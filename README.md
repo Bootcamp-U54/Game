@@ -15,10 +15,14 @@ Takım Unity 54
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=128018114868)
 
 # Ürün Açıklaması
-"Yume no Michi", eşinizi kurtarmak için mücadele ettiğiniz heyecan dolu bir macera oyunudur. Oyun dünyası tehlikelerle dolu olan ve birçok farklı parkur ve bossların bulunduğu fantastik bir ortama sahiptir. Eşinizi kurtarmak için bu fantastik dünyada güçlü olmalı ve intikam için oyunun sonuna kadar dayanmalısın.
-Oyunun oynanışı, çeşitli parkurları tek başınıza geçmeyi içerir. Parkurlar, engeller, tuzaklar ve düşmanlarla doludur ve sizin beceri ve reflekslerinizi test eder. Her bir parkur, size eşinizi bulmak için gerekli olan ipuçlarını elde etmeniz için zorluklarla dolu olacaktır.
-Boss savaşları oyunun önemli bir parçasıdır. Her bir boss, kendine özgü güçlere sahip olan özel bir karakterdir. Boss savaşlarını kazandığınızda, bu özel güçlerden bazılarını elde edersiniz. Bu güçler, size avantaj sağlar ve maceranızı kolaylaştırır. Örneğin, bir boss savaşında kazandığınız bir güç, engelleri aşmanıza veya düşmanları yenmenize yardımcı olabilir.
-Bu macera dolu deneyimde parkurları geçin, bosslarla savaşın, güçlere sahip olun ve eşinizi kurtarmak için yolculuğunuza devam edin. Keyifli oyunlar. 
+"Yume no Michi" adını verdiğimiz bu nefes kesici macera oyununda, eşinizi kurtarmak için destansı bir mücadeleye atılıyorsunuz. Kendinizi tehlikelerle dolu bir oyun dünyasında bulacak ve fantastik bir ortamın içinde birçok heyecan verici parkur ve güçlü boss karakterlerle karşılaşacaksınız.
+
+Bu büyülü dünyada güçlü olmalı ve intikam arzunuzla oyunun sonuna kadar savaşmalısınız. Oyunun heyecan verici oynanışı, çeşitli parkurları tek başınıza keşfetmenizi içerir. Parkurlar, zorlu engeller, hileler ve düşmanlarla doludur ve becerilerinizi ve reflekslerinizi sınar. Her bir parkur, eşinizi kurtarmak için gerekli olan ipuçlarını elde etmeniz için size meydan okuyacak.
+
+Boss savaşları oyunun vazgeçilmez bir parçasıdır. Her bir boss karakteri, kendine özgü güçlere sahip benzersiz bir karakterdir. Boss savaşlarını kazandığınızda, bu özel güçlerden bazılarını elde edersiniz. Bu güçler, size avantaj sağlar ve maceranızı kolaylaştırır. Örneğin, bir boss savaşında elde ettiğiniz bir güç, engelleri aşmanıza veya düşmanları yenmenize yardımcı olabilir.
+
+Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun ve eşinizi kurtarmak için unutulmaz bir yolculuğa çıkın. Bu sürükleyici deneyimde kendinizi kaybedeceksiniz. Yume no Michi ile eşsiz bir dünyaya adım atacak ve heyecan dolu maceranızı yaşarken oyunun sizi içine çeken anlatımıyla tamamen bağlanacaksınız. Hazır olun, sizi bekleyen büyüleyici bir yolculuk var. Keyifli oyunlar!
+
 # Ürün Özellikleri
 - Eşsiz ve çeşitli parkurlar: Her seviye farklı bir ortam ve meydan okumalar sunacak.
 - Zorlu boss savaşları: Güçlü bosslarla karşılaşacak ve stratejik becerilerinizi kullanmanız gerekecek.
