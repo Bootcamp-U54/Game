@@ -42,10 +42,10 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Sprint board update: Sprint board screenshotları:
 ![Sprint1](![Sprint1_rev](https://github.com/Bootcamp-U54/Game/blob/main/Sprint1_rev.png?raw=true) 
 
-#Sprint Review: 
+# Sprint Review: 
 - Oyundaki karaktere dash, ateş etme ve süzülme eklenmesi kararlaştırılmıştır.
 - Bu özellikleri karşısına çıkacak bosslardan kazanacaktır. 
 - Toplam 4 adet boss olup bunlardan 3 tanesi tasarlanmıştır. Son boss’un daha detaylı tasarlanması gerektiği düşünülerek ilerleyen sprintlere ertelenmiştir.
-#Sprint Retrospective: 
+# Sprint Retrospective: 
 - Takım içinde görev dağılımı yapılmıştır.
 - Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır. 
