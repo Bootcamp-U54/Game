@@ -38,6 +38,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Sprint içinde tamamlanması tahmin edilen puan: 100
 - Puan tamamlama mantığı: Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ilk sprintin 100 olması gerektiğine karar verilmiştir.
 - Backlog düzeni ve story seçimleri: Backlog oyunun hikayesi ve oynanış şekline göre belirlenmiştir. Seçimler tahmin edilen puan sayısını geçmeyecek şekilde yapılmaktadır.
+
 **Daily Scrum:**
 - Daily Scrum toplantılarının zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 - Sprint board update: Sprint board screenshotları:
@@ -47,6 +48,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Oyundaki karaktere dash, ateş etme ve süzülme eklenmesi kararlaştırılmıştır.
 - Bu özellikleri karşısına çıkacak bosslardan kazanacaktır. 
 - Toplam 4 adet boss olup bunlardan 3 tanesi tasarlanmıştır. Son boss’un daha detaylı tasarlanması gerektiği düşünülerek ilerleyen sprintlere ertelenmiştir.
+
 **Sprint Retrospective:**
 - Takım içinde görev dağılımı yapılmıştır.
 - Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır. 
