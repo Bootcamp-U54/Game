@@ -35,8 +35,8 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Stratejik düşünme becerileri gelişmiş ve meydan okumalardan hoşlanan kişiler.
 ---
 # Sprint 1
-- Sprint içinde tamamlanması tahmin edilen puan: 100
-- Puan tamamlama mantığı: Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ilk sprintin 100 olması gerektiğine karar verilmiştir.
+- Sprint içinde tamamlanması tahmin edilen puan: 50
+- Puan tamamlama mantığı: Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ilk sprintin 50 olması gerektiğine karar verilmiştir.
 - Backlog düzeni ve story seçimleri: Backlog oyunun hikayesi ve oynanış şekline göre belirlenmiştir. Seçimler tahmin edilen puan sayısını geçmeyecek şekilde yapılmaktadır.
 
 **Daily Scrum:**
