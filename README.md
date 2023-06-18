@@ -45,6 +45,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 **Sprint board update: Sprint board screenshotları:**
 
 ![Sprint1_rev](https://github.com/Bootcamp-U54/Game/blob/main/Sprint1_rev.png?raw=true) 
+![SprintBoard](https://github.com/Bootcamp-U54/Game/blob/main/SprintBoard.png?raw=true)
 
 **Sprint Review:** 
 - Oyundaki karaktere dash, ateş etme ve süzülme eklenmesi kararlaştırılmıştır.
