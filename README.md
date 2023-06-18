@@ -12,7 +12,7 @@ Takım Unity 54
 # Ürün İsmi
 - Yume no Michi
 # Product Backlog URL
-[Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=128018114868)
+[Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=921615522229)
 
 # Ürün Açıklaması
 "Yume no Michi" adını verdiğimiz bu nefes kesici macera oyununda, eşinizi kurtarmak için destansı bir mücadeleye atılıyorsunuz. Kendinizi tehlikelerle dolu bir oyun dünyasında bulacak ve fantastik bir ortamın içinde birçok heyecan verici parkur ve güçlü boss karakterlerle karşılaşacaksınız.
@@ -35,10 +35,12 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Stratejik düşünme becerileri gelişmiş ve meydan okumalardan hoşlanan kişiler.
 ---
 # Sprint 1
-- Sprint içinde tamamlanması tahmin edilen puan:
-- Puan tamamlama mantığı:
-- Daily Scrum:
+- Sprint içinde tamamlanması tahmin edilen puan: 100
+- Puan tamamlama mantığı: Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ilk sprintin 100 olması gerektiğine karar verilmiştir.
+- Backlog düzeni ve story seçimleri: Backlog oyunun hikayesi ve oynanış şekline göre belirlenmiştir. Seçimler tahmin edilen puan sayısını geçmeyecek şekilde yapılmaktadır.
+- Daily Scrum: Daily Scrum toplantılarının zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 - Sprint board update: Sprint board screenshotları:
+- 
 
 - Ürün Durumu: Ekran görüntüleri: 
 - Sprint Review:
