@@ -47,6 +47,9 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 ![Sprint1_rev](https://github.com/Bootcamp-U54/Game/blob/main/Sprint1_rev.png?raw=true) 
 ![SprintBoard](https://github.com/Bootcamp-U54/Game/blob/main/SprintBoard.png?raw=true)
 
+**Ürün DurumuEkran Görüntüleri**
+
+
 - Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
 **Sprint Review:** 
