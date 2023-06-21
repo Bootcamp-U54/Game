@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
 
-    
+
     [Space(10)]
     [Header("Run")]
     public int speed;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public float hangTime = 0.2f; //Platformdan dusse bile ufak bir ziplama suresi veriyor
     private float hangCounter;
     [Space(10)]
-    public float jumpBufferLenght=0.1f; //Yere inince oyuncu hemen ziplamak isterse ziplamasini kolaylasitiriyor.
+    public float jumpBufferLenght = 0.1f; //Yere inince oyuncu hemen ziplamak isterse ziplamasini kolaylasitiriyor.
     private float jumpBufferCount;
 
     [Space(10)]
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     bool candash = true;
     public DashPool dashPool;
     public float dashCoolDown = 1;
-    
+
     float normalgravity;
     IEnumerator dashCoroutine;
 
@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour
     [Header("SFX")]
     public AudioSource stepSound;
 
+
+    [Space(10)]
+    [Header("SoarDown")]
+    public bool isSoar;
 
     private void Start()
     {
@@ -62,10 +66,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-          
+
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-        
-        
+
+
 
         if (moveInput > 0 || moveInput < 0)
         {
@@ -99,7 +103,7 @@ public class PlayerController : MonoBehaviour
         if (isdashing)
         {
             float direction;
-            if(faceRight)
+            if (faceRight)
             {
                 direction = 1;
             }
@@ -109,20 +113,19 @@ public class PlayerController : MonoBehaviour
             }
             rb.AddForce(new Vector2(direction * DashPower, 0), ForceMode2D.Impulse);
         }
-
-
+    
     }
 
     public void Update()
     {
-        
+
 
         moveInput = Input.GetAxis("Horizontal");
         animator.SetBool("isJump", !IsGrounded());
         animator.SetFloat("yVelocity", rb.velocity.y);
 
         #region coyota time 
-        if (IsGrounded()) // Oyuncunun platformdan düþtükden sonra da bir süre zýplamasýna izin verir.
+        if (IsGrounded()) // Oyuncunun platformdan dï¿½ï¿½tï¿½kden sonra da bir sï¿½re zï¿½plamasï¿½na izin verir.
         {
             hangCounter = hangTime;
         }
@@ -133,7 +136,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region JumpBuffer
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpBufferCount = jumpBufferLenght;
 
@@ -145,7 +148,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
 
-        if (jumpBufferCount >=0 && hangCounter > 0f)
+        if (jumpBufferCount >= 0 && hangCounter > 0f)
         {
             Jump();
             jumpBufferCount = 0;
@@ -158,14 +161,32 @@ public class PlayerController : MonoBehaviour
         #region Dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && candash == true)
         {
-          
+
             if (dashCoroutine != null)
             {
                 StopCoroutine(dashCoroutine);
             }
             dashCoroutine = Dashing(.1f, dashCoolDown);
             StartCoroutine(dashCoroutine);
-            
+
+        }
+        #endregion
+
+        #region SoarDown
+        if (Input.GetKeyDown(KeyCode.Space) &&hangCounter<0)
+        {
+            isSoar = true; 
+            rb.gravityScale = 0.2f;
+        }
+       
+        if (Input.GetKeyUp(KeyCode.Space) && isSoar==true)
+        {
+            isSoar = false;
+        }
+
+        if (isSoar == false)
+        {
+            rb.gravityScale = 1f;
         }
         #endregion
 
@@ -194,10 +215,10 @@ public class PlayerController : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-
+  
     IEnumerator Dashing(float dashDuration, float dashcooldown)
     {
-       
+
         isdashing = true;
         candash = false;
         rb.gravityScale = 0;

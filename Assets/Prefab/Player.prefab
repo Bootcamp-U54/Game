@@ -209,7 +209,7 @@ MonoBehaviour:
   jumpArea: 0.1
   platformLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   canJump: 1
   hangTime: 0.2
   jumpBufferLenght: 0.1
@@ -221,6 +221,7 @@ MonoBehaviour:
   dashPool: {fileID: 0}
   dashCoolDown: 1
   stepSound: {fileID: 0}
+  isSoar: 0
 --- !u!50 &1268217680794595848
 Rigidbody2D:
   serializedVersion: 4
