@@ -66,6 +66,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Sprint içinde tamamlanması tahmin edilen puan:
 
   **Daily Scrum:**
+  Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 
   **Sprint board update: Sprint board screenshotları:**
 
