@@ -2484,6 +2484,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 236096361468110639, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
+      propertyPath: soarGravity
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 236096361468110639, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
+      propertyPath: normalGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 236096361468110639, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
       propertyPath: platformLayerMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -2529,7 +2537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8940971477368983535, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.22
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 8940971477368983535, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
       propertyPath: m_LocalPosition.z

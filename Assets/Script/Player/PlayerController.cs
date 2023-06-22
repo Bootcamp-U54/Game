@@ -54,7 +54,14 @@ public class PlayerController : MonoBehaviour
 
     [Space(10)]
     [Header("SoarDown")]
+    public float normalGravity;
+    public float soarGravity;
     public bool isSoar;
+    public ParticleSystem soarEffect_1;
+    public ParticleSystem soarEffect_2;
+    
+    private ParticleSystem.EmissionModule soarEmmision_1;
+    private ParticleSystem.EmissionModule soarEmmision_2;
 
     private void Start()
     {
@@ -62,6 +69,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         boxCollider2d = GetComponent<BoxCollider2D>();
         normalgravity = rb.gravityScale;
+
+        soarEmmision_1 = soarEffect_1.emission;
+        soarEmmision_1.rateOverTime = 0f;
+
+        soarEmmision_2 = soarEffect_2.emission;
+        soarEmmision_2.rateOverTime = 0f;
+
     }
 
     private void FixedUpdate()
@@ -173,20 +187,38 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region SoarDown
-        if (Input.GetKeyDown(KeyCode.Space) &&hangCounter<0)
+        if (Input.GetKeyDown(KeyCode.Space) && hangCounter<0)
         {
-            isSoar = true; 
-            rb.gravityScale = 0.2f;
+            isSoar = true;
         }
-       
-        if (Input.GetKeyUp(KeyCode.Space) && isSoar==true)
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             isSoar = false;
         }
 
-        if (isSoar == false)
+        if(isSoar==false)
         {
-            rb.gravityScale = 1f;
+            rb.gravityScale = normalgravity;
+
+            soarEmmision_1.rateOverTime = 0f;
+            soarEmmision_2.rateOverTime = 0f;
+
+        }
+        else
+        {
+            if(rb.velocity.y < 0)
+            {
+                rb.gravityScale = soarGravity;
+
+                soarEmmision_1.rateOverTime = 35f;
+                soarEmmision_2.rateOverTime = 35f;
+
+            }
+
+            if(IsGrounded())
+            {
+                isSoar = false;
+            }
         }
         #endregion
 
