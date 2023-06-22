@@ -15,7 +15,10 @@ public class DashPool : MonoBehaviour
     public float dashImageCount;
 
     public float betweenImage;
-
+    private void Start()
+    {
+        createDashImage();
+    }
     private void Update()
     {
         
@@ -24,6 +27,19 @@ public class DashPool : MonoBehaviour
     {
 
         StartCoroutine(getDashImageIE());
+    }
+
+    public void createDashImage()
+    {
+        for (int i = 0; i < dashImageCount; i++)
+        {
+            GameObject a = Instantiate(dashPrefab, player.position, Quaternion.identity);
+            a.GetComponent<SpriteRenderer>().sprite = player.gameObject.GetComponent<SpriteRenderer>().sprite;
+            dashImage.Add(a);
+            a.GetComponent<SpriteRenderer>().DOFade(0, 0);
+            a.transform.SetParent(this.gameObject.transform);
+            isDashImageSpawn = true;
+        }
     }
 
     
