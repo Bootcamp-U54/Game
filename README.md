@@ -60,4 +60,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 **Sprint Retrospective:**
 - Takım içinde görev dağılımı yapılmıştır.
-- Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır. 
+- Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır.
+
+  # Sprint 2
+- Sprint içinde tamamlanması tahmin edilen puan: 
