@@ -63,4 +63,17 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır.
 
   # Sprint 2
-- Sprint içinde tamamlanması tahmin edilen puan: 
+- Sprint içinde tamamlanması tahmin edilen puan:
+
+  **Daily Scrum:**
+
+  **Sprint board update: Sprint board screenshotları:**
+
+  **Ürün DurumuEkran Görüntüleri**
+
+  **Sprint Review:** 
+
+  **Sprint Retrospective:**
+
+  # Product Backlog URL
+[Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
