@@ -47,7 +47,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 ![Sprint1_rev](https://github.com/Bootcamp-U54/Game/blob/main/Sprint1_rev.png?raw=true) 
 ![SprintBoard](https://github.com/Bootcamp-U54/Game/blob/main/SprintBoard.png?raw=true)
 
-**Ürün DurumuEkran Görüntüleri**
+**Ürün Durumu: Ekran Görüntüleri**
 
 ![karakter](https://github.com/Bootcamp-U54/Game/blob/main/karakter.jpg?raw=true)
 
@@ -70,7 +70,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
   **Sprint board update: Sprint board screenshotları:**
 
-  **Ürün DurumuEkran Görüntüleri**
+  **Ürün Durumu: Ekran Görüntüleri**
 
   **Sprint Review:** 
 
