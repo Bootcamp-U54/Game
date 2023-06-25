@@ -75,9 +75,20 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 - Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
-  **Sprint Review:** 
+  **Sprint Review:**
+- Ana karakter ve tüm animasyonları tamamlandı. İlk boss tasarlandı, animasyonları da oyun içinde denendikten sonra tasarlanacak. 
+- Hazırlanan görseller Github'a yüklendi.
+- Üçüncü boss mekanikleri büyük ölçüde tamamlandı. Eksik kısımların bu hafta tamamlanması planlanıyor.
+- UI ana menü giriş yapıldı. Parkur mekanikleri yapıldı.
+- İkinci bossun mekanikleri üzerinde çalışıldı.
+- Bu hafta tüm bossların bitmesi planlandı.
+- Parkur mekaniklerinin birleşimi gelecek hafta tamamlanacak.
+- Gelecek haftalarda parkurun test için hazır olacak ve diğer UI elementleri tamamlanacak.
+- UI kısmının kod olarak hazır olması planlanıyor.
 
   **Sprint Retrospective:**
+- Takımda görevleri erken biten üyelerin diğer üyelere görevlerinde yardım etmesi üzerine konuşuldu.
+- Oyuncu hikayelerinin ve görevlerin puanlaması yapıldı.
 
   # Product Backlog URL
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
