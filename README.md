@@ -70,6 +70,8 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 
 **Sprint board update: Sprint board screenshotları:**
+![Sprint2](https://github.com/Bootcamp-U54/Game/blob/main/sprint2.png?raw=true)
+![Sprint2_1](https://github.com/Bootcamp-U54/Game/blob/main/sprint2_1.png?raw=true)
 
 **Ürün Durumu: Ekran Görüntüleri**
 
