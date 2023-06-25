@@ -67,7 +67,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Backlog düzeni ve story seçimleri: Backlog oyunun hikayesi ve oynanış şekline göre belirlenmiştir. Seçimler tahmin edilen puan sayısını geçmeyecek şekilde yapılmaktadır.
 
 **Daily Scrum:**
-  Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
+- Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 
 **Sprint board update: Sprint board screenshotları:**
 
