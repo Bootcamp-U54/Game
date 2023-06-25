@@ -63,7 +63,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Takımdaki her bireyin her gün görevlerindeki gelişimle alakalı ekibe Discord üzerinden bilgi vermesi planlanmıştır.
 
 # Sprint 2
-- Sprint içinde tamamlanması tahmin edilen puan: 60
+- Sprint içinde tamamlanması tahmin edilen puan: 70
 - Backlog düzeni ve story seçimleri: Backlog oyunun hikayesi ve oynanış şekline göre belirlenmiştir. Seçimler tahmin edilen puan sayısını geçmeyecek şekilde yapılmaktadır.
 
 **Daily Scrum:**
