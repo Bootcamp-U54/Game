@@ -83,7 +83,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - İkinci bossun mekanikleri üzerinde çalışıldı.
 - Bu hafta tüm bossların bitmesi planlandı.
 - Parkur mekaniklerinin birleşimi gelecek hafta tamamlanacak.
-- Gelecek haftalarda parkurun test için hazır olacak ve diğer UI elementleri tamamlanacak.
+- Gelecek haftalarda parkur test için hazır olacak ve diğer UI elementleri tamamlanacak.
 - UI kısmının kod olarak hazır olması planlanıyor.
 
 **Sprint Retrospective:**
