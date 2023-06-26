@@ -78,6 +78,8 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 ![karakter](https://github.com/Bootcamp-U54/Game/blob/main/Player_Punch_Cross_64x64.png?raw=true)
 
+![kasaObake](https://github.com/Bootcamp-U54/Game/blob/main/KASA_OBAKE.png?raw=true)
+
 - Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
 **Sprint Review:**
