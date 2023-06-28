@@ -157,7 +157,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07656768, y: -0.086645186}
+  m_Offset: {x: -0.060091794, y: -0.00097060204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -168,7 +168,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1822352, y: 1.8460864}
+  m_Size: {x: 1.1492835, y: 2.0174356}
   m_EdgeRadius: 0
 --- !u!95 &4085997941529207075
 Animator:
@@ -228,6 +228,7 @@ MonoBehaviour:
   isSoar: 0
   soarEffect_1: {fileID: 2720849830667621293}
   soarEffect_2: {fileID: 3635372039348405179}
+  isBend: 0
 --- !u!50 &1268217680794595848
 Rigidbody2D:
   serializedVersion: 4

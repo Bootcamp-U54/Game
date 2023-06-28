@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
     private ParticleSystem.EmissionModule soarEmmision_1;
     private ParticleSystem.EmissionModule soarEmmision_2;
 
+    [Space(10)]
+    [Header("Bend System")]
+    public bool isBend;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -80,10 +84,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
-
+        if(canMove==true && isBend==false)
+        {
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
 
         if (moveInput > 0 || moveInput < 0)
         {
@@ -161,8 +165,8 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
-
-        if (jumpBufferCount >= 0 && hangCounter > 0f)
+        #region JumpSystem
+        if (jumpBufferCount >= 0 && hangCounter > 0f && isBend==false)
         {
             Jump();
             jumpBufferCount = 0;
@@ -171,6 +175,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+        #endregion
 
         #region Dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && candash == true)
@@ -220,6 +225,28 @@ public class PlayerController : MonoBehaviour
                 isSoar = false;
             }
         }
+        #endregion
+         
+        #region BendSystem
+
+        if(Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+           
+            if (hangCounter > 0)
+            {
+                isBend = true;
+                rb.velocity = Vector2.zero;
+                animator.SetBool("isBend", isBend);
+            }
+           
+        }
+
+        if(Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
+        {
+            isBend = false;
+            animator.SetBool("isBend", isBend);
+        }
+
         #endregion
 
     }
