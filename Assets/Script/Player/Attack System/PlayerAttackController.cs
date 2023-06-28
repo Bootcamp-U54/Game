@@ -31,7 +31,7 @@ public class PlayerAttackController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.X))
         {
-            if(currentDuration>duration)
+            if(currentDuration>duration && GetComponent<PlayerController>().isBend==false)
             {
                 currentDuration = 0;
                 anim.SetTrigger("Fire");
@@ -43,7 +43,7 @@ public class PlayerAttackController : MonoBehaviour
 
     public void fireAnim()
     {
-
+        Debug.Log("FireAnim");
         if ((vec.x == 1 && vec.y == 0) || (vec.x == -1 && vec.y == 0) || (vec.x == 0 && vec.y == 0))
         {
             fire(AllspawnPos[0]);
@@ -60,7 +60,7 @@ public class PlayerAttackController : MonoBehaviour
 
     public void fire(Transform spawnPos)
     {
-        
+        Debug.Log("Fire");
 
         GameObject a = Instantiate(bullet, spawnPos.position, Quaternion.identity);
 

@@ -114,7 +114,7 @@ SpriteRenderer:
   m_SortingLayerID: 198810613
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1170665777, guid: 897b9e277a6549f438e2625b6239af00, type: 3}
+  m_Sprite: {fileID: -636369666, guid: f29ae6b8c010fe94a9c0b4aec509efbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -277,6 +277,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   bullet: {fileID: 4535252705018868971, guid: fd3562b459f25504cb024398083a451f, type: 3}
+  anim: {fileID: 0}
   vec: {x: 0, y: 0}
   currentDuration: 0
 --- !u!1 &952713413246065278
