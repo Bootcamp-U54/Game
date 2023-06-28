@@ -2487,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4821445041841398580, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
+      propertyPath: canFire
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7690513592958353663, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
       propertyPath: m_Layer
       value: 0
