@@ -80,6 +80,10 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 ![kasaObake](https://github.com/Bootcamp-U54/Game/blob/main/KASA_OBAKE.png?raw=true)
 
+![kasaObake](https://github.com/Bootcamp-U54/Game/blob/main/kasa_Obake.jpg?raw=true)
+
+![kedi](https://github.com/Bootcamp-U54/Game/blob/main/kedi.jpg?raw=true)
+
 - Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
 **Sprint Review:**
