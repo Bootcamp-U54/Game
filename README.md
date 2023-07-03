@@ -64,6 +64,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 # Sprint 2
 - Sprint içinde tamamlanması tahmin edilen puan: 70
+- - Puan tamamlama mantığı: Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ikinci sprintin 70 olması gerektiğine karar verilmiştir.
 
 **Daily Scrum:**
 - Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
