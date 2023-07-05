@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GhostMng : MonoBehaviour
 {
+    public int health;
+    public bool canGetDamage;
+
+
     public int damage;
     public bool canMove = true;
     public Transform target;
@@ -59,6 +63,35 @@ public class GhostMng : MonoBehaviour
             canMove = false;
             GetComponent<BoxCollider2D>().enabled = false;
             anim.SetTrigger("Die");
+        }
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getDamage(collision.gameObject.GetComponent<BulletManager>().damage);
+            Destroy(collision.gameObject);
+        }
+    }
+
+    public void getDamage(int dmg)
+    {
+        if (canGetDamage == true)
+        {
+            this.gameObject.GetComponent<damageAnim>().startAnim();
+            if (health >= dmg)
+            {
+                health -= dmg;
+            }
+            else
+            {
+                health = 0;
+            }
+
+            if (health <= 0)
+            {
+                canMove = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+                anim.SetTrigger("Die");
+            }
         }
     }
 

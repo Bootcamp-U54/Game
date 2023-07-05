@@ -9,6 +9,7 @@ public class SkeletonMng : MonoBehaviour
     public float healt;
     public GameObject player;
     public int ghostCount;
+    public bool canGetDamage = true;
 
     [Space(10)]
     [Header("Skeleton")]
@@ -58,6 +59,7 @@ public class SkeletonMng : MonoBehaviour
             setSkeletonPos();
             yield return new WaitForSeconds(1f);
             sword.GetComponent<Animator>().SetTrigger("Attack");
+            sword.GetComponent<SwordMng>().canDmg = true;
             yield return new WaitForSeconds(3f);
             changeFade(false);
             yield return new WaitForSeconds(1f);
@@ -112,6 +114,7 @@ public class SkeletonMng : MonoBehaviour
             setSkeletonPos();
             yield return new WaitForSeconds(1f);
             sword.GetComponent<Animator>().SetTrigger("Attack");
+            sword.GetComponent<SwordMng>().canDmg = true;
             yield return new WaitForSeconds(3f);
             changeFade(false);
             yield return new WaitForSeconds(1f);
@@ -176,5 +179,42 @@ public class SkeletonMng : MonoBehaviour
             scaler.x = -1f;
             transform.localScale = scaler;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getDamage(collision.gameObject.GetComponent<BulletManager>().damage);
+            Destroy(collision.gameObject);
+        }
+
+    }
+
+    public void getDamage(int dmg)
+    {
+        if (canGetDamage == true)
+        {
+            this.gameObject.GetComponent<damageAnim>().startAnim();
+            if (healt >= dmg)
+            {
+                healt -= dmg;
+            }
+            else
+            {
+                healt = 0;
+            }
+
+            if (healt <= 0)
+            {
+                deadSkeleton();
+            }
+        }
+    }
+
+    public void deadSkeleton()
+    {
+        Debug.Log("dead");
     }
 }

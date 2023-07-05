@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7044927870925557596}
   - component: {fileID: 8310708746916727311}
   - component: {fileID: 2727886998057214373}
+  - component: {fileID: 2358394272037699691}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -100,7 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5290cb58930342e4c9435ddad7fc3c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  health: 10
+  canGetDamage: 1
+  damage: 10
+  canMove: 1
   target: {fileID: 0}
   speed: 1
   rotationSpeed: 0
@@ -198,3 +202,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2358394272037699691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237396427747696078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de2f30735a463940ac34bcabe473082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMaterial: {fileID: 2100000, guid: 4368155fef0a29b429d52291a21c00b8, type: 2}
+  duration: 0.125
