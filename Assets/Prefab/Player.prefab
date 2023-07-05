@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 236096361468110639}
   - component: {fileID: 1268217680794595848}
   - component: {fileID: 4821445041841398580}
+  - component: {fileID: 6763372678593452465}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -203,8 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade31e780454bcf49a1976051c55e051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  canGetDamage: 0
+  health: 100
+  canGetDamage: 1
   speed: 5
   canMove: 1
   moveInput: 0
@@ -282,6 +283,20 @@ MonoBehaviour:
   anim: {fileID: 0}
   vec: {x: 0, y: 0}
   currentDuration: 0
+--- !u!114 &6763372678593452465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483614632185788333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de2f30735a463940ac34bcabe473082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMaterial: {fileID: 2100000, guid: 4368155fef0a29b429d52291a21c00b8, type: 2}
+  duration: 0.125
 --- !u!1 &952713413246065278
 GameObject:
   m_ObjectHideFlags: 0
