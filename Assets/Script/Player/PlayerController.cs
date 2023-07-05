@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     [Header("Property")]
+    public float health;
+    public bool canGetDamage;
     BoxCollider2D boxCollider2d;
     Animator animator;
     Rigidbody2D rb;
@@ -291,5 +293,24 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashcooldown);
         candash = true;
     }
+    public void getDamage(int dmg)
+    {
+        if (canGetDamage == true)
+        {
+            this.gameObject.GetComponent<damageAnim>().startAnim();
+            if (health >= dmg)
+            {
+                health -= dmg;
+            }
+            else
+            {
+                health = 0;
+            }
 
+            if (health <= 0)
+            {
+                //dead
+            }
+        }
+    }
 }

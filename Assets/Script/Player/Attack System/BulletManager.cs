@@ -6,6 +6,7 @@ public class BulletManager : MonoBehaviour
 {
     [Header("Girilen Veriler")]
     public float speed;
+    public int damage;
 
     [Space(10)]
     [Header("Okunan Veriler")]
