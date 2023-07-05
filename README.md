@@ -104,3 +104,28 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 # Product Backlog URL
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
+
+# Sprint 3
+- Sprint içinde tamamlanması tahmin edilen puan: 
+- Puan tamamlama mantığı: 
+
+**Daily Scrum:**
+- Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
+
+**Sprint board update: Sprint board screenshotları:**
+
+
+**Ürün Durumu: Ekran Görüntüleri**
+
+
+- Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+**Sprint Review:**
+
+
+**Sprint Retrospective:**
+
+
+# Product Backlog URL
+[Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
+
