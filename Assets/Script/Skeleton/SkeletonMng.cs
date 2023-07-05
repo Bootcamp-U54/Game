@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-public class SkeletonMngTwo : MonoBehaviour
+public class SkeletonMng : MonoBehaviour
 {
     [Space(10)]
     [Header("Skeleton Value")]
@@ -80,7 +80,7 @@ public class SkeletonMngTwo : MonoBehaviour
         for (int i = 0; i < ghostCount; i++)
         {
             GameObject a = Instantiate(ghost, new Vector3(Random.Range(ghostSpawnPos[0].position.x, ghostSpawnPos[1].position.x), ghostSpawnPos[0].position.y, ghostSpawnPos[0].position.z), Quaternion.identity);
-            a.GetComponent<hayaletMng>().target = player.transform;
+            a.GetComponent<GhostMng>().target = player.transform;
             a.transform.SetParent(ghostParent);
             yield return new WaitForSeconds(0.5f);
         }

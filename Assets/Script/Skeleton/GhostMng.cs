@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hayaletMng : MonoBehaviour
+public class GhostMng : MonoBehaviour
 {
     public int damage;
     public bool canMove = true;
