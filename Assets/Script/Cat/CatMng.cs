@@ -5,31 +5,33 @@ using DG.Tweening;
 
 public class CatMng : MonoBehaviour
 {
+    [Header("Cat Value")]
     public float healt;
-
-    public GameObject[] arms;
     bool isRight = true;
+    public Transform player;
+    public bool canGetDamage = true;
+    public float speed = 1;
 
+    [Space(10)]
+    [Header("Cat Object")]
+    public GameObject[] arms;
     public Transform[] armsPos;
 
-    public float duraiton;
-    public float currentDuraiton;
-    public Coroutine mngCoroutine;
-
+    [Space(10)]
+    [Header("Cat Head Anim")]
     public Transform catRightEye, catLeftEye;
     public Sprite[] catEye;
-    public Transform player;
     public GameObject catHead;
 
+    [Space(10)]
+    [Header("Partical Effect")]
 
     public ParticleSystem rightHandEffect;
     public ParticleSystem leftHandEffect;
+    public ParticleSystem[] obstaclePartical;
 
     private ParticleSystem.EmissionModule rightHandEffectEmmision;
     private ParticleSystem.EmissionModule leftHandEffectEmmision;
-
-    public bool canGetDamage = true;
-    public float speed = 1;
 
     [Space(10)]
     [Header("Obstacle")]
@@ -44,7 +46,9 @@ public class CatMng : MonoBehaviour
     public int obstacleDamage;
 
     public Sprite[] obstacleSprite;
-    public ParticleSystem[] obstaclePartical;
+
+
+
 
     void Start()
     {
@@ -59,7 +63,7 @@ public class CatMng : MonoBehaviour
         leftHandEffectEmmision.rateOverTime = 0;
         rightHandEffectEmmision.rateOverTime = 0;
 
-        mngCoroutine = StartCoroutine(Mng());
+        StartCoroutine(Mng());
     }
 
    
