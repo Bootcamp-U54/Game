@@ -13,14 +13,14 @@ public class PlatformMove : MonoBehaviour
     private bool movingToTarget1 = false; // Ýlk hedefe hareket ediliyor mu?
     private bool characterOnPlatform = false; // Karakter platformda mý?
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (characterOnPlatform)
         {
             if (movingToTarget1)
             {
                 MoveToTarget(targetPoint1.position);
-              
+
             }
             else
             {
@@ -53,8 +53,13 @@ public class PlatformMove : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.transform.tag == "Player")
+        {
+           
             collision.collider.transform.SetParent(null);
-         characterOnPlatform = true;
+            characterOnPlatform = true;
+
+        }
+
     }
 
     private void OnDrawGizmos()

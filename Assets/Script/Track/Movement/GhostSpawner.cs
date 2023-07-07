@@ -21,10 +21,12 @@ public class GhostSpawner : MonoBehaviour
             GameObject bullet = ObjectPool.Instance.GetGhost();
             if (bullet != null)
             {
+
                 bullet.transform.position = selectedSpawnPoint.position;
                 bullet.transform.rotation = Quaternion.Euler(0,0,0);
                 bullet.transform.SetParent(parentObject.transform);
                 bullet.SetActive(true);
+
             }
         }
     }
