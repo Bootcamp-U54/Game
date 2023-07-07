@@ -5,6 +5,8 @@ public abstract class Bullet : MonoBehaviour
     protected float speed = 10f; // Mermi hýzý
     public float lifetime = 0.5f; // Mermi ömrü (saniye)
     protected float timer = 0f; // Mermi geçen süre
+
+    public int damage = 1;
     protected abstract void MoveBullet();
     private void OnEnable()
     {
@@ -21,6 +23,13 @@ public abstract class Bullet : MonoBehaviour
         }
     }
 
-  
- 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag=="Player")
+        {
+            collision.GetComponent<PlayerController>().getDamage(damage);
+            ObjectPool.Instance.ReturnToPool(gameObject);
+        }
+    }
+
 }

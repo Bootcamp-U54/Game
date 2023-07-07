@@ -7,16 +7,6 @@ public class ObstacleMng : MonoBehaviour
     public Transform destroyObstacle;
     public Vector3 destroyPos;
     public int damage;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

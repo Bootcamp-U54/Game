@@ -16,6 +16,7 @@ public class TrapMechanics : MonoBehaviour
         {
             Debug.Log("evet");
             Rigidbody2D targetRb = targetObject.GetComponent<Rigidbody2D>();
+            targetRb.bodyType = RigidbodyType2D.Dynamic;
             targetRb.AddForce(Vector2.up * upwardForce, ForceMode2D.Impulse);
             gameObject.SetActive(false);
             frogMec.SetActive(true);
