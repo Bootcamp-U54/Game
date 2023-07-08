@@ -10,17 +10,20 @@ public class BrokenPlatform : Move
 
     private void Update()
     {
-        MoveObjectBetweenPoints();
+        MoveObjectBetweenPoints(false);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Player")
         {
+            if(collision.transform.position.y>gameObject.transform.position.y)
+            {
+                collision.collider.transform.SetParent(transform);
+                GameObject platform = gameObject;
+                StartCoroutine(DestroyPlatformDelayed(platform, 3f));
+                trapMec.SetActive(true);
+            }
           
-            collision.collider.transform.SetParent(transform);
-            GameObject platform =gameObject;
-            StartCoroutine(DestroyPlatformDelayed(platform, 3f));
-            trapMec.SetActive(true);
         }
 
 

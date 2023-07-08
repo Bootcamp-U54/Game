@@ -8,7 +8,7 @@ public class EagleMove : Move, IBulletSpawner
     public GameObject parentObject;
     private void Update()
     {
-        MoveObjectBetweenPoints();
+        MoveObjectBetweenPoints(true);
         FireBullet();
     }
     public void FireBullet()

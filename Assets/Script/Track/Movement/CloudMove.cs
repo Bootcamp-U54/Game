@@ -6,11 +6,13 @@ public class CloudMove : Move, IBulletSpawner
 {
     public Transform[] spawnPoints; // Spawn noktalarý
     public float fireRate = 1f; // Mermi atma hýzý
-    private float fireTimer = 0f; // Mermi atma zamanlayýcýsý
+    public float fireTimer = 0f; // Mermi atma zamanlayýcýsý
     public GameObject parentObject;
+
+    public int lastPos;
     private void Update()
     {
-        MoveObjectBetweenPoints();
+        MoveObjectBetweenPoints(false);
 
         // Mermi atma zamanlayýcýsýný güncelle
         fireTimer += Time.deltaTime;
@@ -37,6 +39,10 @@ public class CloudMove : Move, IBulletSpawner
                 bullet.SetActive(true);
                 bullet.transform.SetParent(parentObject.transform);
             }
+
+           
         }
+
+
     }
 }

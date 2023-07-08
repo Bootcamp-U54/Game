@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class FrogMove : MonoBehaviour
 {
-    public int maxJumpCount;
     public int speed;
-    public int jump;
 
-    private int jumpCount = 0;
+    public float maxJump, minJump;
+    public float currentJump;
+
     private Rigidbody2D rb;
+
+    public int damage = 1;
+
+    public float maxXPos;
 
     private void Start()
     {
@@ -18,13 +22,19 @@ public class FrogMove : MonoBehaviour
     }
     private void Update()
     {
-        Explode();
+     
+
+        if(transform.position.x<maxXPos)
+        {
+            Destroy(gameObject);
+        }
     }
     private void Jump()
     {
+
+        currentJump = Random.Range(minJump, maxJump);
         // Sadece sola doðru zýplamasý için yatay kuvvet uygula
-        rb.velocity = new Vector2(-speed, jump);
-        jumpCount++;
+        rb.velocity = new Vector2(-speed, currentJump);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,22 +44,17 @@ public class FrogMove : MonoBehaviour
         {
             Jump();
         }
-    }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        // Platform temasýný kaybettiðinde
-        if (collision.gameObject.CompareTag("Platform"))
+        if (collision.gameObject.tag == "Player")
         {
-
-        }
-    }
-
-    private void Explode()
-    {
-        if (jumpCount == maxJumpCount)
-        {
+            collision.gameObject.GetComponent<PlayerController>().getDamage(damage);
             Destroy(gameObject);
         }
     }
+
+    
+
+ 
+
+   
 }

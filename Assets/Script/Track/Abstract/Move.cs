@@ -10,7 +10,7 @@ public abstract class Move : MonoBehaviour
     public float arrivalThreshold = 0.1f; // Mesafe eþik deðeri
     protected bool movingToEnd = true; // Baþlangýçta bitiþ noktasýna doðru hareket edilsin mi?
 
-    protected void MoveObjectBetweenPoints()//Haraket
+    protected void MoveObjectBetweenPoints(bool isNpc)//Haraket
     {
         if (movingToEnd)
         {
@@ -18,6 +18,11 @@ public abstract class Move : MonoBehaviour
             if (Vector3.Distance(transform.position, endPoint.position) <= arrivalThreshold)
             {
                 movingToEnd = false;
+                if(isNpc)
+                {
+                    flip();
+                }
+                
             }
         }
         else
@@ -26,8 +31,19 @@ public abstract class Move : MonoBehaviour
             if (Vector3.Distance(transform.position, startPoint.position) <= arrivalThreshold)
             {
                 movingToEnd = true;
+                if (isNpc)
+                {
+                    flip();
+                }
             }
         }
+    }
+
+    public void flip()
+    {
+        Vector3 scaler = transform.localScale;
+        scaler.x *= -1;
+        transform.localScale = scaler;
     }
 
 

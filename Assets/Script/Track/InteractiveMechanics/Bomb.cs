@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class Bomb : MonoBehaviour
 {
     public float countdown = 2f; // Patlama için geri sayým süresi
@@ -12,6 +12,9 @@ public class Bomb : MonoBehaviour
     private bool hasExploded = false; // Patlamanýn gerçekleþip gerçekleþmediðini kontrol etmek için
     private SpriteRenderer spriteRenderer; // Bomba sprite'ýnýn renderer bileþeni
 
+
+    public GameObject player;
+    public int damage = 3;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); // Bomba sprite'ýnýn renderer bileþenini al
@@ -21,11 +24,20 @@ public class Bomb : MonoBehaviour
     {
         if (collision.CompareTag("Player")) // Eðer karakter ile temas olduysa
         {
-            StartCoroutine(ShakeAndExplode(gameObject)); // Sallanma ve patlama coroutine'unu baþlat
+            StartCoroutine(ShakeAndExplode()); // Sallanma ve patlama coroutine'unu baþlat
+            player = collision.gameObject;
         }
     }
 
-    private IEnumerator ShakeAndExplode(GameObject player)
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag=="Player")
+        {
+            player = null;
+        }
+    }
+
+    private IEnumerator ShakeAndExplode()
     {
         if (!hasExploded)
         {
@@ -57,8 +69,15 @@ public class Bomb : MonoBehaviour
                 Instantiate(explosionEffect, transform.position, Quaternion.identity);
             }
 
+            if(player !=null)
+            {
+                player.GetComponent<PlayerController>().getDamage(damage);
+            }
+
             // Bombayý yok et
+            Camera.main.DOShakePosition(0.5f, 3f);
             Destroy(gameObject);
+
         }
     }
 }
