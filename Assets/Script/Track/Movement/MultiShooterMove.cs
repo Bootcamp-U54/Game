@@ -10,6 +10,9 @@ public class MultiShooterMove : MonoBehaviour
     public Transform[] spawnPoints; // Prefab'ın fırlatılacağı nokta
     public GameObject parentObject;
 
+    public bool canGetDamage = true;
+    public int health;
+
     void Update()
     {
         spawnPoints=GetComponentsInChildren<Transform>();
@@ -17,6 +20,7 @@ public class MultiShooterMove : MonoBehaviour
     }
     public void FireBullet()
     {
+      
         int[] rotations = new int[] { 30, 20, 10 };
         for (int i = 0; i < spawnPoints.Length; i++)
         {
@@ -40,8 +44,46 @@ public class MultiShooterMove : MonoBehaviour
                 Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
                 Vector2 hareket = rotation * new Vector2(-horizontalspeed, verticalspeed); // Açıyı da hesaba katın
                 bulletRigidbody.velocity = hareket;
+                GetComponent<Animator>().SetTrigger("Fire");
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getDamage(collision.gameObject.GetComponent<BulletManager>().damage);
+            Destroy(collision.gameObject);
+        }
+
+    }
+
+    public void getDamage(int dmg)
+    {
+        if (canGetDamage == true)
+        {
+            this.gameObject.GetComponent<damageAnim>().startAnim();
+            if (health >= dmg)
+            {
+                health -= dmg;
+            }
+            else
+            {
+                health = 0;
+            }
+
+            if (health <= 0)
+            {
+                GetComponent<Animator>().SetBool("Death", true);
+            }
+        }
+    }
+
+   public void dest()
+    {
+        Destroy(gameObject);
     }
 
 }

@@ -25,14 +25,11 @@ public class ParallaxEffect : MonoBehaviour
         float deltaX = (cameraTransform.position.x - previousCameraPosition.x) * parallaxMultipler;
         float deltaY = (cameraTransform.position.y - previousCameraPosition.y) * parallaxMultipler;
         float moveAmount = cameraTransform.position.x * (1 - parallaxMultipler);
-        if(cameraTransform.position.y > startPosyY)
-        {
-            transform.Translate(new Vector3(deltaX, deltaY, 0));
-        }
-        else
-        {
-            transform.Translate(new Vector3(deltaX, 0, 0));
-        }
+       
+          transform.Translate(new Vector3(deltaX, deltaY, 0));
+
+
+       
        
         previousCameraPosition = cameraTransform.position;
         
