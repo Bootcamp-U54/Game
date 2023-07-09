@@ -13,10 +13,7 @@ public class MainButtonAnim : MonoBehaviour
 
     public Transform startTransform;
     public Transform quitTransform;
-
-
     public float animationDuration = 1f;
-    private Vector3 originalPosition;
 
 
     void Start()

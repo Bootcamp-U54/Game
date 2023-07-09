@@ -7,7 +7,7 @@ public class BookButtonManager : MonoBehaviour
 {
     public Image mainImage,storyImage, trackImage, controllerImage;
     public GameObject storyBook, trackBook, controllerBook;
-
+    public int track,story,controller;
 
     private void Start()
     {
@@ -15,31 +15,35 @@ public class BookButtonManager : MonoBehaviour
         SetAllBookActive(false);
         mainImage.enabled = true;
     }
-    public void OnClickStoryButton()
+    public void OnClickStoryButton(int index)
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
 
         storyImage.enabled = true;
         storyBook.SetActive(true);
+        story=index;
     }
 
-    public void OnClickTrackButton()
+    public void OnClickTrackButton(int index)
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
 
         trackImage.enabled = true;
         trackBook.SetActive(true);
+        track = index;
+
     }
 
-    public void OnClickControllerButton()
+    public void OnClickControllerButton(int index)
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
 
         controllerImage.enabled = true;
         controllerBook.SetActive(true);
+        controller = index; 
     }
 
     private void SetAllImageVisibility(bool visible)

@@ -7,9 +7,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
+using Image = UnityEngine.UI.Image;
+
 public class BookManager : MonoBehaviour
 {
-    public TextMeshProUGUI[] page;
+    BookButtonManager buttonManager;
+    public TextMeshProUGUI[] storyPage,trackPage,controlerPage;
     public GameObject bookCanvas;
     public float fadeDuration = 2f;
 
@@ -18,21 +21,29 @@ public class BookManager : MonoBehaviour
     private float typingSpeed;
     private bool isPaused = false;
 
+    [Header("BookAnim")]
+    public GameObject Book;
+    public Transform startTransform;
+    public Transform backTransform;
+    public float animationDuration = 1f;
     private void Start()
     {
-        for (int i = 1; i < page.Length; i++)
+        for (int i = 1; i < storyPage.Length; i++)
         {
-            page[i].DOFade(0f, 0f).SetUpdate(true);
+            storyPage[i].DOFade(0f, 0f).SetUpdate(true);
         }
+
     }
 
 
     private void Update()
     {
+        buttonManager = GetComponent<BookButtonManager>();
         if (Input.GetKeyDown(KeyCode.B))
         {
             if (isPaused)
             {
+                BackShowPanel();
                 ResumeGame();
             }
             else
@@ -40,8 +51,9 @@ public class BookManager : MonoBehaviour
 
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                bookCanvas.SetActive(true);
-                StartTypewriterEffect(page[currentIndex].text);
+                
+                ShowPanel();
+                StartTypewriterEffect(storyPage[currentIndex].text);
                 Time.timeScale = 0f;
                 isPaused = true;
 
@@ -51,16 +63,30 @@ public class BookManager : MonoBehaviour
 
     public void OnClickStoryText()
     {
-        StartTypewriterEffect(page[currentIndex].text);
+        StartTypewriterEffect(storyPage[currentIndex].text);
     }
     public void OnClickNextPage()
     {
-        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < page.Length)
+        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < storyPage.Length&& buttonManager.story==0)
         {
-            page[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
-            page[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex++;
-            StartTypewriterEffect(page[currentIndex].text);
+            StartTypewriterEffect(storyPage[currentIndex].text);
+        }
+        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < trackPage.Length && buttonManager.track==1)
+        {
+            trackPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            trackPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            currentIndex++;
+            StartTypewriterEffect(trackPage[currentIndex].text);
+        }
+         if (!isTyping && currentIndex >= 0 && currentIndex + 1 < controlerPage.Length && buttonManager.controller==2)
+        {
+            controlerPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            controlerPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            currentIndex++;
+            StartTypewriterEffect(controlerPage[currentIndex].text);
         }
     }
 
@@ -68,11 +94,38 @@ public class BookManager : MonoBehaviour
     {
         if (!isTyping && currentIndex > 0)
         {
-            page[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
-            page[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex--;
-            StartTypewriterEffect(page[currentIndex].text);
+            StartTypewriterEffect(storyPage[currentIndex].text);
         }
+
+         if (!isTyping && currentIndex > 0)
+        {
+            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            currentIndex--;
+            StartTypewriterEffect(storyPage[currentIndex].text);
+        }
+
+         if (!isTyping && currentIndex > 0)
+        {
+            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            currentIndex--;
+            StartTypewriterEffect(storyPage[currentIndex].text);
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 
     private void StartTypewriterEffect(string text)
@@ -86,7 +139,7 @@ public class BookManager : MonoBehaviour
 
     private IEnumerator TypeText(string text)
     {
-        TextMeshProUGUI currentPage = page[currentIndex];
+        TextMeshProUGUI currentPage = storyPage[currentIndex];
         currentPage.text = "";
 
         foreach (char character in text)
@@ -100,11 +153,29 @@ public class BookManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        bookCanvas.SetActive(false);
+
+        BackShowPanel();
         Time.timeScale = 1f;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
         isPaused = false;
+
     }
+
+
+
+    public void ShowPanel()
+    {
+        Book.SetActive(true);
+        Book.transform.DOMove(startTransform.position, animationDuration).SetEase(Ease.OutBack).SetUpdate(true);
+    }
+
+    public void BackShowPanel()
+    {
+        Book.SetActive(false);
+        Book.transform.DOMove(backTransform.position, animationDuration).SetEase(Ease.OutBack).SetUpdate(true);
+    }
+
 }
+
