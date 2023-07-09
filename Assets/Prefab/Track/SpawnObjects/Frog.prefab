@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3633525863080149213}
   - component: {fileID: 2228456221972109172}
   - component: {fileID: 6041368075162225324}
+  - component: {fileID: 2245710939831415564}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.7473037, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 1668149148, guid: 36645ac26ea633e448dcc110b4d12a38, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &2228456221972109172
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -146,9 +147,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.34757462, y: 1.1156639}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.45312762
 --- !u!114 &6041368075162225324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,9 +162,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83ef8a8c2f5fc549a7a73aec1e41226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpCount: 4
   speed: 5
   maxJump: 10
   minJump: 7
   currentJump: 0
   damage: 1
+  maxXPos: 0
+  anim: {fileID: 0}
+--- !u!95 &2245710939831415564
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362592531445944727}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7561618449888048af4e6967b93977f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

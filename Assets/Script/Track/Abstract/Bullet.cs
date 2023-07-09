@@ -23,6 +23,11 @@ public abstract class Bullet : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = currenSprite;
         }
         GetComponent<BoxCollider2D>().enabled = true;
+        Animator anim = null;
+        if (TryGetComponent(out anim))
+        {
+            anim.enabled = true;
+        }
     }
  
     protected  void UpdateBullet()
@@ -42,6 +47,13 @@ public abstract class Bullet : MonoBehaviour
             collision.GetComponent<PlayerController>().getDamage(damage);
             GetComponent<SpriteRenderer>().sprite = null;
             GetComponent<BoxCollider2D>().enabled = false;
+            Animator anim = null;
+            if(TryGetComponent(out anim))
+            {
+                anim.enabled = false;
+            }
+
+
         }
     }
 

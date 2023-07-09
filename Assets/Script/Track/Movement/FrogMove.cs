@@ -14,10 +14,12 @@ public class FrogMove : MonoBehaviour
     public int damage = 1;
 
     public float maxXPos;
+    public Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
     }
     private void Update()
@@ -28,6 +30,8 @@ public class FrogMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        anim.SetFloat("velocityY", rb.velocity.y);
     }
     private void Jump()
     {
