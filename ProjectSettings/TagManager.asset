@@ -50,3 +50,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Boss
+    uniqueID: 2488085545
+    locked: 0
+  - name: Obstacle
+    uniqueID: 3342387057
+    locked: 0
+  - name: Player
+    uniqueID: 1350889497
+    locked: 0

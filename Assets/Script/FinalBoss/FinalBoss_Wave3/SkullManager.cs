@@ -35,6 +35,8 @@ public class SkullManager : MonoBehaviour
         }
     }
 
+
+
     public void destroyObject()
     {
         Destroy(this.gameObject);

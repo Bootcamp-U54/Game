@@ -10,6 +10,9 @@ public class FinalBossWave3Mng : MonoBehaviour
     public Animator anim;
 
     public float health;
+    public bool canGetDamage = true;
+
+
 
     public bool canAttack;
     public float currentTime;
@@ -25,6 +28,7 @@ public class FinalBossWave3Mng : MonoBehaviour
     public Transform[] ghostSpawnPos;
     public float ghostDuration;
     public Transform allGhost;
+    public int maxGhostCount;
 
     [Space(10)]
     [Header("Platforms")]
@@ -78,8 +82,11 @@ public class FinalBossWave3Mng : MonoBehaviour
            
             yield return new WaitForSeconds(5);
             anim.SetBool("FirePlatform", false);
-            fireEffect_1Emmision.rateOverTime = 0;
+
+            fireEffect_1Emmision.rateOverTime = 0; //Ateþi kapatýr
             fireEffect_2Emmision.rateOverTime = 0;
+            fireEffect_1.transform.parent.gameObject.GetComponent<FinalBossWave3FireMng>().fireIsOpen = false;
+
             yield return new WaitForSeconds(1);
             changePlatform(false);
             patrollCorotine = StartCoroutine(patrollingSystem());
@@ -120,6 +127,7 @@ public class FinalBossWave3Mng : MonoBehaviour
             currentTime += Time.deltaTime;
         }
         
+
     }
    
     IEnumerator ghostSpawner()
@@ -132,6 +140,7 @@ public class FinalBossWave3Mng : MonoBehaviour
             ghost.transform.SetParent(allGhost);
             ghost.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
             yield return new WaitForSeconds(ghostDuration);
+            yield return new WaitUntil(() => maxGhostCount>allGhost.childCount);
         }
     }
     public void Fire()
@@ -162,6 +171,7 @@ public class FinalBossWave3Mng : MonoBehaviour
             if (transform.position.x > a)
             {
                 GetComponent<SpriteRenderer>().flipX = true;
+
             }
             else
             {
@@ -177,5 +187,44 @@ public class FinalBossWave3Mng : MonoBehaviour
     {
         fireEffect_1Emmision.rateOverTime = 200;
         fireEffect_2Emmision.rateOverTime = 200;
+        fireEffect_1.transform.parent.gameObject.GetComponent<FinalBossWave3FireMng>().fireIsOpen = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getDamage(collision.gameObject.GetComponent<BulletManager>().damage);
+            Destroy(collision.gameObject);
+        }
+
+    }
+
+    public void getDamage(int dmg)
+    {
+        if (canGetDamage == true)
+        {
+            this.gameObject.GetComponent<damageAnim>().startAnim();
+            if (health >= dmg)
+            {
+                health -= dmg;
+            }
+            else
+            {
+                health = 0;
+            }
+
+            if (health <= 0)
+            {
+                deadBoss();
+            }
+        }
+    }
+
+    public void deadBoss()
+    {
+        Debug.Log("dead");
+    }
+
 }
