@@ -27,6 +27,15 @@ public class EagleMove : Move, IBulletSpawner
                 bullet.transform.rotation = Quaternion.Euler(0, 0, rotations[i]);
                 bullet.SetActive(true);
                 bullet.transform.SetParent(parentObject.transform);
+                if(transform.localScale.x==1)
+                {
+                    bullet.GetComponent<SpriteRenderer>().flipX = false;
+                }
+                else
+                {
+                    bullet.GetComponent<SpriteRenderer>().flipX = true;
+                }
+                
             }
         }
     }
