@@ -12,10 +12,14 @@ public class PlatformManager : MonoBehaviour
     public bool isColliding = false;  
     public Sprite currentSprite;
 
+    public float openY, closeY;
+
     private void Start()
     {
         currentSprite= GetComponent<SpriteRenderer>().sprite;
         currentCollisionTime = collisionTime;
+        openY = transform.position.y;
+        closeY = transform.position.y - 10;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,14 +50,33 @@ public class PlatformManager : MonoBehaviour
         currentCollisionTime = collisionTime;
 
         Camera.main.GetComponent<Camera>().DOShakePosition(0.1f, 0.1f, fadeOut: true);
+
+        StartCoroutine(closePlatform());
+        yield return new WaitForSeconds(1f+0.5f);
+
+        StartCoroutine(openPlatform());
+
+
+    }
+
+    IEnumerator closePlatform()
+    {
+
+        transform.DOMoveY(closeY, 1f);
+        yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().sprite = null;
-        GetComponent<CapsuleCollider2D>().enabled = false;
-        yield return new WaitForSeconds(1f);
+        GetComponent<BoxCollider2D>().enabled = false;
+    }
 
+    IEnumerator openPlatform()
+    {
+        transform.DOMoveY(openY, 1f);
+        yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().sprite = currentSprite;
-        GetComponent<CapsuleCollider2D>().enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
 
-       
     }
 
 }
+
+

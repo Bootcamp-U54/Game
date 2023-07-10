@@ -323,8 +323,7 @@ public class PlayerController : MonoBehaviour
                 candash = false;
                 canSoar = false;
                 GetComponent<PlayerAttackController>().canAttack = false;
-                rb.bodyType = RigidbodyType2D.Static;
-                boxCollider2d.enabled = false;
+                canGetDamage = false;
             }
         }
     }
