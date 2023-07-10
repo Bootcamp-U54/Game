@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
     public float normalGravity;
     public float soarGravity;
     public bool isSoar;
+    public bool canSoar;
     public ParticleSystem soarEffect_1;
     public ParticleSystem soarEffect_2;
     
@@ -140,7 +141,15 @@ public class PlayerController : MonoBehaviour
     {
 
 
-        moveInput = Input.GetAxis("Horizontal");
+        if(canMove==true)
+        {
+            moveInput = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            moveInput = 0;
+        }
+
         animator.SetBool("isJump", !IsGrounded());
         animator.SetFloat("yVelocity", rb.velocity.y);
 
@@ -168,7 +177,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region JumpSystem
-        if (jumpBufferCount >= 0 && hangCounter > 0f && isBend==false)
+        if (jumpBufferCount >= 0 && hangCounter > 0f && isBend==false &&canMove==true)
         {
             Jump();
             jumpBufferCount = 0;
@@ -194,7 +203,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region SoarDown
-        if (Input.GetKeyDown(KeyCode.Space) && hangCounter<0)
+        if (Input.GetKeyDown(KeyCode.Space) && hangCounter<0 &&canSoar==true)
         {
             isSoar = true;
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.2f);
@@ -309,8 +318,16 @@ public class PlayerController : MonoBehaviour
 
             if (health <= 0)
             {
-                //dead
+                animator.SetTrigger("Dead");
+                canMove = false;
+                candash = false;
+                canSoar = false;
+                GetComponent<PlayerAttackController>().canAttack = false;
+                rb.bodyType = RigidbodyType2D.Static;
+                boxCollider2d.enabled = false;
             }
         }
     }
+
+
 }

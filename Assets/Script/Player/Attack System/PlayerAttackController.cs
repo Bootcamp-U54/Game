@@ -29,7 +29,7 @@ public class PlayerAttackController : MonoBehaviour
 
 
 
-        if (Input.GetKey(KeyCode.X))
+        if (Input.GetKey(KeyCode.X)&&canAttack==true)
         {
             if(currentDuration>duration && GetComponent<PlayerController>().isBend==false)
             {

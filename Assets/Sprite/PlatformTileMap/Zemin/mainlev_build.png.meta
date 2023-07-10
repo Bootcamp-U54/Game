@@ -4008,31 +4008,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainlev_build_185
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 672
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 053e4cf246aecc147a6be59858562b4a
-      internalID: 143911010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: mainlev_build_186
       rect:
         serializedVersion: 2
-        x: 448
+        x: 432
         y: 672
         width: 32
         height: 32
