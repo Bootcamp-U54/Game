@@ -4,14 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class SaveSystemMenu : MonoBehaviour
 {
+    public bool test;
+
     public Button PlayGameButton;
 
     public Image blackImage;
     public GameObject areYouSourePanel;
+    public GameObject setNamePanel;
+
+    public TMP_InputField nameInput;
     void Start()
     {
+        if(test==true)
+        {
+            PlayerPrefs.DeleteKey("Save");
+        }
+
         if(PlayerPrefs.HasKey("Save")==true)
         {
             PlayGameButton.interactable = true;
@@ -21,25 +33,54 @@ public class SaveSystemMenu : MonoBehaviour
             PlayGameButton.interactable = false;
         }
         areYouSourePanel.transform.DOScale(Vector3.zero, 0);
+        setNamePanel.transform.DOScale(Vector3.zero, 0);
 
     }
     public void newGameAreYouSureOpen()
     {
-        areYouSourePanel.transform.DOScale(new Vector3(1,1,1), 1);
+        if(PlayerPrefs.HasKey("Save") == false)
+        {
+            showSetNamePanel();
+        }
+        else
+        {
+            areYouSourePanel.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
+        }
+       
     }
     public void newGameAreYouSureClose()
     {
         areYouSourePanel.transform.DOScale(Vector3.zero, 1);
     }
-    public void newGame()
+    public void newGame() //Yeni save açar
     {
         PlayerPrefs.DeleteKey("Save");
         PlayerPrefs.SetInt("Save",(SceneManager.GetActiveScene().buildIndex + 1));
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    public void playGame()
+    public void playGame() //Save de bulunan oyunu baþlatýr
     {
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(PlayerPrefs.GetInt("Save")));
+    }
+
+    public void showSetNamePanel() //Ýsim ayarlama panelini açar
+    {
+        setNamePanel.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
+    }
+
+    public void setName() //Ýsmi net belirler
+    {
+        if(nameInput.text!="")
+        {
+            PlayerPrefs.SetString("Name", nameInput.text);
+           
+        }
+        else
+        {
+            PlayerPrefs.SetString("Name", "Ryota");
+        }
+
+        newGame();
     }
 }
