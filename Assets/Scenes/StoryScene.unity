@@ -991,6 +991,7 @@ MonoBehaviour:
   fillImage: 0
   black: {fileID: 676643286}
   canPast: {fileID: 1079434844}
+  name: 
 --- !u!114 &713366303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2314,7 +2315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ryota, kasabada ailesiyle yasayan bir cocuktu. Ryotta genellikle zamanini
+  m_text: "Ryota, kasabada ailesiyle yasayan bir cocuktu. Ryota genellikle zamanini
     kasabanin delisi olarak gorulen kazuki\u2019yle gecirirdi. Kazuki bulustuklarinda
     ona efsanelerde gecen hikayeler anlatirdi ve dovus sanatlarina dair bildigi seyleri
     gosterirdi. Kazuki tum kasaba halki tarafindan bir deli olarak gorulse de Ryota

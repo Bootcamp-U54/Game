@@ -18,10 +18,15 @@ public class StoryMng : MonoBehaviour
     public Image black;
     public TextMeshProUGUI canPast;
 
+    public string name;
+
     private void Start()
     {
+        name = PlayerPrefs.GetString("Name");
         resetAll();
         StartCoroutine(pageMng());
+      
+      
     }
 
     public void resetAll()
@@ -37,9 +42,11 @@ public class StoryMng : MonoBehaviour
         {
             canPast.DOFade(0, 1f);
             text = page[i].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+        
             draw = page[i].transform.GetChild(1).gameObject.GetComponent<Image>();
 
-            string write = text.text;
+
+            string write = ReplaceWord(text.text, "Ryota", name);
             text.text = "";
 
             draw.fillAmount = 0;
@@ -79,5 +86,12 @@ public class StoryMng : MonoBehaviour
         {
             draw.fillAmount += fillAmountValue * Time.deltaTime;
         }
+    }
+
+    private string ReplaceWord(string originalText, string searchText, string replaceText)
+    {
+        // Metinde aranan kelimeyi deðiþtirir
+        string newText = originalText.Replace(searchText, replaceText);
+        return newText;
     }
 }
