@@ -8,29 +8,28 @@ using UnityEngine.UI;
 public class MainButtonAnim : MonoBehaviour
 {
 
-    public Button startButton;
-    public Button quitButton;
-
-    public Transform startTransform;
-    public Transform quitTransform;
-    public float animationDuration = 1f;
+    public GameObject[] buttons;
+    public List<Vector3> buttonsStartPos;
 
 
     void Start()
     {
-        ShowPanel();
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttonsStartPos.Add(buttons[i].transform.position);
+            buttons[i].transform.DOMoveY(buttons[i].transform.position.y + 1000,0);
+        }
+
+        StartCoroutine(ShowPanel());
 
     }
 
-    public void ShowPanel()
+    IEnumerator ShowPanel()
     {
-
-        //start
-        startButton.gameObject.SetActive(true);
-        startButton.transform.DOMove(startTransform.position, animationDuration).SetEase(Ease.OutBack);
-        //quit
-        quitButton.gameObject.SetActive(true);
-        quitButton.transform.DOMove(quitTransform.position, animationDuration).SetEase(Ease.OutBack);
-
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].transform.DOMove(buttonsStartPos[i], 1f).SetEase(Ease.OutBack);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 }
