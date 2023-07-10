@@ -10,6 +10,11 @@ public class TriggerNextScane : MonoBehaviour
    
     public Image blackImage; // Siyah Image referansý
     public GameObject otherPanel; // Diðer panelin referansý
+    private void Start()
+    {
+        blackImage.color = Color.black;
+        blackImage.DOFade(0f, 0f);
+    } 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -17,11 +22,7 @@ public class TriggerNextScane : MonoBehaviour
             FadeInAndActivatePanel();
         }
     }
-    private void Start()
-    {
-        blackImage.color = Color.black;
-        blackImage.DOFade(0f, 0f);
-    }
+   
     public void FadeInAndActivatePanel()
     {
         blackImage.DOFade(1f, .5f).OnComplete(NextScane);

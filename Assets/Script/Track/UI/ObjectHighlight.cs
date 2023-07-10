@@ -19,10 +19,10 @@ public class ObjectHighlight : MonoBehaviour
         outline = gameObject.AddComponent<Outline>();
 
         // Efekt rengini ayarlayýn
-        outline.effectColor = Color.red;
+        outline.effectColor = Color.blue;
 
         // Efekt mesafesini ayarlayýn (çizgi geniþliði)
-        outline.effectDistance = new Vector2(4f, 4f);
+        outline.effectDistance = new Vector2(10f, 10f);
 
         // Görsel alfa kullanýmýný etkinleþtirin
         outline.useGraphicAlpha = true;
