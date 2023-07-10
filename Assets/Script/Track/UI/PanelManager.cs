@@ -23,6 +23,6 @@ public class PanelManager: MonoBehaviour
 
     private void GoNextScane()
     {
-        SceneManager.LoadScene("Parkur_1");
+        SceneManager.LoadSceneAsync("Parkur_1");
     }
 }
