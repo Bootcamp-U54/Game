@@ -475,7 +475,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 609967398}
         m_TargetAssemblyTypeName: SaveSystemMenu, Assembly-CSharp
-        m_MethodName: newGame
+        m_MethodName: setName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ab7541bfc02504c86a867a6d4910cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 1
+  test: 0
   PlayGameButton: {fileID: 671669517}
   blackImage: {fileID: 404616296}
   areYouSourePanel: {fileID: 2014706630}
@@ -1864,14 +1864,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 5
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 5
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -2174,7 +2174,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 609967398}
         m_TargetAssemblyTypeName: SaveSystemMenu, Assembly-CSharp
-        m_MethodName: newGame
+        m_MethodName: showSetNamePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -55,7 +55,7 @@ public class SaveSystemMenu : MonoBehaviour
     public void newGame() //Yeni save açar
     {
         PlayerPrefs.DeleteKey("Save");
-        PlayerPrefs.SetInt("Save",(SceneManager.GetActiveScene().buildIndex + 1));
+
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
@@ -83,4 +83,6 @@ public class SaveSystemMenu : MonoBehaviour
 
         newGame();
     }
+
+  
 }

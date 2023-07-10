@@ -10052,6 +10052,119 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &384704851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179518751814212743, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432878236664832935, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
+      propertyPath: m_Name
+      value: SaveSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7edf32641f10e994cafce7d9bcdfabdf, type: 3}
 --- !u!1 &404404705
 GameObject:
   m_ObjectHideFlags: 0
@@ -20750,26 +20863,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healt: 100
+  player: {fileID: 1602500210}
+  canGetDamage: 1
+  speed: 0.5
   arms:
   - {fileID: 76809086}
   - {fileID: 951444649}
   armsPos:
   - {fileID: 1212550118}
   - {fileID: 603117402}
-  duraiton: 0
-  currentDuraiton: 0
   catRightEye: {fileID: 837522760}
   catLeftEye: {fileID: 321725200}
   catEye:
   - {fileID: 21300000, guid: 33a5c987d9b281846aec98de74c05088, type: 3}
   - {fileID: 21300000, guid: 1d22bb70b1946de4ba2d5124474fb86f, type: 3}
   - {fileID: 21300000, guid: 29bcdcaa57663654d9d31fb1f089f36f, type: 3}
-  player: {fileID: 1602500210}
   catHead: {fileID: 2107984987}
   rightHandEffect: {fileID: 245023709}
   leftHandEffect: {fileID: 74024950}
-  canGetDamage: 1
-  speed: 0.5
+  obstaclePartical:
+  - {fileID: 1212620346}
+  - {fileID: 867903830}
   allObstacle: {fileID: 618853255}
   deletedObstacle: {fileID: 622879534}
   obstacle: {fileID: 2724093769578863108, guid: 386508f8012c65b4d91fc7bd401a2906, type: 3}
@@ -20789,6 +20903,3 @@ MonoBehaviour:
   - {fileID: 278328603, guid: bc00bfc5170fdff4585cfc0fe8a94d5c, type: 3}
   - {fileID: 1754907026, guid: bc00bfc5170fdff4585cfc0fe8a94d5c, type: 3}
   - {fileID: 313875776, guid: bc00bfc5170fdff4585cfc0fe8a94d5c, type: 3}
-  obstaclePartical:
-  - {fileID: 1212620346}
-  - {fileID: 867903830}
