@@ -8,26 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Track/MainMenu.unity
     guid: a3a89d9341bb8714ba365452569a86ce
-<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/StoryScene.unity
     guid: 7fabad98ea278e944b01cf7347e3abe5
   - enabled: 1
-=======
-  - enabled: 0
->>>>>>> 5cd4d1a25e30a3bc98777041671e752b855baa23
     path: Assets/Scenes/Boss/CatScene.unity
     guid: 437bd0c0b794b2944a0fa6cd6763f586
   - enabled: 1
     path: Assets/Scenes/Track/Parkur_1.unity
     guid: cac0b62b921c785438b251dbd4312c3d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Boss/SkeletonBoss.unity
     guid: 22c82e157bb846e41a3ab06d21b2a554
   - enabled: 1
     path: Assets/Scenes/Track/Parkur_2.unity
     guid: ba60122c1a6b41c4b91f1228c583a7e3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Boss/KasaObakeScene.unity
     guid: a9364661a46de5446a3de462318526dd
   - enabled: 1
@@ -42,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss/Final Boss/FinalBoss_3.unity
     guid: e38b5d39f2deab449a02fec59ca2bab4
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 436a019df3c3d8541aee3ba9c0167442
   m_configObjects: {}
