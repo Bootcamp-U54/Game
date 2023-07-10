@@ -1,23 +1,39 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TriggerNextScane : MonoBehaviour
 {
+   
+    public Image blackImage; // Siyah Image referansý
+    public GameObject otherPanel; // Diðer panelin referansý
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            NextScane();
+            FadeInAndActivatePanel();
         }
     }
-
-    void NextScane()
+    private void Start()
     {
-          int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
-            int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla
+        blackImage.color = Color.black;
+        blackImage.DOFade(0f, 0f);
+    }
+    public void FadeInAndActivatePanel()
+    {
+        blackImage.DOFade(1f, .5f).OnComplete(NextScane);
+    }
+    private void NextScane()
+    {
 
-            SceneManager.LoadScene(nextSceneIndex); // Bir sonraki sahneyi yükle
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
+        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla
+       SceneManager.LoadScene(nextSceneIndex); 
+          
+       
+     
     }
 }
