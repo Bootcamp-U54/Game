@@ -11,11 +11,11 @@ using Image = UnityEngine.UI.Image;
 
 public class BookManager : MonoBehaviour
 {
-    BookButtonManager buttonManager;
-    public TextMeshProUGUI[] storyPage,trackPage,controlerPage;
+    TextMeshProUGUI currentPage;
+    public TextMeshProUGUI[] storyPage;
+    public Image[]  trackPage, controlerPage;
     public GameObject bookCanvas;
     public float fadeDuration = 2f;
-
     private int currentIndex = 0;
     private bool isTyping = false;
     private float typingSpeed;
@@ -31,6 +31,8 @@ public class BookManager : MonoBehaviour
         for (int i = 1; i < storyPage.Length; i++)
         {
             storyPage[i].DOFade(0f, 0f).SetUpdate(true);
+            trackPage[i].DOFade(0f, 0f).SetUpdate(true);
+            controlerPage[i].DOFade(0f, 0f).SetUpdate(true);
         }
 
     }
@@ -38,7 +40,7 @@ public class BookManager : MonoBehaviour
 
     private void Update()
     {
-        buttonManager = GetComponent<BookButtonManager>();
+
         if (Input.GetKeyDown(KeyCode.B))
         {
             if (isPaused)
@@ -51,9 +53,7 @@ public class BookManager : MonoBehaviour
 
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                
                 ShowPanel();
-                StartTypewriterEffect(storyPage[currentIndex].text);
                 Time.timeScale = 0f;
                 isPaused = true;
 
@@ -65,68 +65,68 @@ public class BookManager : MonoBehaviour
     {
         StartTypewriterEffect(storyPage[currentIndex].text);
     }
-    public void OnClickNextPage()
+
+
+
+
+
+    public void OnClickNextPage(int index)
     {
-        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < storyPage.Length&& buttonManager.story==0)
+        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < storyPage.Length && index == 0)
         {
             storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
             storyPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex++;
             StartTypewriterEffect(storyPage[currentIndex].text);
         }
-        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < trackPage.Length && buttonManager.track==1)
+
+        if (!isTyping && currentIndex >= 0 && currentIndex + 1 < trackPage.Length && index == 1)
         {
             trackPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
             trackPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex++;
-            StartTypewriterEffect(trackPage[currentIndex].text);
+          
         }
-         if (!isTyping && currentIndex >= 0 && currentIndex + 1 < controlerPage.Length && buttonManager.controller==2)
+
+         if (!isTyping && currentIndex >= 0 && currentIndex + 1 < trackPage.Length && index == 2)
         {
             controlerPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
             controlerPage[currentIndex + 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex++;
-            StartTypewriterEffect(controlerPage[currentIndex].text);
+          
         }
-    }
 
-    public void OnClickBackpage()
+
+
+    }
+    public void OnClickBackpage(int index)
     {
-        if (!isTyping && currentIndex > 0)
+        if (!isTyping && currentIndex > 0 && index == 0)
         {
             storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
             storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex--;
             StartTypewriterEffect(storyPage[currentIndex].text);
         }
-
-         if (!isTyping && currentIndex > 0)
+        if (!isTyping && currentIndex > 0 && index == 1)
         {
-            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
-            storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            trackPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            trackPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex--;
-            StartTypewriterEffect(storyPage[currentIndex].text);
         }
-
-         if (!isTyping && currentIndex > 0)
+         if (!isTyping && currentIndex > 0 && index == 2)
         {
-            storyPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
-            storyPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            controlerPage[currentIndex].DOFade(0f, fadeDuration).SetUpdate(true);
+            controlerPage[currentIndex - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndex--;
-            StartTypewriterEffect(storyPage[currentIndex].text);
         }
-
-
-
-
-
-
-
-
-
 
 
     }
+
+
+
+
 
     private void StartTypewriterEffect(string text)
     {
@@ -134,12 +134,14 @@ public class BookManager : MonoBehaviour
         {
             isTyping = true;
             StartCoroutine(TypeText(text));
+          
         }
     }
 
     private IEnumerator TypeText(string text)
     {
-        TextMeshProUGUI currentPage = storyPage[currentIndex];
+      
+        currentPage = storyPage[currentIndex];
         currentPage.text = "";
 
         foreach (char character in text)

@@ -15,35 +15,34 @@ public class BookButtonManager : MonoBehaviour
         SetAllBookActive(false);
         mainImage.enabled = true;
     }
-    public void OnClickStoryButton(int index)
+    public void OnClickStoryButton()
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
 
         storyImage.enabled = true;
         storyBook.SetActive(true);
-        story=index;
+    
     }
 
-    public void OnClickTrackButton(int index)
+    public void OnClickTrackButton()
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
-
         trackImage.enabled = true;
         trackBook.SetActive(true);
-        track = index;
+
 
     }
 
-    public void OnClickControllerButton(int index)
+    public void OnClickControllerButton()
     {
         SetAllImageVisibility(false);
         SetAllBookActive(false);
 
         controllerImage.enabled = true;
         controllerBook.SetActive(true);
-        controller = index; 
+
     }
 
     private void SetAllImageVisibility(bool visible)
