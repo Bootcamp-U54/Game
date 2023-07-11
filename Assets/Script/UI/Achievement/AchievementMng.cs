@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class AchievementMng : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class AchievementMng : MonoBehaviour
     public Sprite[] gradeSprite;
     public int[] allAchievementGrade;
 
-    public Vector3 startScale;
+    public List<Vector3> startScale;
 
     public Sprite closeSprite;
 
@@ -72,22 +73,44 @@ public class AchievementMng : MonoBehaviour
                 allAchievementImage[i].transform.GetChild(0).gameObject.SetActive(false);
                 allAchievementImage[i].transform.GetChild(1).gameObject.SetActive(false);
                 allAchievementImage[i].sprite = closeSprite;
+                allAchievementImage[i].gameObject.GetComponent<ImageMng>().isLocked = true;
+                allAchievementImage[i].gameObject.transform.localScale = new Vector3(1f, 0.5f, 1f);
+             
+            }
+            
+            startScale.Add(allAchievementImage[i].transform.localScale);
+        }
+
+        StartCoroutine(openAchievementImage(true));
+    }
+
+    IEnumerator openAchievementImage(bool a)
+    {
+        if(a)
+        {
+            for (int i = 0; i < allAchievementImage.Length; i++)
+            {
+                allAchievementImage[i].gameObject.transform.DOScale(startScale[i], 1);
+                yield return new WaitForSeconds(0.5f);
             }
         }
-
-        StartCoroutine(openAchievementImage());
-    }
-
-    IEnumerator openAchievementImage()
-    {
-        for (int i = 0; i < allAchievementImage.Length; i++)
+        else
         {
-            allAchievementImage[i].gameObject.transform.DOScale(startScale, 1);
-            yield return new WaitForSeconds(0.5f);
+            for (int i = 0; i < allAchievementImage.Length; i++)
+            {
+                allAchievementImage[i].gameObject.transform.DOScale(0, 0.5f);
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            SceneManager.LoadScene(0);
         }
+        
     }
 
-    
+    public void goMenu()
+    {
+        StartCoroutine(openAchievementImage(false));
+    }
 
 
 }

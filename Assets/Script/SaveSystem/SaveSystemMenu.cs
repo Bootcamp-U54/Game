@@ -56,7 +56,7 @@ public class SaveSystemMenu : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("Save");
 
-        blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
+        blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2));
     }
 
     public void playGame() //Save de bulunan oyunu baþlatýr
