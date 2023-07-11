@@ -23,11 +23,14 @@ public class PauseMenuManager : MonoBehaviour
             if (isPaused )
             {
                 ResumeGame(); // Eðer oyun duraklatýlmýþsa Esc tuþuna basýnca oyunu devam ettir
+               
             }
             else
             {
                 PauseGame(); // Eðer oyun devam ediyorsa Esc tuþuna basýnca oyunu duraklat
+              
             }
+        
         }
     }
 

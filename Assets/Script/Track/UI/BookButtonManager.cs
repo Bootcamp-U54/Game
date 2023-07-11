@@ -7,7 +7,6 @@ public class BookButtonManager : MonoBehaviour
 {
     public Image mainImage,storyImage, trackImage, controllerImage;
     public GameObject storyBook, trackBook, controllerBook;
-    public int track,story,controller;
 
     private void Start()
     {
