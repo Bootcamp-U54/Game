@@ -1541,7 +1541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0023804, y: -0.00013733}
+  m_AnchoredPosition: {x: 0.002380371, y: -0.0001373291}
   m_SizeDelta: {x: -212.88, y: -81.877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032482266
@@ -2619,7 +2619,10 @@ MonoBehaviour:
   writeDuration: 0.01
   AchivementImage: {fileID: 0}
   mng: {fileID: 1908589530}
-  accountParent: {fileID: 743186425}
+  accountObject:
+  - {fileID: 1212831250}
+  - {fileID: 743186425}
+  startPos: []
 --- !u!4 &1442299139
 Transform:
   m_ObjectHideFlags: 0
@@ -2681,7 +2684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTest: 1
-  isAllOpen: 1
+  isAllOpen: 0
   allAchievementName:
   - CatDead
   - SkeletonDead
@@ -2716,6 +2719,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f9e4c7e4094b4f448966f3b81861eca8, type: 3}
   allAchievementGrade: 02000000020000000200000003000000010000000200000003000000010000000200000003000000010000000200000003000000
   startScale: []
+  infoMng: {fileID: 1442299138}
   closeSprite: {fileID: 998522082, guid: adfcf7a5e6efdf942823a94bb46846e4, type: 3}
 --- !u!4 &1908589531
 Transform:

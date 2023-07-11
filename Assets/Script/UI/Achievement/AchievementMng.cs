@@ -18,7 +18,9 @@ public class AchievementMng : MonoBehaviour
 
     public List<Vector3> startScale;
 
+    public InfoMng infoMng;
     public Sprite closeSprite;
+    private Coroutine openAchivementCor;
 
     private void Awake()
     {
@@ -81,7 +83,7 @@ public class AchievementMng : MonoBehaviour
             startScale.Add(allAchievementImage[i].transform.localScale);
         }
 
-        StartCoroutine(openAchievementImage(true));
+       openAchivementCor= StartCoroutine(openAchievementImage(true));
     }
 
     IEnumerator openAchievementImage(bool a)
@@ -96,12 +98,13 @@ public class AchievementMng : MonoBehaviour
         }
         else
         {
+            infoMng.changeObjectPos(false);
             for (int i = 0; i < allAchievementImage.Length; i++)
             {
                 allAchievementImage[i].gameObject.transform.DOScale(0, 0.5f);
                 yield return new WaitForSeconds(0.1f);
             }
-
+            yield return new WaitForSeconds(0.4f);
             SceneManager.LoadScene(0);
         }
         
@@ -109,6 +112,7 @@ public class AchievementMng : MonoBehaviour
 
     public void goMenu()
     {
+        StopCoroutine(openAchivementCor);
         StartCoroutine(openAchievementImage(false));
     }
 

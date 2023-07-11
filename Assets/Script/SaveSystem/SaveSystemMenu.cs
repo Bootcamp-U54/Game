@@ -84,5 +84,10 @@ public class SaveSystemMenu : MonoBehaviour
         newGame();
     }
 
+    public void openScene(string a)
+    {
+        blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(a));
+    }
+
   
 }

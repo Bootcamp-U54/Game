@@ -14,8 +14,8 @@ public class InfoMng : MonoBehaviour
     public Image AchivementImage;
 
     public AchievementMng mng;
-    public GameObject accountParent;
-    private Vector3 startPos;
+    public GameObject[] accountObject;
+    public  List<Vector3> startPos;
     
 
     Coroutine writeText;
@@ -24,10 +24,29 @@ public class InfoMng : MonoBehaviour
         accountText.text = "";
         AchivementImage = null;
 
-        startPos = accountParent.transform.position;
 
-        accountParent.transform.position = new Vector3(accountParent.transform.position.x+1000, accountParent.transform.position.y, accountParent.transform.position.z);
-        accountParent.transform.DOMoveX(startPos.x, 1);
+        changeObjectPos(true);
+
+    }
+
+    public void changeObjectPos(bool a)
+    {
+        if(a)
+        {
+            for (int i = 0; i < accountObject.Length; i++)
+            {
+                startPos.Add(accountObject[i].transform.position);
+                accountObject[i].transform.position = new Vector3(accountObject[i].transform.position.x + 1000, accountObject[i].transform.position.y, accountObject[i].transform.position.z);
+                accountObject[i].transform.DOMoveX(startPos[i].x, 1);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < accountObject.Length; i++)
+            {
+                accountObject[i].transform.DOMoveX(startPos[i].x + 1000, 1);
+            }
+        }
     }
     public void Enter(string name,bool isLocked)
     {
@@ -66,4 +85,6 @@ public class InfoMng : MonoBehaviour
             yield return new WaitForSeconds(writeDuration);
         }
     }
+
+    
 }
