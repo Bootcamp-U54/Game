@@ -34,8 +34,14 @@ public class FinalBossMng : MonoBehaviour
 
     [Header("Portal")]
     public GameObject portal;
+
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public DeadMng deadMng;
     void Start()
     {
+        deadMng.bossMaxHealt = healt;
+        deadMng.bossCurrentHealt = healt;
         anim = GetComponent<Animator>();
         StartCoroutine(manager());
 
@@ -233,8 +239,14 @@ public class FinalBossMng : MonoBehaviour
 
             if (healt <= 0)
             {
-                //deadKasaObake();
+                deadBoss();
             }
+            deadMng.bossCurrentHealt = healt;
         }
+    }
+
+    public void deadBoss()
+    {
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
     }
 }

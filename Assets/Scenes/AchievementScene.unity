@@ -429,6 +429,7 @@ RectTransform:
   - {fileID: 1092057750}
   - {fileID: 1177667822}
   - {fileID: 299304171}
+  - {fileID: 249896612}
   m_Father: {fileID: 1222925512}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -553,6 +554,132 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &249896611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 202021731}
+    m_Modifications:
+    - target: {fileID: 1261298715313293626, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: mng
+      value: 
+      objectReference: {fileID: 1442299138}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766270222928166156, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+      propertyPath: m_Name
+      value: Achivement (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+--- !u!224 &249896612 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2481101631648967154, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+  m_PrefabInstance: {fileID: 249896611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249896613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5189417021544391149, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+  m_PrefabInstance: {fileID: 249896611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249896614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &249896614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5766270222928166156, guid: d26ecebadbac8f14d96aa0613c0bfb17, type: 3}
+  m_PrefabInstance: {fileID: 249896611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &264658719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2601,6 +2728,7 @@ MonoBehaviour:
   - Bu basarim birinci parkuru basarili bir sekilde tamamladigi icin kazanilmistir
   - Bu basarim ikinci parkuru basarili bir sekilde tamamladigi icin kazanilmistir
   - Bu basarim ucuncu parkuru basarili bir sekilde tamamladigi icin kazanilmistir
+  - Bu basarim sevgilisine hic vurmadan oldugu icin kazanilmistir
   allAchivementName:
   - {fileID: 2083478904548258308}
   - {fileID: 815151699}
@@ -2615,6 +2743,7 @@ MonoBehaviour:
   - {fileID: 1437906871}
   - {fileID: 1433496306}
   - {fileID: 618662456}
+  - {fileID: 249896614}
   accountText: {fileID: 1311933865}
   writeDuration: 0.01
   AchivementImage: {fileID: 0}
@@ -2637,6 +2766,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1611780513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611780514}
+  m_Layer: 0
+  m_Name: Achivement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611780514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611780513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 985.3401, y: 659.06384, z: 17.039326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1618567011 stripped
 RectTransform:
@@ -2683,7 +2843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7262b76c81910a5479b3af51e59485fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTest: 1
+  gameTest: 0
   isAllOpen: 0
   allAchievementName:
   - CatDead
@@ -2699,6 +2859,7 @@ MonoBehaviour:
   - Parkour1
   - Parkour2
   - Parkour3
+  - FinalBossWave1
   allAchievementImage:
   - {fileID: 478972558}
   - {fileID: 986743286}
@@ -2713,11 +2874,12 @@ MonoBehaviour:
   - {fileID: 1092057752}
   - {fileID: 1177667824}
   - {fileID: 299304169}
+  - {fileID: 249896613}
   gradeSprite:
   - {fileID: 21300000, guid: 439f21448d1dce547b48c571441ceae4, type: 3}
   - {fileID: 21300000, guid: f2fa7acb9ce35424da53f4d4ec34a724, type: 3}
   - {fileID: 21300000, guid: f9e4c7e4094b4f448966f3b81861eca8, type: 3}
-  allAchievementGrade: 02000000020000000200000003000000010000000200000003000000010000000200000003000000010000000200000003000000
+  allAchievementGrade: 0200000002000000020000000300000001000000020000000300000001000000020000000300000001000000020000000300000003000000
   startScale: []
   infoMng: {fileID: 1442299138}
   closeSprite: {fileID: 998522082, guid: adfcf7a5e6efdf942823a94bb46846e4, type: 3}

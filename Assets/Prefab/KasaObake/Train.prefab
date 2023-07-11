@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 548effb53fc5b9d4487409339b3d146c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
   currentWallHit: 0
   boxCollider2d: {fileID: 8713902556000878980}
   anim: {fileID: 0}

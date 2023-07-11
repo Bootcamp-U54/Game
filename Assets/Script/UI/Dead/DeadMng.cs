@@ -29,7 +29,8 @@ public class DeadMng : MonoBehaviour
     public float bossCurrentHealt;
     [Header("Restart Scene")]
     public Image black;
-
+    [Header("Only Final Boss First Scene")]
+    public bool isFinalBossFirstScene = false;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class DeadMng : MonoBehaviour
         {
             allText[i].DOFade(0, 0);
         }
+
     }
     public void death()
     {
@@ -54,6 +56,8 @@ public class DeadMng : MonoBehaviour
 
     IEnumerator go()
     {
+        
+
         for (int i = 0; i < allObject.Length; i++)
         {
             allObject[i].DOFade(1, 1);
@@ -73,6 +77,13 @@ public class DeadMng : MonoBehaviour
         else
         {
             value =calculatePercent(bossMaxHealt, bossMaxHealt-bossCurrentHealt);
+            if (isFinalBossFirstScene == true)
+            {
+                if(bossMaxHealt==bossCurrentHealt)
+                {
+                    PlayerPrefs.SetInt("FinalBossWave1", 1);
+                }
+            }
         }
         fillSlider = true;
     }

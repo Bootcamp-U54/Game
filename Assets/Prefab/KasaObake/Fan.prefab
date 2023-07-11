@@ -104,8 +104,8 @@ MonoBehaviour:
   player: {fileID: 0}
   force: 5
   healtDuration: 0
-  normalDamage: 0
-  trapDamage: 0
+  normalDamage: 1
+  trapDamage: 1
   closeSprite: {fileID: 21300000, guid: 1dc05bff054c5704c991ba61a15acd7e, type: 3}
   openSprite: {fileID: 21300000, guid: 28b19bd2adc8b2f438aedf9c15c42fcd, type: 3}
 --- !u!50 &3249354841339520513

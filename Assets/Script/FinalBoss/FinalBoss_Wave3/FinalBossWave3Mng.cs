@@ -40,15 +40,18 @@ public class FinalBossWave3Mng : MonoBehaviour
     private ParticleSystem.EmissionModule fireEffect_2Emmision;
 
 
-
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public DeadMng deadMng;
 
     public void Start()
     {
         fireEffect_1Emmision = fireEffect_1.emission;
         fireEffect_2Emmision = fireEffect_2.emission;
 
+        deadMng.bossMaxHealt = health;
+        deadMng.bossCurrentHealt = health;
 
-        
         anim = GetComponent<Animator>();
         StartCoroutine(manager());
         StartCoroutine(ghostSpawner());
@@ -219,12 +222,13 @@ public class FinalBossWave3Mng : MonoBehaviour
             {
                 deadBoss();
             }
+            deadMng.bossCurrentHealt = health;
         }
     }
 
     public void deadBoss()
     {
-        Debug.Log("dead");
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
     }
 
 }

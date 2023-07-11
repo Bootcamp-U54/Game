@@ -10,6 +10,7 @@ public class TriggerNextScane : MonoBehaviour
    
     public Image blackImage; // Siyah Image referansý
     public GameObject otherPanel; // Diðer panelin referansý
+    public string levelAchievement;
     private void Start()
     {
         blackImage.color = Color.black;
@@ -27,14 +28,18 @@ public class TriggerNextScane : MonoBehaviour
     {
         blackImage.DOFade(1f, .5f).OnComplete(NextScane);
     }
-    private void NextScane()
+    public  void NextScane()
     {
-
+        if (levelAchievement != "")
+        {
+            PlayerPrefs.SetInt(levelAchievement, 1);
+        }
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
         int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla
-       SceneManager.LoadScene(nextSceneIndex); 
-          
+        SceneManager.LoadScene(nextSceneIndex);
+
        
+      
      
     }
 }

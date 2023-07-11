@@ -11,7 +11,7 @@ public class CatMng : MonoBehaviour
     public Transform player;
     public bool canGetDamage = true;
     public float speed = 1;
-
+    public DeadMng deadMng;
     [Space(10)]
     [Header("Cat Object")]
     public GameObject[] arms;
@@ -47,6 +47,8 @@ public class CatMng : MonoBehaviour
 
     public Sprite[] obstacleSprite;
 
+    public string achievementName;
+
 
 
 
@@ -63,6 +65,8 @@ public class CatMng : MonoBehaviour
         leftHandEffectEmmision.rateOverTime = 0;
         rightHandEffectEmmision.rateOverTime = 0;
 
+        deadMng.bossMaxHealt = healt;
+        deadMng.bossCurrentHealt = healt;
         StartCoroutine(Mng());
     }
 
@@ -97,7 +101,7 @@ public class CatMng : MonoBehaviour
     }
     IEnumerator Mng()
     {
-        while(healt>50)
+        while(healt>10)
         {
             setDirection();
 
@@ -242,12 +246,14 @@ public class CatMng : MonoBehaviour
             {
                 deadCat();
             }
+            deadMng.bossCurrentHealt = healt;
         }
     }
 
     public void deadCat()
     {
-        Debug.Log("dead");
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().levelAchievement = achievementName;
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
     }
 
     IEnumerator spawnMng()

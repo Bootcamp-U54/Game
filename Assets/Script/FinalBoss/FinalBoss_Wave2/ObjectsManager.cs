@@ -9,7 +9,10 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 public class ObjectsManager : MonoBehaviour
 {
-    public float health;
+    public float maxTime;
+    public float currentTime;
+    private Coroutine cor;
+    private bool canNextSeen = true;
 
     public float yPos;
     public float rnd;
@@ -21,18 +24,33 @@ public class ObjectsManager : MonoBehaviour
     public GameObject[] exclamation;
     public GameObject player;
 
-   
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public DeadMng deadMng;
     void Start()
     {
+        currentTime = maxTime;
+        deadMng.bossMaxHealt = maxTime;
+       
         exclamation[1].SetActive(false);
-        StartCoroutine(go());
+        cor = StartCoroutine(go());
     }
-
+    private void Update()
+    {
+        currentTime -= Time.deltaTime;
+        deadMng.bossCurrentHealt = currentTime;
+        if (currentTime<0&&canNextSeen==true)
+        {
+            StopCoroutine(cor);
+            GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
+            canNextSeen = false;
+        }
+    }
 
     IEnumerator go()
     {
 
-        while (health > 0)
+        while (currentTime > 0)
         {
 
           
@@ -45,6 +63,7 @@ public class ObjectsManager : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
                 StartCoroutine(ExclamationChange());
                 yield return new WaitForSeconds(1f);
+                Obje.GetComponent<SwordMng>().canDmg = true;
                 Obje.transform.position = new Vector3(13, yPos, 0);
                 Obje.transform.DOMoveX(2f, 0.5f);
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.1f, 0.2f, fadeOut: true);
@@ -58,6 +77,7 @@ public class ObjectsManager : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
                 StartCoroutine(ExclamationChange());
                 yield return new WaitForSeconds(1f);
+                Obje2.GetComponent<SwordMng>().canDmg = true;
                 Obje2.transform.position = new Vector3(-13, yPos, 0);
                 Obje2.transform.DOMoveX(-2f, 0.5f);
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.1f, 0.2f, fadeOut: true);
@@ -103,6 +123,14 @@ public class ObjectsManager : MonoBehaviour
         exclamation[1].transform.position = latestPos;
         exclamation[1].SetActive(true);
         yPos = exclamation[1].transform.position.y;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<PlayerController>().getDamage(3);
+        }
     }
 
 }

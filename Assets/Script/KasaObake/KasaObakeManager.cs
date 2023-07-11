@@ -59,12 +59,18 @@ public class KasaObakeManager : MonoBehaviour
     [Header("Smoke Spawn")]
     public ParticleSystem smokeCoffeSystem;
 
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public DeadMng deadMng;
+
 
     void Start()
     {
         changeEffect.Stop(); //Deðiþim efektini baþta oynamasýn diye durduruyor
         smokeCoffeSystem.Stop();
         anim = GetComponent<Animator>();
+        deadMng.bossMaxHealt = healt;
+        deadMng.bossCurrentHealt = healt;
         StartCoroutine(manager());//Bossun manager kodunu çalýþtýrýyor
         for (int i = 0; i < trainSpawnPartical.Length; i++) //Tren spawn effektlerini baþta durduruyor.
         {
@@ -171,7 +177,7 @@ public class KasaObakeManager : MonoBehaviour
 
         patrolCoroutine = StartCoroutine(patrollingSystem());
 
-        while(healt > 70) //Tren atma kýsmý
+        while(healt > 30) //Tren atma kýsmý
         {
             spawnTrain();
             yield return new WaitForSeconds(trainDuration);
@@ -195,7 +201,7 @@ public class KasaObakeManager : MonoBehaviour
         changeEffect.Play();
         anim.SetBool("isCamera", true);
 
-        while (healt>40) //Fotoðraf makinesi çalýþýyor
+        while (healt>20) //Fotoðraf makinesi çalýþýyor
         {
             GameObject a = Instantiate(photo, photoSpawnPos.position, Quaternion.identity);
             a.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = screenshot();
@@ -217,7 +223,7 @@ public class KasaObakeManager : MonoBehaviour
 
         patrolCoroutine = StartCoroutine(patrollingSystem());
 
-        while (healt > 20) //Tren atma kýsmý
+        while (healt > 10) //Tren atma kýsmý
         {
             spawnTrain();
             canAttack = true;
@@ -290,12 +296,13 @@ public class KasaObakeManager : MonoBehaviour
             {
                 deadKasaObake();
             }
+            deadMng.bossCurrentHealt = healt;
         }
     }
 
     public void deadKasaObake()
     {
-        Debug.Log("dead");
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
     }
 
     public void smokeEffect()

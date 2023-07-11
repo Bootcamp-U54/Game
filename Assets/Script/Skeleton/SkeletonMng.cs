@@ -43,6 +43,7 @@ public class SkeletonMng : MonoBehaviour
         bloodEmmision = bloodEffect.emission;
         deadMng = GameObject.Find("DeathScene").GetComponent<DeadMng>();
         deadMng.bossMaxHealt = healt;
+        deadMng.bossCurrentHealt = healt;
         StartCoroutine(go());
     }
 
@@ -221,6 +222,6 @@ public class SkeletonMng : MonoBehaviour
 
     public void deadSkeleton()
     {
-        Debug.Log("dead");
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
     }
 }
