@@ -31,20 +31,25 @@ public class SkeletonMng : MonoBehaviour
     public Transform ghostParent;
     public GameObject ghost;
     public Transform[] ghostSpawnPos;
-    
+
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public DeadMng deadMng;
+
 
 
     void Start()
     {
         bloodEmmision = bloodEffect.emission;
-        
+        deadMng = GameObject.Find("DeathScene").GetComponent<DeadMng>();
+        deadMng.bossMaxHealt = healt;
         StartCoroutine(go());
     }
 
     IEnumerator go()
     {
         #region Aþama 1
-        while (healt > 50)
+        while (healt > 10)
         {
             changeFade(true);
 
@@ -210,6 +215,7 @@ public class SkeletonMng : MonoBehaviour
             {
                 deadSkeleton();
             }
+            deadMng.bossCurrentHealt = healt;
         }
     }
 

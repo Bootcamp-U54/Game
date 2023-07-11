@@ -9,9 +9,12 @@ using DG.Tweening;
 public class SaveSystemScene : MonoBehaviour
 {
     public GameObject saveIcon;
+    public Camera renderCam;
+    public Image parchment;
     private void Start()
     {
         saveIcon.GetComponent<Image>().DOFade(0, 0);
+        parchment.DOFade(0, 0);
         checkScene();
 
     }
@@ -35,7 +38,30 @@ public class SaveSystemScene : MonoBehaviour
     IEnumerator saveIconOpen()
     {
         saveIcon.GetComponent<Image>().DOFade(1, 1);
+        parchment.DOFade(1, 1);
+        saveIcon.GetComponent<Image>().sprite = screenshot();
+
         yield return new WaitForSeconds(5f);
         saveIcon.GetComponent<Image>().DOFade(0, 1);
+        parchment.DOFade(0, 1);
+    }
+
+    public Sprite screenshot()
+    {
+        RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
+
+        renderCam.transform.position = Camera.main.transform.position;
+        Camera mainCamera = renderCam; // Kameranýn referansýný alýn
+        mainCamera.targetTexture = renderTexture; // RenderTexture'ý kamera hedefi olarak ayarlayýn
+
+        mainCamera.Render(); // Kamerayý render et
+        RenderTexture.active = renderTexture; // RenderTexture'ý etkinleþtir
+        Texture2D screenshot = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false); // Boþ bir Texture2D oluþtur
+        screenshot.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0); // RenderTexture'dan pikselleri oku
+        screenshot.Apply(); // Texture2D'yi güncelle
+
+        Sprite screenshotSprite = Sprite.Create(screenshot, new Rect(0, 0, screenshot.width, screenshot.height), new Vector2(0.5f, 0.5f));
+
+        return screenshotSprite;
     }
 }

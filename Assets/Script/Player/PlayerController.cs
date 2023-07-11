@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     [Header("Dash")]
     public float DashPower = 10;
     public bool isdashing;
-    bool candash = true;
+    public bool candash = true;
     public DashPool dashPool;
     public float dashCoolDown = 1;
 
@@ -90,6 +90,11 @@ public class PlayerController : MonoBehaviour
         if(canMove==true && isBend==false)
         {
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
+
+        if(canMove==false)
+        {
+            rb.velocity = Vector2.zero;
         }
 
         if (moveInput > 0 || moveInput < 0)
@@ -324,6 +329,7 @@ public class PlayerController : MonoBehaviour
                 canSoar = false;
                 GetComponent<PlayerAttackController>().canAttack = false;
                 canGetDamage = false;
+                GameObject.Find("DeathScene").GetComponent<DeadMng>().death();
             }
         }
     }

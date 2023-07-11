@@ -8,6 +8,7 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject pauseMenu; // Pause menüsünün referansý
     public GameObject optionsPanel; // Pause menüsünün referansý
     public bool isPaused; // Oyunun duraklatýlýp duraklatýlmadýðýný kontrol etmek için flag
+    public bool canOpen = true;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class PauseMenuManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true)
         {
             if (isPaused )
             {
