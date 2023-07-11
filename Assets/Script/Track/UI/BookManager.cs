@@ -103,8 +103,8 @@ public class BookManager : MonoBehaviour
         {
             controlerPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
             controlerPage[currentIndexTrack + 1].DOFade(1f, fadeDuration).SetUpdate(true);
-            currentIndexTrack++;
-          
+            currentIndexController++;
+
         }
 
 
@@ -121,9 +121,9 @@ public class BookManager : MonoBehaviour
         }
         if (!isTyping && currentIndexTrack > 0 && index == 1)
         {
-            trackPage[currentIndexController].DOFade(0f, fadeDuration).SetUpdate(true);
-            trackPage[currentIndexController - 1].DOFade(1f, fadeDuration).SetUpdate(true);
-            currentIndexController--;
+            trackPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
+            trackPage[currentIndexTrack - 1].DOFade(1f, fadeDuration).SetUpdate(true);
+            currentIndexTrack--;
         }
          if (!isTyping && currentIndexController > 0 && index == 2)
         {
