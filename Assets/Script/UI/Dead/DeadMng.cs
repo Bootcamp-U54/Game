@@ -112,6 +112,7 @@ public class DeadMng : MonoBehaviour
 
     public void restartGame()
     {
+        Debug.Log("Bastý");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         black.DOFade(1, 1).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex));

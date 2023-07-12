@@ -49,6 +49,7 @@ public class CatMng : MonoBehaviour
 
     public string achievementName;
 
+    public AudioSource pawSfx;
 
 
 
@@ -115,6 +116,7 @@ public class CatMng : MonoBehaviour
                 catHead.transform.DOLocalMoveY(3f, 0.2f * speed);
                 arms[0].GetComponent<CatArmMng>().canDmg = true;
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.2f * speed, 0.3f, fadeOut: true);
+                pawSfx.Play();
                 yield return new WaitForSeconds(1f * speed);
 
                 catHead.transform.DOLocalMoveY(3.75f, 1f * speed);
@@ -134,6 +136,7 @@ public class CatMng : MonoBehaviour
                 catHead.transform.DOLocalMoveY(3f, 0.2f * speed);
                 arms[1].GetComponent<CatArmMng>().canDmg = true;
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.2f * speed, 0.3f, fadeOut: true);
+                pawSfx.Play();
                 yield return new WaitForSeconds(1f * speed);
 
                 catHead.transform.DOLocalMoveY(3.75f, 1f * speed);
