@@ -9,6 +9,8 @@ public class ShakePlatform : MonoBehaviour
     private bool isShaking = false;
     private Vector3 initialPosition;
 
+    public AudioSource sfx;
+
 
     private void Start()
     {
@@ -52,6 +54,7 @@ public class ShakePlatform : MonoBehaviour
 
     private void RemovePlatform()
     {
+        sfx.Play();
         Destroy(gameObject);
     }
 }

@@ -12,9 +12,10 @@ public class Bomb : MonoBehaviour
     private bool hasExploded = false; // Patlamanýn gerçekleþip gerçekleþmediðini kontrol etmek için
     private SpriteRenderer spriteRenderer; // Bomba sprite'ýnýn renderer bileþeni
 
-
+    public AudioSource bombEffet;
     public GameObject player;
     public int damage = 3;
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); // Bomba sprite'ýnýn renderer bileþenini al
@@ -76,6 +77,7 @@ public class Bomb : MonoBehaviour
 
             // Bombayý yok et
             Camera.main.DOShakePosition(0.5f, 3f);
+            bombEffet.Play();
             Destroy(gameObject);
 
         }
