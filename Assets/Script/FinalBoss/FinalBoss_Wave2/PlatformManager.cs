@@ -12,6 +12,7 @@ public class PlatformManager : MonoBehaviour
     public bool isColliding = false;  
     public Sprite currentSprite;
 
+    public AudioSource platformDestSFX;
     public float openY, closeY;
 
     private void Start()
@@ -61,7 +62,7 @@ public class PlatformManager : MonoBehaviour
 
     IEnumerator closePlatform()
     {
-
+        platformDestSFX.Play();
         transform.DOMoveY(closeY, 1f);
         yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().sprite = null;

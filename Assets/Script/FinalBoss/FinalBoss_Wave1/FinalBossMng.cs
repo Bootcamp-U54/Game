@@ -42,6 +42,7 @@ public class FinalBossMng : MonoBehaviour
     [Space(10)]
     [Header("SFX")]
     public AudioSource darkSfx;
+    public AudioSource screamSFX;
     void Start()
     {
         deadMng.bossMaxHealt = healt;
@@ -164,6 +165,7 @@ public class FinalBossMng : MonoBehaviour
             Camera.main.GetComponent<CamController>().target = transform;
             yield return new WaitForSeconds(0.5f);
             Camera.main.GetComponent<Camera>().DOShakePosition(1, 0.3f, fadeOut: true);
+            screamSFX.Play();
 
             //shockWave.transform.DOScale(shockDistance*2, 0.5f);
             Camera.main.GetComponent<CamController>().target = player;
@@ -171,6 +173,7 @@ public class FinalBossMng : MonoBehaviour
 
             shockWave.SetActive(true);
             shockWave.GetComponent<Animator>().SetTrigger("ShockWave");
+            
             yield return new WaitForSeconds(0.15f);
             shockWaveAttack();
             yield return new WaitForSeconds(0.2f);

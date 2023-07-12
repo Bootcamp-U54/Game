@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss/Final Boss/FinalBoss_3.unity
     guid: e38b5d39f2deab449a02fec59ca2bab4
   - enabled: 1
+    path: Assets/Scenes/FinalStoryScene.unity
+    guid: e2894bb2f78ed6c4d936dec57508221d
+  - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: 436a019df3c3d8541aee3ba9c0167442
   - enabled: 1

@@ -38,6 +38,7 @@ public class AchievementNotification : MonoBehaviour
     IEnumerator getAchivementIE(string achivementId)
     {
         bg.SetActive(true);
+        GetComponent<AudioSource>().Play();
 
         int id = 0;
         for (int i = 0; i < allAchivementId.Length; i++)

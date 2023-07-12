@@ -36,6 +36,13 @@ public class SkeletonMng : MonoBehaviour
     [Header("Death Slider Manager")]
     public DeadMng deadMng;
 
+    [Space(10)]
+    [Header("SFX")]
+    public AudioSource bone;
+    public AudioSource ghostSFX;
+    public AudioSource swordElongation;
+    public AudioSource swordGround;
+
 
 
     void Start()
@@ -63,8 +70,10 @@ public class SkeletonMng : MonoBehaviour
 
             setSkeletonScale();
             setSkeletonPos();
+            bone.Play();
             yield return new WaitForSeconds(1f);
             sword.GetComponent<Animator>().SetTrigger("Attack");
+            swordElongation.Play();
             sword.GetComponent<SwordMng>().canDmg = true;
             yield return new WaitForSeconds(3f);
             changeFade(false);
@@ -82,8 +91,12 @@ public class SkeletonMng : MonoBehaviour
         changeFade(true);
 
         #region Aþama 2
+        canGetDamage = false;
         GetComponent<Animator>().SetBool("SummonGhost", true);
+        yield return new WaitForSeconds(0.2f);
+        swordGround.Play();
         yield return new WaitForSeconds(0.5f);
+        ghostSFX.Play();
         Camera.main.GetComponent<Camera>().DOShakePosition(1, 0.3f, fadeOut: true);
         for (int i = 0; i < ghostCount; i++)
         {
@@ -96,6 +109,7 @@ public class SkeletonMng : MonoBehaviour
 
         yield return new WaitUntil(() => ghostParent.childCount <= 0);
         GetComponent<Animator>().SetBool("SummonGhost", false);
+        canGetDamage = true;
 
         #endregion
 
@@ -118,8 +132,10 @@ public class SkeletonMng : MonoBehaviour
 
             setSkeletonScale();
             setSkeletonPos();
+            bone.Play();
             yield return new WaitForSeconds(1f);
             sword.GetComponent<Animator>().SetTrigger("Attack");
+            swordElongation.Play();
             sword.GetComponent<SwordMng>().canDmg = true;
             yield return new WaitForSeconds(3f);
             changeFade(false);
@@ -202,6 +218,7 @@ public class SkeletonMng : MonoBehaviour
     {
         if (canGetDamage == true)
         {
+           
             this.gameObject.GetComponent<damageAnim>().startAnim();
             if (healt >= dmg)
             {

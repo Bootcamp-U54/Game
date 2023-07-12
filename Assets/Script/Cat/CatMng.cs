@@ -102,7 +102,8 @@ public class CatMng : MonoBehaviour
     }
     IEnumerator Mng()
     {
-        while(healt>10)
+        yield return new WaitForSeconds(3f);
+        while (healt>10)
         {
             setDirection();
 

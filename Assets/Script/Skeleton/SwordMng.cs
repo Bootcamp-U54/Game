@@ -7,6 +7,8 @@ public class SwordMng : MonoBehaviour
     public int damage;
     public bool canDmg;
 
+    public AudioSource swordSaplama;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag=="Player")
@@ -14,6 +16,10 @@ public class SwordMng : MonoBehaviour
             if(canDmg==true)
             {
                 collision.gameObject.GetComponent<PlayerController>().getDamage(damage);
+                if(swordSaplama!=null)
+                {
+                    swordSaplama.Play();
+                }
                 canDmg = false;
             }
             

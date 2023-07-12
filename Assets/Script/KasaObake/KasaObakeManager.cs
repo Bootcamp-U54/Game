@@ -63,6 +63,11 @@ public class KasaObakeManager : MonoBehaviour
     [Header("Death Slider Manager")]
     public DeadMng deadMng;
 
+    [Space(10)]
+    [Header("Death Slider Manager")]
+    public AudioSource TransformationSfx;
+    public AudioSource CameraSfx;
+
 
     void Start()
     {
@@ -200,17 +205,19 @@ public class KasaObakeManager : MonoBehaviour
 
         changeEffect.Play();
         anim.SetBool("isCamera", true);
+        TransformationSfx.Play();
 
         while (healt>20) //Fotoðraf makinesi çalýþýyor
         {
             GameObject a = Instantiate(photo, photoSpawnPos.position, Quaternion.identity);
             a.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = screenshot();
             a.transform.SetParent(photos);
+            CameraSfx.Play();
             yield return new WaitForSeconds(photoDuration);
         }
         changeEffect.Play();
         anim.SetBool("isCamera", false);
-
+        TransformationSfx.Play();
         #endregion
 
         anim.SetBool("isOpen", true);
@@ -240,6 +247,7 @@ public class KasaObakeManager : MonoBehaviour
         #region Aþama 4 
         changeEffect.Play();
         anim.SetBool("isKettle", true);
+        TransformationSfx.Play();
 
         yield return new WaitForSeconds(1);
         patrolCoroutine = StartCoroutine(patrollingSystem());
@@ -265,6 +273,7 @@ public class KasaObakeManager : MonoBehaviour
 
         changeEffect.Play();
         anim.SetBool("isKettle", false);
+        TransformationSfx.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
