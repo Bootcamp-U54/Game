@@ -29,7 +29,7 @@ public class TriggerNextScane : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P)&&cheatMode==true)
         {
             isCheat = true;
-            NextScane();
+            FadeInAndActivatePanel();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

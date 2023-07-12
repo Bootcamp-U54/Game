@@ -42,6 +42,19 @@ public class SaveSystemMenu : MonoBehaviour
         setNamePanel.transform.DOScale(Vector3.zero, 0);
         cheatPanel.transform.DOScale(0, 0);
 
+        if(PlayerPrefs.HasKey("Cheat")==true)
+        {
+            if(PlayerPrefs.GetInt("Cheat")==1)
+            {
+                cheatToggle.isOn = true;
+            }
+
+            if (PlayerPrefs.GetInt("Cheat") == 0)
+            {
+                cheatToggle.isOn = false;
+            }
+        }
+
     }
     public void newGameAreYouSureOpen()
     {

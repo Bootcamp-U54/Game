@@ -108,7 +108,7 @@ public class AchievementMng : MonoBehaviour
                 yield return new WaitForSeconds(0.1f);
             }
             yield return new WaitForSeconds(0.4f);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         
     }
