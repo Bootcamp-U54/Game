@@ -11,11 +11,27 @@ public class TriggerNextScane : MonoBehaviour
     public Image blackImage; // Siyah Image referansý
     public GameObject otherPanel; // Diðer panelin referansý
     public string levelAchievement;
+
+    public bool isCheat=false;
+    public bool cheatMode;
     private void Start()
     {
         blackImage.color = Color.black;
         blackImage.DOFade(0f, 0f);
-    } 
+        if (PlayerPrefs.GetInt("Cheat")==1)
+        {
+            cheatMode = true;
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P)&&cheatMode==true)
+        {
+            isCheat = true;
+            NextScane();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -30,15 +46,19 @@ public class TriggerNextScane : MonoBehaviour
     }
     public  void NextScane()
     {
-        if (levelAchievement != "")
+        if(isCheat==false)
         {
-            if(PlayerPrefs.GetInt(levelAchievement)==0)
+            if (levelAchievement != "")
             {
-                PlayerPrefs.SetInt(levelAchievement, 1);
-                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement(levelAchievement);
+                if (PlayerPrefs.GetInt(levelAchievement) == 0)
+                {
+                    PlayerPrefs.SetInt(levelAchievement, 1);
+                    GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement(levelAchievement);
+                }
+
             }
-            
         }
+      
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
         int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla
         SceneManager.LoadScene(nextSceneIndex);

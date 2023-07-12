@@ -17,9 +17,15 @@ public class SaveSystemMenu : MonoBehaviour
     public GameObject setNamePanel;
 
     public TMP_InputField nameInput;
+
+    public Toggle cheatToggle;
+    public GameObject cheatPanel;
+    public bool cheatMode;
+    
     void Start()
     {
-        if(test==true)
+       
+        if (test==true)
         {
             PlayerPrefs.DeleteKey("Save");
         }
@@ -34,6 +40,7 @@ public class SaveSystemMenu : MonoBehaviour
         }
         areYouSourePanel.transform.DOScale(Vector3.zero, 0);
         setNamePanel.transform.DOScale(Vector3.zero, 0);
+        cheatPanel.transform.DOScale(0, 0);
 
     }
     public void newGameAreYouSureOpen()
@@ -87,6 +94,34 @@ public class SaveSystemMenu : MonoBehaviour
     public void openScene(string a)
     {
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(a));
+    }
+
+    public void changeCheatMode()
+    {
+        cheatMode = cheatToggle.isOn;
+        if(cheatMode==true)
+        {
+            PlayerPrefs.SetInt("Cheat", 1);
+            cheatPanelMode(true);
+            Debug.Log("Hileler aktif");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Cheat", 0);
+            Debug.Log("Hileler kapalý");
+        }
+    }
+
+    public void cheatPanelMode(bool a)
+    {
+        if(a==true)
+        {
+            cheatPanel.transform.DOScale(0.5f, 1f);
+        }
+        else
+        {
+            cheatPanel.transform.DOScale(0, 1f);
+        }
     }
 
   

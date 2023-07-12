@@ -14,8 +14,14 @@ public class DiscordMng : MonoBehaviour
     [Header("Object")]
     public TMP_InputField discordLink;
     public Toggle isOpenDiscordToggle;
+    [Header("How")]
+    public GameObject panel;
+    public Vector3 panelStartPos;
     void Start()
     {
+        panelStartPos = panel.transform.localScale;
+        panel.transform.localScale = new Vector3(0, 0, 0);
+
         if(PlayerPrefs.HasKey("CanUseDiscord"))
         {
             if(PlayerPrefs.GetInt("CanUseDiscord")==1)
@@ -37,11 +43,6 @@ public class DiscordMng : MonoBehaviour
        
     }
 
-
-    void Update()
-    {
-        
-    }
 
     public void changeDiscordBool()
     {
@@ -111,5 +112,15 @@ public class DiscordMng : MonoBehaviour
     public void back()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void openPanel()
+    {
+        panel.transform.DOScale(panelStartPos, 1f);
+    }
+
+    public void closePanel()
+    {
+        panel.transform.DOScale(Vector3.zero, 1f);
     }
 }
