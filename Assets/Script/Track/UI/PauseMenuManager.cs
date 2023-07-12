@@ -10,7 +10,9 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject optionsPanel; // Pause menüsünün referansý
     public bool isPaused; // Oyunun duraklatýlýp duraklatýlmadýðýný kontrol etmek için flag
     public bool canOpen = true;
- 
+
+    public bool pauseMenuIsOpen = false;
+    public BookManager bookMng;
 
     private void Start()
     {
@@ -23,7 +25,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         PlayerController targetScript = targetObject.GetComponent<PlayerController>();
 
-        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true&& targetScript.deathSfxIsPlay==false)
+        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true&& targetScript.deathSfxIsPlay==false&&bookMng.bookIsOpen==false)
         {
             if (isPaused )
             {
@@ -46,6 +48,7 @@ public class PauseMenuManager : MonoBehaviour
         Cursor.visible = true; // Fare imleci görünür hale gelsin
         Cursor.lockState = CursorLockMode.None; // Fare imleci ekranda serbestçe hareket edebilsin
         isPaused = true; // Oyun duraklatýldý
+        pauseMenuIsOpen = true;
     }
 
     public void ResumeGame()
@@ -56,6 +59,7 @@ public class PauseMenuManager : MonoBehaviour
         Cursor.visible = false; // Fare imleci gizlensin
         Cursor.lockState = CursorLockMode.Locked; // Fare imleci ekranda sabitlensin
         isPaused = false; // Oyun devam ediyor
+        pauseMenuIsOpen = false;
     }
 
     public void GoToOptions()

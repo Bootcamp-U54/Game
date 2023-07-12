@@ -29,6 +29,8 @@ public class BookManager : MonoBehaviour
     private bool isPaused = false;
 
     int ScaneIndex;
+    public bool bookIsOpen = false;
+    public PauseMenuManager pauseMenuMng;
 
     [Header("BookAnim")]
     public GameObject Book;
@@ -96,7 +98,7 @@ public class BookManager : MonoBehaviour
     {
         Debug.Log(currentIndexStory);
         PlayerController targetScript = targetObject.GetComponent<PlayerController>();
-        if (Input.GetKeyDown(KeyCode.B)&&targetScript.deathSfxIsPlay==false)
+        if (Input.GetKeyDown(KeyCode.B)&&targetScript.deathSfxIsPlay==false&&pauseMenuMng.pauseMenuIsOpen==false )
         {
             if (isPaused)
             {
@@ -113,6 +115,7 @@ public class BookManager : MonoBehaviour
                 StartCoroutine(TypeText(storyPage[currentIndexStory].text));
                 Time.timeScale = 0f;
                 isPaused = true;
+                bookIsOpen = true;
 
             }
         }
@@ -258,6 +261,7 @@ public class BookManager : MonoBehaviour
 
     public void BackShowPanel()
     {
+        bookIsOpen = false;
         Book.SetActive(false);
         Book.transform.DOMove(backTransform.position, animationDuration).SetEase(Ease.OutBack).SetUpdate(true);
     }

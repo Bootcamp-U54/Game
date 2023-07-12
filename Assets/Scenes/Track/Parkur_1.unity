@@ -991,6 +991,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 629353737}
+--- !u!114 &176919555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+  m_PrefabInstance: {fileID: 1258019505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26bbed607172704f91507deef488812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &182764980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2614455750021299405, guid: 2cbb96c4567dc5147a2ba2b00da93727, type: 3}
@@ -40166,6 +40177,10 @@ PrefabInstance:
       value: Book_0
       objectReference: {fileID: 0}
     - target: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: pauseMenuMng
+      value: 
+      objectReference: {fileID: 7782493021961825948}
+    - target: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 819276372}
@@ -41305,7 +41320,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601118871
 GameObject:
@@ -42122,11 +42137,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1890815901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 203700895780265723, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
-  m_PrefabInstance: {fileID: 1258019505}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1891418305
 GameObject:
   m_ObjectHideFlags: 0
@@ -48386,20 +48396,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &937506087197361409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290475130906416638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8275221f4193504db5e822fa2c6e92c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settingsMenu: {fileID: 5190209670966677704}
-  bookMenu: {fileID: 1890815901}
 --- !u!1001 &1071223883287342450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48478,23 +48474,6 @@ GameObject:
   - component: {fileID: 4604070191105254188}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1290475130906416638
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1772433766426527321}
-  - component: {fileID: 937506087197361409}
-  m_Layer: 0
-  m_Name: UIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48677,21 +48656,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8213279600832565099}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1772433766426527321
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290475130906416638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 192.87755, y: 620.6501, z: -11.133203}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1851602138492077459
 RectTransform:
@@ -49638,7 +49602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3413194060946492210
 Transform:
   m_ObjectHideFlags: 0
@@ -50802,6 +50766,8 @@ MonoBehaviour:
   optionsPanel: {fileID: 537331543397724923}
   isPaused: 0
   canOpen: 1
+  pauseMenuIsOpen: 0
+  bookMng: {fileID: 176919555}
 --- !u!1 &7872622530008049501
 GameObject:
   m_ObjectHideFlags: 0
@@ -50837,7 +50803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7903450763548375629
 GameObject:
   m_ObjectHideFlags: 0
