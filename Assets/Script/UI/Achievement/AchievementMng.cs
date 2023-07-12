@@ -43,6 +43,9 @@ public class AchievementMng : MonoBehaviour
                     PlayerPrefs.SetInt(allAchievementName[i], 0);
 
                 }
+
+                PlayerPrefs.SetInt("TrainCount", 0);
+                PlayerPrefs.SetInt("GhostCount", 0);
             }
         }
 

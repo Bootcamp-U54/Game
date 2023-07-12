@@ -81,7 +81,12 @@ public class DeadMng : MonoBehaviour
             {
                 if(bossMaxHealt==bossCurrentHealt)
                 {
-                    PlayerPrefs.SetInt("FinalBossWave1", 1);
+                    if(PlayerPrefs.GetInt("FinalBossWave1")==0)
+                    {
+                        PlayerPrefs.SetInt("FinalBossWave1", 1);
+                        GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("FinalBossWave1");
+                    }
+                   
                 }
             }
         }

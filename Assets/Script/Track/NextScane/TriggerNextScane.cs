@@ -32,7 +32,12 @@ public class TriggerNextScane : MonoBehaviour
     {
         if (levelAchievement != "")
         {
-            PlayerPrefs.SetInt(levelAchievement, 1);
+            if(PlayerPrefs.GetInt(levelAchievement)==0)
+            {
+                PlayerPrefs.SetInt(levelAchievement, 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement(levelAchievement);
+            }
+            
         }
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
         int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla

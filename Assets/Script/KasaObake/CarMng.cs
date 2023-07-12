@@ -36,6 +36,8 @@ public class CarMng : MonoBehaviour
     public ParticleSystem smokeEffect;
     private ParticleSystem.EmissionModule smokeEmmision;
 
+    private bool setPlayerPrefs;
+
 
 
 
@@ -44,6 +46,7 @@ public class CarMng : MonoBehaviour
 
     private void Start()
     {
+        setPlayerPrefs = true;
         smokeEmmision = smokeEffect.emission;
         anim = GetComponent<Animator>();
         yon = 1;
@@ -76,12 +79,63 @@ public class CarMng : MonoBehaviour
             if (currentWallHit > WallHit)
             {
                 canMove = false;
+                if(setPlayerPrefs==true)
+                {
+                    int a = 0;
+                    if (PlayerPrefs.HasKey("TrainCount") == true)
+                    {
+                        a = PlayerPrefs.GetInt("TrainCount");
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetInt("TrainCount", 0);
+                        a = PlayerPrefs.GetInt("TrainCount");
+                    }
 
-                anim.SetTrigger("Dest");
+                    a++;
+                    PlayerPrefs.SetInt("TrainCount", a);
+                    Debug.LogWarning("Toplam Kýrýlan Tren Sayýsý : " + PlayerPrefs.GetInt("TrainCount"));
+
+                    checkAchivement();
+                    anim.SetTrigger("Dest");
+                    setPlayerPrefs = false;
+                }
+               
             }
             else
             {
                 Flip();
+            }
+        }
+    }
+
+    public void checkAchivement()
+    {
+        int b = PlayerPrefs.GetInt("TrainCount");
+
+        if(b >= 10)
+        {   
+            if(PlayerPrefs.GetInt("TrainDead1")==0)
+            {
+                PlayerPrefs.SetInt("TrainDead1", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("TrainDead1");
+            }
+          
+        }
+        if (b >= 25)
+        {
+            if (PlayerPrefs.GetInt("TrainDead2") == 0)
+            {
+                PlayerPrefs.SetInt("TrainDead2", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("TrainDead2");
+            }
+        }
+        if (b >= 50)
+        {
+            if (PlayerPrefs.GetInt("TrainDead3") == 0)
+            {
+                PlayerPrefs.SetInt("TrainDead3", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("TrainDead3");
             }
         }
     }

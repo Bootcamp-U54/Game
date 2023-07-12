@@ -15,11 +15,12 @@ public class GhostMng : MonoBehaviour
     public float rotationSpeed;
     public Animator anim;
 
-
+    private bool setPlayerPrefs = false;
 
 
     void Start()
     {
+        setPlayerPrefs = true;
         anim = GetComponent<Animator>();
     }
     void Update()
@@ -90,7 +91,60 @@ public class GhostMng : MonoBehaviour
             {
                 canMove = false;
                 GetComponent<BoxCollider2D>().enabled = false;
+
+                if (setPlayerPrefs == true)
+                {
+                    int a = 0;
+                    if (PlayerPrefs.HasKey("GhostCount") == true)
+                    {
+                        a = PlayerPrefs.GetInt("GhostCount");
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetInt("GhostCount", 0);
+                        a = PlayerPrefs.GetInt("GhostCount");
+                    }
+
+                    a++;
+                    PlayerPrefs.SetInt("GhostCount", a);
+                    Debug.LogWarning("Toplam Kýrýlan Tren Sayýsý : " + PlayerPrefs.GetInt("GhostCount"));
+
+                    checkAchivement();
+
+                    setPlayerPrefs = false;
+                }
+
                 anim.SetTrigger("Die");
+            }
+        }
+    }
+
+    public void checkAchivement()
+    {
+        int b = PlayerPrefs.GetInt("GhostCount");
+
+        if (b > 10)
+        {
+            if (PlayerPrefs.GetInt("GhostDead1") == 0)
+            {
+                PlayerPrefs.SetInt("GhostDead1", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("GhostDead1");
+            }
+        }
+        if (b > 25)
+        {
+            if (PlayerPrefs.GetInt("GhostDead2") == 0)
+            {
+                PlayerPrefs.SetInt("GhostDead2", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("GhostDead2");
+            }
+        }
+        if (b > 50)
+        {
+            if (PlayerPrefs.GetInt("GhostDead3") == 0)
+            {
+                PlayerPrefs.SetInt("GhostDead3", 1);
+                GameObject.Find("AchievementNotification").GetComponent<AchievementNotification>().getAchivement("GhostDead3");
             }
         }
     }
