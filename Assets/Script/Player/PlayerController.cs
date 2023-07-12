@@ -52,6 +52,12 @@ public class PlayerController : MonoBehaviour
     [Space(10)]
     [Header("SFX")]
     public AudioSource stepSound;
+    public AudioSource soarSfx;
+    public AudioSource jumpSfx;
+    public AudioSource deathSfx;
+    public AudioSource dashSfx;
+
+    private bool deathSfxIsPlay;
 
 
     [Space(10)]
@@ -101,15 +107,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
 
-            #region Ayak Sesi
-            /*
-            if (stepSound.isPlaying == false)
-            {
-                stepSound.Play();
-                stepSound.pitch = Random.Range(1.3f, 1.5f);
-            }
-            */
-            #endregion
+           
         }
         else
         {
@@ -225,9 +223,16 @@ public class PlayerController : MonoBehaviour
             soarEmmision_1.rateOverTime = 0f;
             soarEmmision_2.rateOverTime = 0f;
 
+            soarSfx.Stop();
         }
         else
         {
+            if(soarSfx.isPlaying==false)
+            {
+                soarSfx.Play();
+                soarSfx.pitch = Random.Range(1.1f, 1.2f);
+            }
+
             if(rb.velocity.y < 0)
             {
                 rb.gravityScale = soarGravity;
@@ -281,6 +286,12 @@ public class PlayerController : MonoBehaviour
     {
         canJump = false;
         rb.velocity = new Vector2(rb.velocity.x, jumpspeed);
+
+        if(jumpSfx.isPlaying==false)
+        {
+            jumpSfx.Play();
+        }
+
     }
 
 
@@ -297,6 +308,7 @@ public class PlayerController : MonoBehaviour
 
         isdashing = true;
         candash = false;
+        dashSfx.Play();
         rb.gravityScale = 0;
         rb.velocity = Vector2.zero;
         dashPool.getDashImage();
@@ -330,8 +342,27 @@ public class PlayerController : MonoBehaviour
                 GetComponent<PlayerAttackController>().canAttack = false;
                 canGetDamage = false;
                 GameObject.Find("DeathScene").GetComponent<DeadMng>().death();
+
+                if(deathSfxIsPlay==false)
+                {
+                    deathSfx.Play();
+                    deathSfxIsPlay = true;
+                }
             }
         }
+    }
+
+    public void stepSoundEffect()
+    {
+        #region Ayak Sesi
+
+        if (stepSound.isPlaying == false)
+        {
+            stepSound.Play();
+            stepSound.pitch = Random.Range(1.1f, 1.2f);
+        }
+
+        #endregion
     }
 
 

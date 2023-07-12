@@ -38,6 +38,10 @@ public class FinalBossMng : MonoBehaviour
     [Space(10)]
     [Header("Death Slider Manager")]
     public DeadMng deadMng;
+
+    [Space(10)]
+    [Header("SFX")]
+    public AudioSource darkSfx;
     void Start()
     {
         deadMng.bossMaxHealt = healt;
@@ -54,11 +58,18 @@ public class FinalBossMng : MonoBehaviour
         {
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, 1, 5f*Time.deltaTime);
             playerLight.intensity = Mathf.Lerp(playerLight.intensity, 0, 5f * Time.deltaTime);
+
+            darkSfx.Stop();
         }
         else
         {
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, 0, 5f * Time.deltaTime);
             playerLight.intensity = Mathf.Lerp(playerLight.intensity, 1, 5f * Time.deltaTime);
+
+            if(darkSfx.isPlaying==false)
+            {
+                darkSfx.Play();
+            }
         }
     }
 

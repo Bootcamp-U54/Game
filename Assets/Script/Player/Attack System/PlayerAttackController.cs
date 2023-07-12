@@ -11,6 +11,7 @@ public class PlayerAttackController : MonoBehaviour
     public Transform[] AllspawnPos;
     public GameObject bullet;
     public Animator anim;
+    public AudioSource fireSfx;
 
     [Space(10)]
     [Header("Okunan Veriler")]
@@ -63,6 +64,7 @@ public class PlayerAttackController : MonoBehaviour
         Debug.Log("Fire");
 
         GameObject a = Instantiate(bullet, spawnPos.position, Quaternion.identity);
+        fireSfx.Play();
 
         if (vec!=Vector2.zero)
         {
