@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public TMP_Text healthText;
 
     [Header("Property")]
     public float health;
@@ -57,7 +59,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource deathSfx;
     public AudioSource dashSfx;
 
-    private bool deathSfxIsPlay;
+    public bool deathSfxIsPlay;
 
 
     [Space(10)]
@@ -143,8 +145,8 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
 
-
-        if(canMove==true)
+        healthText.text = health.ToString();
+        if (canMove==true)
         {
             moveInput = Input.GetAxis("Horizontal");
         }

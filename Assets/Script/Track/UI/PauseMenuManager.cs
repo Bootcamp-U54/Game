@@ -5,20 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
+    public GameObject targetObject;
     public GameObject pauseMenu; // Pause menüsünün referansý
     public GameObject optionsPanel; // Pause menüsünün referansý
     public bool isPaused; // Oyunun duraklatýlýp duraklatýlmadýðýný kontrol etmek için flag
     public bool canOpen = true;
+ 
 
     private void Start()
     {
+      
         Cursor.visible = false; // Fare imleci gizlensin
         Cursor.lockState = CursorLockMode.Locked; // Fare imleci ekranda sabitlensin
        
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true)
+        PlayerController targetScript = targetObject.GetComponent<PlayerController>();
+
+        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true&& targetScript.deathSfxIsPlay==false)
         {
             if (isPaused )
             {

@@ -12,13 +12,14 @@ using Image = UnityEngine.UI.Image;
 
 public class BookManager : MonoBehaviour
 {
+    public GameObject targetObject;
     TextMeshProUGUI currentPage;
     public TextMeshProUGUI[] storyPage;
     public Image[] trackPage, controlerPage;
     public GameObject bookCanvas;
     public float fadeDuration = 2f;
     private int currentIndexStory;
-
+    
     private int catBorder = 1;
     private int skeletorBorder = 7;
 
@@ -39,7 +40,7 @@ public class BookManager : MonoBehaviour
     private void Start()
     {
         ScaneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
-
+        #region CurrentIndexGeneator
         if (ScaneIndex == 3 || ScaneIndex == 4)
         {
             currentIndexStory = 0;
@@ -70,6 +71,7 @@ public class BookManager : MonoBehaviour
         else if (ScaneIndex >= 7)
             currentIndexStory = 7;
 
+        #endregion
 
         for (int i = 1; i < storyPage.Length; i++)
         {
@@ -93,8 +95,8 @@ public class BookManager : MonoBehaviour
     private void Update()
     {
         Debug.Log(currentIndexStory);
-
-        if (Input.GetKeyDown(KeyCode.B))
+        PlayerController targetScript = targetObject.GetComponent<PlayerController>();
+        if (Input.GetKeyDown(KeyCode.B)&&targetScript.deathSfxIsPlay==false)
         {
             if (isPaused)
             {
@@ -169,7 +171,7 @@ public class BookManager : MonoBehaviour
 
         }
 
-        if (!isTyping && currentIndexTrack >= 0 && currentIndexTrack + 1 < trackPage.Length && index == 2)
+        if (!isTyping && currentIndexTrack >= 0 && currentIndexTrack + 1 < controlerPage.Length && index == 2)
         {
             controlerPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
             controlerPage[currentIndexTrack + 1].DOFade(1f, fadeDuration).SetUpdate(true);
