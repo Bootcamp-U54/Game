@@ -93,7 +93,7 @@ public class ParchmentMng : MonoBehaviour
         foreach (char a in account)
         {
             text.text += a.ToString();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.02f);
         }
         isWrite = true;
     }

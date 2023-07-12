@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CreditMng : MonoBehaviour
 {
@@ -15,12 +16,12 @@ public class CreditMng : MonoBehaviour
     public Vector3 textPosition;
     void Start()
     {
-        text.transform.DOLocalMove(textPosition, textDuration).SetEase(Ease.Linear);
+        text.transform.DOLocalMove(textPosition, textDuration).SetEase(Ease.Linear).OnComplete(()=>SceneManager.LoadScene(0));
         for (int a = 0; a < allImage.Length; a++)
         {
             allImage[a].transform.DOScale(0, 0f);
         }
-        StartCoroutine(go());
+       // StartCoroutine(go());
     }
 
     IEnumerator go()

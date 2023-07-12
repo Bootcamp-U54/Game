@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region JumpBuffer
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             jumpBufferCount = jumpBufferLenght;
 
@@ -194,7 +194,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region Dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && candash == true)
+        if (Input.GetKeyDown(KeyCode.Z) && candash == true)
         {
 
             if (dashCoroutine != null)
