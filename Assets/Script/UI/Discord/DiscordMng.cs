@@ -16,7 +16,25 @@ public class DiscordMng : MonoBehaviour
     public Toggle isOpenDiscordToggle;
     void Start()
     {
-        
+        if(PlayerPrefs.HasKey("CanUseDiscord"))
+        {
+            if(PlayerPrefs.GetInt("CanUseDiscord")==1)
+            {
+                isOpenDiscordToggle.isOn = true;
+                discordLink.interactable = true;
+            }
+            else
+            {
+                isOpenDiscordToggle.isOn = false;
+                discordLink.interactable = false;
+            }
+        }
+        else
+        {
+            isOpenDiscordToggle.isOn = false;
+            discordLink.interactable = false;
+        }
+       
     }
 
 
