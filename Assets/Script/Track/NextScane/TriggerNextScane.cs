@@ -42,9 +42,6 @@ public class TriggerNextScane : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Mevcut sahnenin index numarasýný al
         int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; // Bir sonraki sahnenin index numarasýný hesapla
         SceneManager.LoadScene(nextSceneIndex);
-
-       
-      
-     
     }
+
 }

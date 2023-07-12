@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.Networking;
 
 public class AchievementNotification : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class AchievementNotification : MonoBehaviour
     public string[] allAchivementId;
     public Sprite[] allAchivementSprite;
     public string[] allAchivementAccount;
+    public string[] allAchivementDiscordMsg;
     void Start()
     {
         startPos = bg.transform.position;
@@ -49,6 +51,10 @@ public class AchievementNotification : MonoBehaviour
         img.sprite = allAchivementSprite[id];
         text.text = allAchivementAccount[id];
 
+        if (PlayerPrefs.GetInt("CanUseDiscord") == 1)
+        {
+            sendDiscordMsg(id);
+        }
         bg.transform.DOMove(startPos, 1).SetUpdate(true);
         yield return new WaitForSeconds(1f);
 
@@ -58,5 +64,40 @@ public class AchievementNotification : MonoBehaviour
         bg.transform.DOMove(otherPos, 1).SetUpdate(true);
         yield return new WaitForSeconds(1f);
         bg.SetActive(false);
+    }
+
+    public void sendDiscordMsg(int id)
+    {
+        string webHookMsg = PlayerPrefs.GetString("webHook");
+        string msg = "**"+PlayerPrefs.GetString("Name")+"** "+ allAchivementDiscordMsg[id];
+
+        StartCoroutine(sendMsgIE(webHookMsg, msg, (succes) =>
+          {
+              if (succes)
+              {
+                  Debug.Log("Good");
+              }
+          }
+        ));
+    }
+
+    IEnumerator sendMsgIE(string link , string message,System.Action<bool> action)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("content", message);
+        using (UnityWebRequest www = UnityWebRequest.Post(link,form))
+        {
+            yield return www.SendWebRequest();
+
+            if(www.result == UnityWebRequest.Result.ConnectionError)
+            {
+                Debug.LogError(www.error);
+                action(false);
+            }
+            else
+            {
+                action(true);
+            }
+        }
     }
 }

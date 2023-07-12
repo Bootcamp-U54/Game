@@ -375,6 +375,21 @@ MonoBehaviour:
   - "H\u0131zl\u0131ndan da h\u0131zl\u0131 s\xFCratliden de s\xFCratli 2"
   - "H\u0131zl\u0131ndan da h\u0131zl\u0131 s\xFCratliden de s\xFCratli 3"
   - Gulu seven dikenine katlanir
+  allAchivementDiscordMsg:
+  - "**kediyi alt etmeyi ba\u015Fard\u0131 !** :green_circle: "
+  - "**iskeleti alt etmeyi ba\u015Far\u0131d\u0131 !** :green_circle: "
+  - "**Kasa Obake'yi alt etmeyi ba\u015Far\u0131d\u0131 !** :green_circle: "
+  - '**oyunu bitirdi** :red_circle:  '
+  - "**10 tane hayalet avlad\u0131** :green_circle: "
+  - "**25 tane hayalet avlad\u0131** :blue_circle: "
+  - "**50 tane hayalet avlad\u0131** :red_circle:  "
+  - "**10 tane treni parampar\xE7a etti** :green_circle: "
+  - "**25 tane treni parampar\xE7a etti** :blue_circle: "
+  - "**50 tane treni parampar\xE7a etti** :red_circle: "
+  - "**birinci parkuru bitirmeyi ba\u015Fard\u0131** :green_circle: "
+  - "**ikinci parkuru bitirmeyi ba\u015Fard\u0131** :green_circle: "
+  - "**\xFC\xE7\xFCnc\xFC parkuru bitirmeyi ba\u015Fard\u0131** :green_circle: "
+  - "**ger\xE7ekten onu bu kadar seviyor mu ?** :red_circle:  "
 --- !u!1 &4296053034321964088
 GameObject:
   m_ObjectHideFlags: 0
