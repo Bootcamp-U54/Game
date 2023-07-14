@@ -7,7 +7,7 @@ Takım Unity 54
 - Ahmet Topdaş: Developer
 - Batu Özçamlık: Product Owner / Developer
 - Şeyma Ertuğrul: Developer
-- Yeşim Ezgi Şeref: Scrum Master / Developer
+- Yeşim Ezgi Şeref: 2D Artist / Scrum Master / Developer
 
 # Ürün İsmi
 - Dawn of Fate
