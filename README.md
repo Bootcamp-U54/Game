@@ -106,14 +106,18 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
 
 # Sprint 3
-- Sprint içinde tamamlanması tahmin edilen puan: 
-- Puan tamamlama mantığı: 
+- Sprint içinde tamamlanması tahmin edilen puan: 180
+- Puan tamamlama mantığı:  Proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ikinci sprintin 180 olması gerektiğine karar verilmiştir.
 
 **Daily Scrum:**
 - Daily Scrum toplantıları zaman ve mekan farklılıkları olabileceğinden dolayı Whatsapp veya Discord üzerinden yapılmaya devam edilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Miro Backlog Board içerisinde tarafımızdan paylaşılmaktadır.
 
 **Sprint board update: Sprint board screenshotları:**
 
+![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3.png?raw=true)
+![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_0.png?raw=true)
+![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_1.png?raw=true)
+![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_2.png?raw=true)
 
 **Ürün Durumu: Ekran Görüntüleri**
 
@@ -122,9 +126,17 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 
 **Sprint Review:**
 
+- Ana karakterin tüm animasyonları tamamlandı.
+- Tüm boss mekanikleri tamamlandı ve GitHub'a yüklendi.
+- Parkur mekaniklerinin birleşimi tamamlandı.
+- UI elementleri tamamlandı.
+- Hikayeler için görseller hazırlandı ve eklendi.
+-Ses araştırmaları yapıldı ve gerekli mekaniklere sesleri eklendi.
 
 **Sprint Retrospective:**
-
+- Genel anlamda herkes üzerine düşen görevleri zamanında bitirip teslim etti.
+- Oyuncu hikayelerinin ve görevlerin puanlaması yapıldı.
+- Oyunu test edildi.
 
 # Product Backlog URL
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
