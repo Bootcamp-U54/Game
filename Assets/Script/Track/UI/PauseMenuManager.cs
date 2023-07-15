@@ -16,28 +16,28 @@ public class PauseMenuManager : MonoBehaviour
 
     private void Start()
     {
-      
+
         Cursor.visible = false; // Fare imleci gizlensin
         Cursor.lockState = CursorLockMode.Locked; // Fare imleci ekranda sabitlensin
-       
+
     }
     private void Update()
     {
         PlayerController targetScript = targetObject.GetComponent<PlayerController>();
 
-        if (Input.GetKeyDown(KeyCode.Escape) &&canOpen==true&& targetScript.deathSfxIsPlay==false&&bookMng.bookIsOpen==false)
+        if (Input.GetKeyDown(KeyCode.Escape) && canOpen == true && targetScript.deathSfxIsPlay == false && bookMng.bookIsOpen == false)
         {
-            if (isPaused )
+            if (isPaused)
             {
                 ResumeGame(); // Eðer oyun duraklatýlmýþsa Esc tuþuna basýnca oyunu devam ettir
-               
+
             }
             else
             {
                 PauseGame(); // Eðer oyun devam ediyorsa Esc tuþuna basýnca oyunu duraklat
-              
+
             }
-        
+
         }
     }
 
@@ -77,8 +77,13 @@ public class PauseMenuManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        Time.timeScale = 1f;
+
         SceneManager.LoadScene("MainMenu"); // Main Menu sahnesine geçiþ yap
+        Time.timeScale = 1f;
 
     }
+
+
+
+
 }

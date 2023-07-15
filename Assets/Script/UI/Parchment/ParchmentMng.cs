@@ -14,13 +14,17 @@ public class ParchmentMng : MonoBehaviour
     public string account;
     private bool isWrite = false;
 
+    public int sceneIndex;
+    public int currentIndex;
+
 
 
     void Start()
     {
+        sceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         spriteRender.gameObject.transform.DORotate(new Vector3(0, 0, 90), 0);
         spriteRender.DOFade(0, 0);
-      
+
 
         getParchment();
     }
@@ -31,12 +35,12 @@ public class ParchmentMng : MonoBehaviour
         {
             if (canOpen == true)
             {
-                spriteRender.size = Vector2.Lerp(spriteRender.size, OpenSize, 2f*Time.deltaTime);
+                spriteRender.size = Vector2.Lerp(spriteRender.size, OpenSize, 2f * Time.deltaTime);
 
             }
             else
             {
-                spriteRender.size = Vector2.Lerp(spriteRender.size, closeSize, 2f*Time.deltaTime);
+                spriteRender.size = Vector2.Lerp(spriteRender.size, closeSize, 2f * Time.deltaTime);
             }
         }
 
@@ -45,7 +49,21 @@ public class ParchmentMng : MonoBehaviour
 
     public void getParchment()
     {
-        StartCoroutine(go());
+        if (sceneIndex == 7 && PlayerPrefs.GetInt("Key") != 1)
+        {
+            StartCoroutine(go());
+            currentIndex++;
+            PlayerPrefs.SetInt("Key", currentIndex);
+        }
+        else if (sceneIndex == 9 && PlayerPrefs.GetInt("Key") == 1)
+        {
+            StartCoroutine(go());
+            currentIndex = PlayerPrefs.GetInt("Key");
+            currentIndex++;
+            PlayerPrefs.SetInt("Key", currentIndex);
+        }
+
+
     }
 
 
@@ -53,7 +71,7 @@ public class ParchmentMng : MonoBehaviour
     {
 
         isActive = true;
-        
+
         spriteRender.DOFade(1, 1).From(0).SetUpdate(true);
         yield return new WaitForSeconds(1f);
 
@@ -78,7 +96,7 @@ public class ParchmentMng : MonoBehaviour
         spriteRender.DOFade(0, 1).From(1).SetUpdate(true);
         yield return new WaitForSeconds(1f);
         isActive = false;
-       
+
 
 
 
@@ -99,5 +117,5 @@ public class ParchmentMng : MonoBehaviour
     }
 
     // Update is called once per frame
-   
+
 }

@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region JumpBuffer
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpBufferCount = jumpBufferLenght;
 

@@ -34,6 +34,7 @@ public class DeadMng : MonoBehaviour
 
     private void Start()
     {
+       
         sliderImage.fillAmount = 0;
         for (int i = 0; i < allObject.Length; i++)
         {
@@ -47,6 +48,7 @@ public class DeadMng : MonoBehaviour
     }
     public void death()
     {
+    
         StartCoroutine(go());
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -56,7 +58,7 @@ public class DeadMng : MonoBehaviour
 
     IEnumerator go()
     {
-        
+       
 
         for (int i = 0; i < allObject.Length; i++)
         {

@@ -43,13 +43,13 @@ public class BookManager : MonoBehaviour
     {
         ScaneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         #region CurrentIndexGeneator
-        if (ScaneIndex == 3 || ScaneIndex == 4)
+        if (ScaneIndex == 4|| ScaneIndex == 5)
         {
             currentIndexStory = 0;
 
         }
 
-        else if (ScaneIndex == 5 || ScaneIndex == 6)
+        else if (ScaneIndex == 6 || ScaneIndex == 7)
         {
             currentIndexStory = 2;
             for (int i = 0; i < currentIndexStory; i++)
@@ -60,7 +60,7 @@ public class BookManager : MonoBehaviour
 
 
         }
-        else if (ScaneIndex >= 7)
+        else if (ScaneIndex >= 8)
         {
             currentIndexStory = 8;
 
@@ -125,7 +125,7 @@ public class BookManager : MonoBehaviour
     {
 
         #region StoryGenerator 
-        if (ScaneIndex == 3 || ScaneIndex == 4)
+        if (ScaneIndex == 4 || ScaneIndex == 5)
         {
             if (!isTyping && currentIndexStory >= 0 && currentIndexStory < catBorder && index == 0)
             {
@@ -138,7 +138,7 @@ public class BookManager : MonoBehaviour
             }
         }
 
-        else if (ScaneIndex == 5 || ScaneIndex == 6)
+        else if (ScaneIndex == 6 || ScaneIndex == 7)
         {
             if (!isTyping && currentIndexStory >= 0 && currentIndexStory < skeletorBorder && index == 0)
             {
@@ -151,7 +151,7 @@ public class BookManager : MonoBehaviour
             }
         }
 
-        else if (ScaneIndex >= 7)
+        else if (ScaneIndex >= 8)
         {
             if (!isTyping && currentIndexStory >= 0 && currentIndexStory + 1 < storyPage.Length && index == 0)
             {

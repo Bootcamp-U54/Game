@@ -54,14 +54,14 @@ public class PlatformMove : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-           
+
             collision.collider.transform.SetParent(null);
             characterOnPlatform = true;
 
         }
 
     }
-
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         if (targetPoint1 != null && targetPoint2 != null)
@@ -74,4 +74,9 @@ public class PlatformMove : MonoBehaviour
             Handles.Label(labelPosition, distance.ToString("F2") + " units");
         }
     }
+
+
+
+#endif
+
 }

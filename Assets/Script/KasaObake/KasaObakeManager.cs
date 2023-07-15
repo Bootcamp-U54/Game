@@ -28,6 +28,7 @@ public class KasaObakeManager : MonoBehaviour
     public float photoDuration;
     public Camera renderCam;
     public Transform photos;
+    public GameObject colliderObs;
 
     [Header("Fan Spawn")]
     public float fireTime;
@@ -202,7 +203,7 @@ public class KasaObakeManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         #region Aşama  2
-
+        colliderObs.SetActive(true);
         changeEffect.Play();
         anim.SetBool("isCamera", true);
         TransformationSfx.Play();
@@ -229,7 +230,7 @@ public class KasaObakeManager : MonoBehaviour
         #region Aşama 3
 
         patrolCoroutine = StartCoroutine(patrollingSystem());
-
+        colliderObs.SetActive(false);
         while (healt > 10) //Tren atma kısmı
         {
             spawnTrain();

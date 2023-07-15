@@ -5,12 +5,16 @@ using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using TMPro;
+using static UnityEngine.Rendering.DebugUI;
+using Button = UnityEngine.UI.Button;
 
 public class SaveSystemMenu : MonoBehaviour
 {
     public bool test;
 
     public Button PlayGameButton;
+    public GameObject panel;
+    public Vector3 panelStartPos;
 
     public Image blackImage;
     public GameObject areYouSourePanel;
@@ -24,7 +28,8 @@ public class SaveSystemMenu : MonoBehaviour
     
     void Start()
     {
-       
+        panelStartPos = panel.transform.localScale;
+        panel.transform.localScale = new Vector3(0, 0, 0);
         if (test==true)
         {
             PlayerPrefs.DeleteKey("Save");
@@ -75,6 +80,7 @@ public class SaveSystemMenu : MonoBehaviour
     public void newGame() //Yeni save açar
     {
         PlayerPrefs.DeleteKey("Save");
+        PlayerPrefs.DeleteKey("Key");
 
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2));
     }
@@ -136,6 +142,31 @@ public class SaveSystemMenu : MonoBehaviour
             cheatPanel.transform.DOScale(0, 1f);
         }
     }
+    public void Quit()
+    {
 
-  
+        Application.Quit();
+
+    }
+
+    public void TryAgain()
+    {
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
+
+
+    public void openPanel()
+    {
+        
+        panel.transform.DOScale(panelStartPos, 1f);
+    }
+
+    public void closePanel()
+    {
+        panel.transform.DOScale(Vector3.zero, 1f);
+       
+    }
+
 }

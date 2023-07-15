@@ -22,7 +22,7 @@ public class ObjectHighlight : MonoBehaviour
         outline.effectColor = Color.blue;
 
         // Efekt mesafesini ayarlayýn (çizgi geniþliði)
-        outline.effectDistance = new Vector2(10f, 10f);
+        outline.effectDistance = new Vector2(40f, 40f);
 
         // Görsel alfa kullanýmýný etkinleþtirin
         outline.useGraphicAlpha = true;

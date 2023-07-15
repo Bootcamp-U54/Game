@@ -17,6 +17,7 @@ public class DiscordMng : MonoBehaviour
     [Header("How")]
     public GameObject panel;
     public Vector3 panelStartPos;
+
     void Start()
     {
         panelStartPos = panel.transform.localScale;
@@ -111,7 +112,7 @@ public class DiscordMng : MonoBehaviour
 
     public void back()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void openPanel()
