@@ -118,6 +118,8 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 ![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_0.png?raw=true)
 ![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_1.png?raw=true)
 ![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint3_2.png?raw=true)
+![Sprint3](https://github.com/Bootcamp-U54/Game/blob/main/sprint_3.png?raw=true)
+
 
 **Ürün Durumu: Ekran Görüntüleri**
 
