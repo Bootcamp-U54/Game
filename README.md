@@ -144,7 +144,7 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 **Sprint Retrospective:**
 - Genel anlamda herkes üzerine düşen görevleri zamanında bitirip teslim etti.
 - Oyuncu hikayelerinin ve görevlerin puanlaması yapıldı.
-- Oyun test edildi.
+- Oyun test edildi, buglar düzeltildi, kodlar fixlendi.
 
 # Product Backlog URL
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
