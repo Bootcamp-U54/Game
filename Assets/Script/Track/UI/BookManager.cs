@@ -15,7 +15,7 @@ public class BookManager : MonoBehaviour
     public GameObject targetObject;
     TextMeshProUGUI currentPage;
     public TextMeshProUGUI[] storyPage;
-    public Image[] trackPage, controlerPage;
+    public Image[] trackPage;
     public GameObject bookCanvas;
     public float fadeDuration = 2f;
     private int currentIndexStory;
@@ -85,11 +85,7 @@ public class BookManager : MonoBehaviour
             trackPage[i].DOFade(0f, 0f).SetUpdate(true);
 
         }
-        for (int i = 1; i < controlerPage.Length; i++)
-        {
-            controlerPage[i].DOFade(0f, 0f).SetUpdate(true);
-
-        }
+     
 
     }
 
@@ -174,14 +170,7 @@ public class BookManager : MonoBehaviour
 
         }
 
-        if (!isTyping && currentIndexTrack >= 0 && currentIndexTrack + 1 < controlerPage.Length && index == 2)
-        {
-            controlerPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
-            controlerPage[currentIndexTrack + 1].DOFade(1f, fadeDuration).SetUpdate(true);
-            currentIndexController++;
-
-        }
-
+ 
 
 
     }
@@ -199,12 +188,6 @@ public class BookManager : MonoBehaviour
             trackPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
             trackPage[currentIndexTrack - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndexTrack--;
-        }
-        if (!isTyping && currentIndexController > 0 && index == 2)
-        {
-            controlerPage[currentIndexController].DOFade(0f, fadeDuration).SetUpdate(true);
-            controlerPage[currentIndexController - 1].DOFade(1f, fadeDuration).SetUpdate(true);
-            currentIndexController--;
         }
 
 
