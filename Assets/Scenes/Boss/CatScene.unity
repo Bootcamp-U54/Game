@@ -23593,9 +23593,53 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1360970155}
+    - target: {fileID: 600659007798591001, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600659007798591001, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2887807199023283499, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_Name
       value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978710965006790603, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3688158273239425387, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3688158273239425387, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617612376514050749, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617612376514050749, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617612376514050749, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221886704149510793, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221886704149510793, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221886704149510793, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

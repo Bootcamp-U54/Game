@@ -636,6 +636,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473898006}
     m_Modifications:
+    - target: {fileID: 140904349115746793, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_text
+      value: 'Bakanekonun bir anda buyudugunu goren yagmacilar evden kacmaya calisir
+        fakat bakanekonun gazabindan kacamazlar. Bakaneko''nun yuzunde 3 derin yarik
+        oldugu ve bu yariklara yagmacilarin sebep oldugu soylenir. Bakaneko, sahibinin
+        yanina yatar ve onun mezarini korumaya yemin eder. Efsanelere gore olaylarin
+        yasandigi evde, sahibinin basinda beklemektedir.
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3612996385918028950, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_Name
       value: Book_0
@@ -691,6 +701,10 @@ PrefabInstance:
     - target: {fileID: 6024948238442062718, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579462904848933672, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13941,7 +13955,7 @@ PrefabInstance:
       objectReference: {fileID: 661527376}
     - target: {fileID: 3386962000114310054, guid: 2ba73acf3f150bf4cbbfc5ec5884ecea, type: 3}
       propertyPath: canGetDamage
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3386962000114310054, guid: 2ba73acf3f150bf4cbbfc5ec5884ecea, type: 3}
       propertyPath: TransformationSfx
