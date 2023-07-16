@@ -181,7 +181,7 @@ public class FinalBossMng : MonoBehaviour
             shockWave.SetActive(false);
 
             canGetDamage = true;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             canGetDamage = false;
 
         }
@@ -261,6 +261,6 @@ public class FinalBossMng : MonoBehaviour
 
     public void deadBoss()
     {
-        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
+        
     }
 }

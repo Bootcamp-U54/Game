@@ -64,11 +64,11 @@ public class ObjectsManager : MonoBehaviour
                 StartCoroutine(ExclamationChange());
                 yield return new WaitForSeconds(1f);
                 Obje.GetComponent<SwordMng>().canDmg = true;
-                Obje.transform.position = new Vector3(13, yPos, 0);
+                Obje.transform.position = new Vector3(30, yPos, 0);
                 Obje.transform.DOMoveX(2f, 0.5f);
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.1f, 0.2f, fadeOut: true);
                 yield return new WaitForSeconds(0.5f);
-                Obje.transform.DOMove(new Vector3(13, yPos, 0), 1f);
+                Obje.transform.DOMove(new Vector3(30, yPos, 0), 1f);
              
             }
             else
@@ -78,11 +78,11 @@ public class ObjectsManager : MonoBehaviour
                 StartCoroutine(ExclamationChange());
                 yield return new WaitForSeconds(1f);
                 Obje2.GetComponent<SwordMng>().canDmg = true;
-                Obje2.transform.position = new Vector3(-13, yPos, 0);
+                Obje2.transform.position = new Vector3(-30, yPos, 0);
                 Obje2.transform.DOMoveX(-2f, 0.5f);
                 Camera.main.GetComponent<Camera>().DOShakePosition(0.1f, 0.2f, fadeOut: true);
                 yield return new WaitForSeconds(0.5f);
-                Obje2.transform.DOMove(new Vector3(-13, yPos, 0), 1f);
+                Obje2.transform.DOMove(new Vector3(-30, yPos, 0), 1f);
              
             }
 
@@ -103,7 +103,7 @@ public class ObjectsManager : MonoBehaviour
         if (random <=5 )
         {
             exclamation[1].SetActive(false);
-            exclamationPosition.x = 8.3f;
+            exclamationPosition.x = 13.6f;
           
             exclamation[0].transform.position= exclamationPosition;
             
@@ -111,7 +111,7 @@ public class ObjectsManager : MonoBehaviour
         else
         {
             exclamation[1].SetActive(false);
-            exclamationPosition.x = -8.3f;
+            exclamationPosition.x = -13.6f;
           
             exclamation[0].transform.position = exclamationPosition;
         } 

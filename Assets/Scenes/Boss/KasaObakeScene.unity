@@ -13958,6 +13958,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3386962000114310054, guid: 2ba73acf3f150bf4cbbfc5ec5884ecea, type: 3}
+      propertyPath: photoDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386962000114310054, guid: 2ba73acf3f150bf4cbbfc5ec5884ecea, type: 3}
       propertyPath: TransformationSfx
       value: 
       objectReference: {fileID: 1121441870}
