@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 2
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!1 &101828439
@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 2
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!212 &261453240
@@ -2882,7 +2882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 2
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!1 &498770228 stripped
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 1
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!212 &548434842
@@ -10925,7 +10925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 1
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!61 &1125440821
@@ -11951,7 +11951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 2
+  shakeDuration: 0.5
   shakeIntensity: 0.1
   sfx: {fileID: 1916521991}
 --- !u!1 &1405209151
