@@ -998,10 +998,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Basi dondu ve etraf karardi. O geceden sonra hicbir sey eskisi gibi olmayacakti.\r
-    Ayuminin unutamadigi ve korkunc olan anisinda ailesiyle ciktigi seyahatte kazara
-    cikardigi yangin vardi. Yangin oldugu sirada eve bakmak icin cok gecti cunku
-    evden cok uzaklasmislardi. "
+  m_text: 'Basi dondu ve etraf karardi. O geceden sonra hicbir sey eskisi gibi olmayacakti.
+
+    Ayuminin
+    unutamadigi ve korkunc olan anisinda ailesiyle ciktigi seyahatte kazara cikardigi
+    yangin vardi. Yangin oldugu sirada eve bakmak icin cok gecti cunku evden cok
+    uzaklasmislardi. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -1245,7 +1247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1046735016
 Transform:
   m_ObjectHideFlags: 0
