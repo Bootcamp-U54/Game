@@ -253,7 +253,7 @@ RectTransform:
   m_GameObject: {fileID: 9133400022437704351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.8466535, y: 2.8466535, z: 2.8466535}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857481560628764658}
@@ -261,7 +261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -228}
+  m_AnchoredPosition: {x: 88, y: -244}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5128067759719754053
@@ -294,8 +294,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B'YE BAS!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6234a09dfb10eac4ca9323a285763ca6, type: 2}
-  m_sharedMaterial: {fileID: 945622615683264951, guid: 6234a09dfb10eac4ca9323a285763ca6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+  m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 5.2633305, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
