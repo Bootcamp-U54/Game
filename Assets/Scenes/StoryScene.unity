@@ -770,10 +770,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yillar once seytanla yapmis oldugu anlasma aklina gelen Ryota, Kazuki\u2019nin
-    vermis oldugu kitabi aramaya koyulur. Kitaptan, seytanin baska bir boyuta ait
-    oldugunu ve bu boyuta bir portal yardimiyla gectigini ogrenir. Sevgilisini bulmak
-    icin portala dogru yola koyulur."
+  m_text: "Yillar once seytanla yapmis oldugu anlasma aklina gelir. Ryota, Kazuki\u2019nin
+    verdigi kitabi aramaya koyulur ve kitaptan seytanin baska bir boyuta ait oldugunu
+    ve bu boyuta bir portal yardimiyla gectigini ogrenir. Sevgilisini bulmak icin
+    portala dogru yola koyulur.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -1273,14 +1273,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gozundeki yasi silerek caliliga dogru ilerleyen Ryota\u2019nin onunde
-    bir anda siyah bir duman belirir. Gozleri kipkirmizi olan bu duman Ryota\u2019ya
+  m_text: "Gozundeki yaslari silerek caliliga dogru ilerleyen Ryota\u2019nin onunde
+    bir anda siyah bir duman belirir. Gozleri kipkirmizi olan bu duman, Ryota\u2019ya
     yaklasarak \u201CHer seyini kaybettigini gorebiliyorum. Sana yeni bir hayat bahsedebilirim
     ama bunun bir bedeli olacaktir.\u201D Kazuki\u2019nin efsanelerde anlattigi seytana
     benzeyen bu dumani goren Ryota dehsete kapilmistir. Sesi titreyerek \u201CNedir?\u201D
-    diyen Ryota\u2019nin bu sorusuna karsilik seytan \u201CAslinda bedel bile sayilmaz.
-    Sana cok buyuk kotulugu dokunmus birinin ruhunu istiyorum.\u201D der. Ryota,
-    ailesinin kaybetmis olmanin verdigi aciyla dusunmeden seytanin teklifini kabul
+    diye sorar. Ryota\u2019nin bu sorusuna karsilik seytan, \u201CAslinda bedel bile
+    sayilmaz. Sana cok buyuk kotulugu dokunmus birinin ruhunu istiyorum.\u201D der.
+    Ryota, ailesini kaybetmenin verdigi aciyla dusunmeden seytanin teklifini kabul
     eder."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -1628,9 +1628,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Seytan bir anda Ryota\u2019yi dumanla sararak bambaska bir diyara goturur.
-    Burada yeni bir hayata baslayan Ryota zaman gectikce buyur ve seytanin ordugu
-    kaderi yasamaya baslar.Kasabanin zengin kizi Ayumi ile evlenir ve mutlu bir hayat
-    surmeye baslarlar."
+    Burada yeni bir hayata baslayan Ryota, zaman gectikce buyur ve seytanin ordugu
+    kaderi yasamaya baslar. Kasabanin zengin kizi Ayumi ile evlenir ve mutlu bir
+    hayat surmeye baslarlar. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -2258,7 +2258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1664989704
 Transform:
   m_ObjectHideFlags: 0
@@ -2443,11 +2443,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ryota, kasabada ailesiyle yasayan bir cocuktu. Ryota genellikle zamanini
-    kasabanin delisi olarak gorulen kazuki\u2019yle gecirirdi. Kazuki bulustuklarinda
-    ona efsanelerde gecen hikayeler anlatirdi ve dovus sanatlarina dair bildigi seyleri
+  m_text: "\"Ryota, kasabada ailesiyle yasayan bir cocuktu. Ryota genellikle zamanini
+    kasabanin delisi olarak gorulen Kazuki\u2019yle gecirirdi. Kazuki bulustuklarinda
+    ona efsanelerde gecen hikayeler anlatir ve dovus sanatlarina dair bildigi seyleri
     gosterirdi. Kazuki tum kasaba halki tarafindan bir deli olarak gorulse de Ryota
-    onu bir kahraman olarak gorurdu."
+    onu bir kahraman olarak gorurdu. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}

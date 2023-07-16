@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class ObjectHighlight : MonoBehaviour
 {
 
     private Image image;
+   [SerializeField] private TextMeshProUGUI text;
     private Outline outline;
     private bool isBlinking = false;
     private float blinkInterval = 0.5f; // Parlama aralýðý (saniye)
@@ -22,7 +24,7 @@ public class ObjectHighlight : MonoBehaviour
         outline.effectColor = Color.blue;
 
         // Efekt mesafesini ayarlayýn (çizgi geniþliði)
-        outline.effectDistance = new Vector2(40f, 40f);
+        outline.effectDistance = new Vector2(38f, 38f);
 
         // Görsel alfa kullanýmýný etkinleþtirin
         outline.useGraphicAlpha = true;
@@ -57,6 +59,7 @@ public class ObjectHighlight : MonoBehaviour
             isBlinking = false;
             CancelInvoke("ToggleBlink");
             outline.enabled = false;
+            text.enabled = false ;
         }
     }
 }

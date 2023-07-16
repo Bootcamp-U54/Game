@@ -6859,7 +6859,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 986988690}
         m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
-        m_MethodName: GoToOptions
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

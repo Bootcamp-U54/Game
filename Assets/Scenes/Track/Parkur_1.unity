@@ -48071,18 +48071,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: "GameWindowU\u0131"
       objectReference: {fileID: 0}
-    - target: {fileID: 8752920939664810320, guid: 2434963d368876447baa884c34fd0f96, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8752920939664810320, guid: 2434963d368876447baa884c34fd0f96, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 8752920939664810320, guid: 2434963d368876447baa884c34fd0f96, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54081,7 +54069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fedfecbebbc949afeeef1c3b26c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 2
+  shakeDuration: 0.8
   shakeIntensity: 0.1
   sfx: {fileID: 1217196082}
 --- !u!212 &1893761635
@@ -55387,7 +55375,7 @@ MonoBehaviour:
   endPoint: {fileID: 243295201}
   moveSpeed: 5
   arrivalThreshold: 0.1
-  breakDelay: 2
+  breakDelay: 1
   trapMec: {fileID: 1379656699}
 --- !u!1001 &2134313792
 PrefabInstance:

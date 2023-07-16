@@ -1126,7 +1126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 654}
+  m_AnchoredPosition: {x: -372, y: 613}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5485305332032163194
@@ -1157,14 +1157,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bu semsiyeyi, evlilik yildonumlerinde esi olan Naomi''ye hediye etmek
-    ister. Uzun bir sure boyunca semsiyeyi kullanirlar.
-
-    Bir gun, isten cikan
-    Naomi, is yerinin onunde Dahici''yi bekler. Yagmur siddetli bir sekilde yagar
-    ve Naomi, kocasinin yaptigi semsiyeyi kullanmaktadir. Naomi, Dahici''yi gorunce
-    ona dogru ilerlemeye baslar. Tam o sirada yakinlardaki bir agaca tum siddetiyle
-    yildirim duser. '
+  m_text: Bir gun, isten cikan Naomi, is yerinin onunde Dahici'yi bekledi. Yagmur
+    siddetli bir sekilde yagarken, Naomi, kocasinin yaptigi semsiyeyi kullaniyordu.
+    Naomi, Dahici'yi gorunce ona dogru ilerlemeye basladi. Tam o sirada yakinlardaki
+    bir agaca tum siddetiyle yildirim dustu. Yildirimin etkisiyle dusen agac, Naomi'nin
+    hayatina mal oldu. Bu aci olayi gozleriyle goren Dahici, oldugu yerde saskinlik
+    icinde kaldi. Karisindan geriye, sadece ona yaptigi semsiye kalmisti.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -1191,8 +1189,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1404,7 +1402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -856.6, y: -59.699852}
+  m_AnchoredPosition: {x: -856.6, y: -66.699974}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3730891578986207762
@@ -2076,12 +2074,10 @@ MonoBehaviour:
   - {fileID: 4001193604834241444}
   - {fileID: 7947216932405922468}
   - {fileID: 4791205011643385340}
-  - {fileID: 3325000701968369975}
   - {fileID: 3217275916419959189}
   - {fileID: 7756389099880641993}
   - {fileID: 7196044176704640380}
   - {fileID: 6149259881358289556}
-  - {fileID: 2099809064779209965}
   trackPage:
   - {fileID: 4195252397656735891}
   - {fileID: 5804079658707984512}
@@ -2286,7 +2282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 654}
+  m_AnchoredPosition: {x: -372, y: 609}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7191229709912677136
@@ -2317,13 +2313,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Yildirimin etkisiyle dusen agac, Naomi''nin hayatina mal olur. Bu aci
-    olayi gozleriyle goren Dahici, oldugu yerde saskinlik icinde kalir. Karisindan
-    geriye, sadece ona yaptigi semsiye kalmistir.
-
-    Bu trajediyi atlatmaya calisan
-    Dahici, bir gun asiri derecede icer ve semsiyenin ona karisini hatirlatmasina
-    dayanamaz. Onu hayatindan cikarmak ister ve disari cikarak semsiyeyi cope atar. '
+  m_text: Bu trajediyi atlatmaya calisan Dahici, bir gun asiri derecede icki icti
+    ve semsiyenin ona karisini hatirlatmasina dayanamadi. Onu hayatindan cikarmak
+    istedi ve disari cikarak semsiyeyi cope atti. Bir antikaci, copun kenarinda duran
+    semsiyeyi fark etti. Semsiyenin el yapimi oldugunu gorunce ilgisini cekti ve
+    ikinci el dukkanina satmak icin aldi. Yagmurlu gecelerde ortaya cikan efsanevi
+    bir ruh olan Kasa Obake, eski esyalari lanetlemesiyle biliniyordu.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -2350,8 +2345,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2740,7 +2735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 684}
+  m_AnchoredPosition: {x: -372, y: 643}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5285174564591764871
@@ -2773,12 +2768,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Taiki;
 
-    Cok uzaklarda bir krallikta kralin esi amansiz bir hastaligin
-    pencesine duser. Kraliyetteki tum sifacilari toplayan kral Taiki, esini kurtarmak
-    icin yollar aramaya baslar. Sifacilar efsanelerde gecen ve her derde deva olan
-    bir cesmenin varligindan bahsedip kralin son umudunu yesertmislerdir. Sifacilarin
-    en bilgesi krali nimetlerden gereginden fazla yararlanmamasi eger acgozluluk
-    yaparsa basina felaketler gelecegi konusunda uyarir.
+    "Cok uzaklarda bir krallikta kralin esi amansiz bir hastaligin
+    pencesine dustu. Kraliyetteki tum sifacilari toplayan kral Taiki, esini kurtarmak
+    icin yollar aramaya basladi. Sifacilar efsanelerde gecen ve her derde deva olan
+    bir cesmenin varligindan bahsedip kralin son umudunu yesertmislerdi. Sifacilarin
+    en bilgesi krali nimetlerden gereginden fazla yararlanmamasi ve eger acgozluluk
+    yaparsa basina felaketler gelecegi konusunda uyardi.
 
 '
   m_isRightToLeft: 0
@@ -2807,8 +2802,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3131,7 +3126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294.5, y: -59.999855}
+  m_AnchoredPosition: {x: 294.5, y: -67}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1083241923886241819
@@ -3294,13 +3289,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kaito''nun Sensiye;
+  m_text: 'Kasa Obake;
 
-    Sessiz ve sakin bir Japon koyunde, Ame no Hi
-    ailesi yasar. Ailenin babasi, Dahici, usta bir comlekcidir. Sadece comlek yapmakla
-    kalmaz, her malzemeden cesitli hediyeler uretip sevdiklerine hediye etmeyi cok
-    sever. Cocuklarindan biri olan Kaito, fotograf cekmeyi sever. Yagmurlu bir gunde,
-    yine calisma odasina kapanan Dahici, bir semsiye yapmaya karar verir.'
+    "Sessiz ve sakin bir Japon koyunde, Ame no Hi ailesi
+    yasiyordu. Ailenin babasi, Dahici, usta bir comlekciydi. Sadece comlek yapmakla
+    kalmaz, her malzemeden cesitli hediyeler ureterek sevdiklerine hediye etmeyi
+    cok severdi. Cocuklarindan biri olan Kaito, fotograf cekmeyi severdi. Yagmurlu
+    bir gunde, yine calisma odasina kapanan Dahici, bir semsiye yapmaya karar verdi.
+    Bu semsiyeyi, evlilik yildonumlerinde esi olan Naomi''ye hediye etmek istedi.
+    Uzun bir sure boyunca semsiyeyi kullandilar.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -3327,8 +3324,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3404,7 +3401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 636}
+  m_AnchoredPosition: {x: -372, y: 624}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1681501172814260944
@@ -3435,11 +3432,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Magara girisinde savrulmadigini, hatta iceriden bir sesin onu cagirdigini
-    fark eder. \u0130ceri girdikten sonra gozleri kamasan kral bir sure etrafini
-    goremez. Ufak ufak cevresindeki esyalari gormeye baslayan kral etrafinin tamamen
-    altin esyalarla kapli oldugunu fark eder. Aklinda sadece biricik aski olan kral,
-    altinlari umursamadan direkt sifa veren cesmeye yonelir. "
+  m_text: ' Iceri girdikten sonra gozleri kamasan kral bir sure etrafini goremedi.
+    Ufak ufak cevresindeki esyalari gormeye baslayan kral etrafinin tamamen altin
+    esyalarla kapli oldugunu fark etti. Aklinda sadece biricik aski olan kral, altinlari
+    umursamadan direkt sifa veren cesmeye yoneldi. . Cebinden sifacinin verdigi cam
+    siseyi cikarir ardindan cesmeden doldurmaya basladi. Siseyi dolduran kralin aklina
+    bilge sifacinin sozu geldi. Bunun uzerine sadece 1 sise alarak oradan uzaklasti.
+    Magaradan tam cikarken gozune bir tac ilisti.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -3466,8 +3465,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3892,146 +3891,6 @@ Transform:
   m_Father: {fileID: 359682011105791450}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6610415079866981326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8193831818696180175}
-  - component: {fileID: 7666882925784506063}
-  - component: {fileID: 3325000701968369975}
-  m_Layer: 5
-  m_Name: Page_8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &8193831818696180175
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610415079866981326}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.0834956}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3530886109265418916}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 654}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7666882925784506063
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610415079866981326}
-  m_CullTransparentMesh: 1
---- !u!114 &3325000701968369975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610415079866981326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Tum orduyu katleder ve askerlerinin ruhlari ile yeni bir ordu kurar. Tekrar
-    magaraya giren kral taiki bir daha asla hazinenin yanindan ayrilmaz. Yillar gecer,
-    krallikta kralin ve esinin akibeti unutur. Bir efsaneye gore Kral Taiki'nin magaradan
-    cikmadigi, hazineyi korudugu ve kimsenin yaklasmasina izin vermedigi anlatilir.
-    Magaraya yaklasmayi basaran bazi hazine avcilari olmustur ancak geri donmeyi
-    basarabilen olmamistir.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
-  m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278471861
-  m_fontColor: {r: 0.70980394, g: 0.29803923, b: 0.015686275, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -376.2845, y: 0, z: 49.79419, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6772136065235254555
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,12 +3957,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bunun uzerine sadece 1 sise alarak oradan uzaklasir. Magaradan tam cikarken
-    gozune bir tac ilisir. Efsaneye gore bu taci takan hukumdarin kilici tilsimlanir
-    ve sonsuz zenginlik sahibi olur. Acgozlulugunden oturu buyulu magara tarafindan
-    lanetlenen kral Taiki magaradaki altini korumak icin etrafina dehset sacmaya
-    baslar. Derisinin bir kismi eridikten sonra iskeletlesmis bedeni ile magaradan
-    cikar. '
+  m_text: 'Efsaneye gore bu taci takan hukumdarin kilici tilsimlanmakta ve sonsuz
+    zenginlik sahibi olmaktaydi. Acgozlulugunden oturu buyulu magara tarafindan lanetlenen
+    kral Taiki magaradaki altini korumak icin etrafina dehset sacmaya basladi. Derisinin
+    bir kismi eridikten sonra iskeletlesmis bedeni ile magaradan cikti.Tum orduyu
+    katletti ve askerlerinin ruhlari ile yeni bir ordu kurdu. Tekrar magaraya giren
+    Kral Taiki, bir daha asla hazinenin yanindan ayrilmadi. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -4130,8 +3989,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4342,7 +4201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 684}
+  m_AnchoredPosition: {x: -372, y: 626}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5559962131657380999
@@ -4373,12 +4232,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0130lk basta bu iksiri almak icin ozel bir ordu kuran kral Taiki sabahin
-    erken saatlerinde yola koyulur. Uzun suren yolculugun ardindan buyulu magaraya
-    varan kral, ordunun oncu birligini magaraya gonderir ancak oncu birlik kapiya
-    dahi yaklasmadan adeta magarayi koruyan bir guc duvari varmis gibi etrafa savrulur.
+  m_text: 'Ilk basta bu iksiri almak icin ozel bir ordu kuran kral Taiki sabahin
+    erken saatlerinde yola koyuldu.
+
+    Uzun suren yolculugun ardindan buyulu magaraya
+    varan kral, ordunun oncu birligini magaraya gonderdi ancak oncu birlik kapiya
+    dahi yaklasmadan adeta magarayi koruyan bir guc duvari varmis gibi etrafa savruldu.
     Dehsete dusen kral, tum cesaretini toplayarak biricik askini kurtarmak adina
-    magaraya yaklasir. \n"
+    magaraya yaklasti.. Magara girisinde savrulmadigini, hatta iceriden bir sesin
+    onu cagirdigini fark etti.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -4405,147 +4269,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -376.2845, y: 0, z: 49.79419, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &7184625118526313655
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2581107340121611991}
-  - component: {fileID: 1421388658289860120}
-  - component: {fileID: 2099809064779209965}
-  m_Layer: 5
-  m_Name: Page_13
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2581107340121611991
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7184625118526313655}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.0834956}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3530886109265418916}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 612}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1421388658289860120
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7184625118526313655}
-  m_CullTransparentMesh: 1
---- !u!114 &2099809064779209965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7184625118526313655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Yine yagmurlu bir gecede, bu sefer hedefi ikinci el dukkani olan Kasa Obake,
-    semsiyenin icine sizar ve etrafa dehset sacmaya baslar. Dukkandan baslayarak
-    tum kasabayi harabeye ceviren Kasa Obake, hala kasabanin icinde dolasmaktadir.
-    Bu korkunc varlik, semsiyenin icindeki yasanmisliklardan beslenmekte ve kasaba
-    halkinin uzerine korku salmaktadir.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
-  m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278471861
-  m_fontColor: {r: 0.70980394, g: 0.29803923, b: 0.015686275, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4831,12 +4556,10 @@ Transform:
   - {fileID: 6167539800653684083}
   - {fileID: 8448240733564847015}
   - {fileID: 3028943109284743994}
-  - {fileID: 8193831818696180175}
   - {fileID: 912639603862986289}
   - {fileID: 6031470868306258812}
   - {fileID: 2677514119492094162}
   - {fileID: 4999494212037999834}
-  - {fileID: 2581107340121611991}
   - {fileID: 8438127642955020545}
   - {fileID: 3078466551069208908}
   m_Father: {fileID: 359682011105791450}
@@ -4908,11 +4631,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bir eskici, copun kenarinda duran semsiyeyi fark eder. Semsiyenin el yapimi
-    oldugunu gorunce ilgisini ceker ve ikinci el dukkanina satmak icin alir. Yagmurlu
-    gecelerde ortaya cikan efsanevi bir ruh olan Kasa Obake, eski esyalari lanetlemesiyle
-    bilinmektedir. Bu efsanevi yaratik lanetlenmis esyalarin gecmisini gorebiliyor
-    ve hatta onlarin sekline burunebilmektedir. '
+  m_text: Bu efsanevi yaratik lanetlenmis esyalarin gecmisini gorebiliyor ve hatta
+    onlarin sekline burunebiliyordu. Yine yagmurlu bir gecede, bu sefer hedefi ikinci
+    el dukkani olan Kasa Obake, semsiyenin icine sizdi ve etrafa dehset sacmaya basladi.
+    Dukkandan baslayarak tum kasabayi harabeye ceviren Kasa Obakenin hala kasabanin
+    icinde dolastigi soylenir. Bu korkunc varlik, semsiyenin icindeki yasanmisliklardan
+    beslenmekte ve kasaba halkinin uzerine korku salmaktadir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -4939,8 +4663,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5016,7 +4740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.41626, y: 626}
+  m_AnchoredPosition: {x: -90.41626, y: 635}
   m_SizeDelta: {x: 623.1674, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5112195113626131042
@@ -5047,11 +4771,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bakanekonun bir anda buyudugunu goren yagmacilar evden kacmaya calisir
-    fakat bakanekonun gazabindan kacamazlar. Bakaneko'nun yuzunde 3 derin yarik oldugu
-    ve bu yariklara yagmacilarin sebep oldugu soylenir. Bakaneko, sahibinin yanina
-    yatar ve onun mezarini korumaya yemin eder. Efsanelere gore olaylarin yasandigi
-    evde, sahibinin basinda beklemektedir.
+  m_text: Icindeki mistik guc uyanan Bakeneko, iki ayagi uzerinde yurumeye basladi
+    ve kollarinin devasa sekilde buyumeye basladigini fark etti. Bakaneko aniden
+    buyuyunce, yagmacilar evden kacmaya calistilar, ancak Bakanekonun gazabindan
+    kacamadilar. Bakaneko'nun yuzunde 3 derin yara oldugu ve bu yaralarin yagmacilarin
+    sebep oldugu soylendi. Bakaneko, sahibinin yanina yatar ve onun mezarini korumaya
+    yemin eder. Efsanelere gore olaylarin yasandigi evde, sahibinin basinda beklemektedir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -5078,8 +4803,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5231,7 +4956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 636}
+  m_AnchoredPosition: {x: -372, y: 603}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4115157911131728012
@@ -5262,12 +4987,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bunun uzerine sadece 1 sise alarak oradan uzaklasir. Magaradan tam cikarken
-    gozune bir tac ilisir. Efsaneye gore bu taci takan hukumdarin kilici tilsimlanir
-    ve sonsuz zenginlik sahibi olur. Acgozlulugunden oturu buyulu magara tarafindan
-    lanetlenen kral Taiki magaradaki altini korumak icin etrafina dehset sacmaya
-    baslar. Derisinin bir kismi eridikten sonra iskeletlesmis bedeni ile magaradan
-    cikar. '
+  m_text: Yillar gecti, krallikta kralin ve esinin akibeti unutuldu. Bir efsaneye
+    gore Kral Taiki'nin magaradan cikmadigi, hazineyi korudugu ve kimsenin yaklasmasina
+    izin vermedigi anlatilir. Magaraya yaklasmayi basaran bazi hazine avcilari olmustur
+    ancak geri donmeyi basarabilen olmamistir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -5294,8 +5017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5537,7 +5260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.41626, y: 626}
+  m_AnchoredPosition: {x: -90.41626, y: 614}
   m_SizeDelta: {x: 623.1674, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4924604849723236028
@@ -5570,11 +5293,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Bakeneko;
 
-    Ormanin derinliklerinde kimsesiz, yasli ve kedilere sahip
-    cikan bir kadin yasar. Sisli boguk bir kis gecesi o bolgenin yagmacilari ansizin
-    eve girer. Kedilerini ve kendini korumak isteyen yasli kadin yagmacilara karsi
-    direnir ancak gozu donen yagmacilar onu oracikta oldurur. Yasli kadinin ilk sahiplendigi
-    ve biricik kedisi bakeneko olanlari gorunce dehsete duser. '
+    "Ormanin derinliklerinde kimsesiz, yasli ve kedilere sahip
+    cikan bir kadin yasiyordu. Sisli ve boguk bir kis gecesi, o bolgenin yagmacilari
+    ansizin eve girdi. Kedilerini ve kendisini korumak isteyen yasli kadin, yagmacilara
+    karsi direndi ancak gozu donen yagmacilar onu oracikta oldurdu. Yasli kadinin
+    ilk sahiplendigi ve biricik kedisi olan Bakeneko, olanlari gorunce dehsete dustu. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
   m_sharedMaterial: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
@@ -5601,8 +5324,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
