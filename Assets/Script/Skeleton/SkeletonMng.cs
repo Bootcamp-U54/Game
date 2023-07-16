@@ -56,6 +56,9 @@ public class SkeletonMng : MonoBehaviour
 
     IEnumerator go()
     {
+        canGetDamage = false;
+        yield return new WaitForSeconds(4f);
+        canGetDamage = true;
         #region Aþama 1
         while (healt > 10)
         {

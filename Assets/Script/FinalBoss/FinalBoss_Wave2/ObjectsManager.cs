@@ -39,15 +39,8 @@ public class ObjectsManager : MonoBehaviour
     {
         currentTime -= Time.deltaTime;
         deadMng.bossCurrentHealt = currentTime;
-        if(player.GetComponent<PlayerController>().health > 0)
-        {
-            canNextSeen = true;
-        }
-        else
-        {
-            canNextSeen = false;
-        }
-        if (currentTime<0&&canNextSeen==true)
+        
+        if (currentTime<0&&canNextSeen== true && player.GetComponent<PlayerController>().health > 0)
         {
             StopCoroutine(cor);
             GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();

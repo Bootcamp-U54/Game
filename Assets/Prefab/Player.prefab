@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canAttack: 1
-  duration: 1
+  duration: 0.75
   AllspawnPos:
   - {fileID: 3682750076049309922}
   - {fileID: 4024328373390955337}

@@ -11100,7 +11100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageDuration: 2
-  fireDamage: 10
+  fireDamage: 1
   fireIsOpen: 0
   playerInFire: 0
   player: {fileID: 0}
