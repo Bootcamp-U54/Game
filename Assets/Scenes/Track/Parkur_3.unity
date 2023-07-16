@@ -11391,6 +11391,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1261315242}
     - target: {fileID: 236096361468110639, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
+      propertyPath: soarGravity
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 236096361468110639, guid: ee2966918f1f8c34080eda68006273e8, type: 3}
       propertyPath: platformLayerMask.m_Bits
       value: 64
       objectReference: {fileID: 0}

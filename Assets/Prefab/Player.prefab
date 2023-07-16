@@ -236,7 +236,7 @@ MonoBehaviour:
   dashSfx: {fileID: 2626688650234651799}
   deathSfxIsPlay: 0
   normalGravity: 0
-  soarGravity: 0
+  soarGravity: 0.2
   isSoar: 0
   canSoar: 0
   soarEffect_1: {fileID: 2720849830667621293}

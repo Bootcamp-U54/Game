@@ -211,7 +211,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && hangCounter<0 &&canSoar==true)
         {
             isSoar = true;
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.2f);
+
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+
+
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
