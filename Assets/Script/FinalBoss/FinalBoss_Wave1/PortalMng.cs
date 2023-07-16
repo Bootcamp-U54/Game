@@ -31,11 +31,14 @@ public class PortalMng : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         anim.SetTrigger("Close");
+        yield return new WaitForSeconds(1);
+        GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
 
     }
 
     public void loadScene()
     {
+        //GameObject.Find("NextScaneTrigger").GetComponent<TriggerNextScane>().FadeInAndActivatePanel();
         anim.enabled = false;
         GetComponent<SpriteRenderer>().sprite = null;
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(1));

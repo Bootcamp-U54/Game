@@ -17,6 +17,8 @@ public class ParchmentMng : MonoBehaviour
     public int sceneIndex;
     public int currentIndex;
 
+    public string playerPrefsText;
+
 
 
     void Start()
@@ -25,8 +27,15 @@ public class ParchmentMng : MonoBehaviour
         spriteRender.gameObject.transform.DORotate(new Vector3(0, 0, 90), 0);
         spriteRender.DOFade(0, 0);
 
-
-        getParchment();
+        if(PlayerPrefs.HasKey(playerPrefsText))
+        {
+            if(PlayerPrefs.GetInt(playerPrefsText) ==0)
+            {
+                PlayerPrefs.SetInt(playerPrefsText, 1);
+                getParchment();
+            }
+        }
+     
     }
     void Update()
     {
@@ -49,6 +58,8 @@ public class ParchmentMng : MonoBehaviour
 
     public void getParchment()
     {
+       
+
         if (sceneIndex == 7 && PlayerPrefs.GetInt("Key") != 1)
         {
             StartCoroutine(go());
@@ -69,7 +80,7 @@ public class ParchmentMng : MonoBehaviour
 
     IEnumerator go()
     {
-
+        GameObject.Find("Player").GetComponent<PlayerController>().canMove = false;
         isActive = true;
 
         spriteRender.DOFade(1, 1).From(0).SetUpdate(true);
@@ -96,7 +107,7 @@ public class ParchmentMng : MonoBehaviour
         spriteRender.DOFade(0, 1).From(1).SetUpdate(true);
         yield return new WaitForSeconds(1f);
         isActive = false;
-
+        GameObject.Find("Player").GetComponent<PlayerController>().canMove = true;
 
 
 

@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
 
         if(canMove==false)
         {
-            rb.velocity = Vector2.zero;
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
         if (moveInput > 0 || moveInput < 0)
@@ -208,12 +208,12 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region SoarDown
-        if (Input.GetKeyDown(KeyCode.C) && hangCounter<0 &&canSoar==true)
+        if (Input.GetKeyDown(KeyCode.Space) && hangCounter<0 &&canSoar==true)
         {
             isSoar = true;
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.2f);
         }
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             isSoar = false;
         }

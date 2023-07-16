@@ -81,6 +81,8 @@ public class SaveSystemMenu : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("Save");
         PlayerPrefs.DeleteKey("Key");
+        PlayerPrefs.SetInt("DashParchment", 0);
+        PlayerPrefs.SetInt("SoarParchment", 0);
 
         blackImage.DOFade(1, 1f).OnComplete(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2));
     }
