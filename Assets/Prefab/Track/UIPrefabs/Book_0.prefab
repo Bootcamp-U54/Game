@@ -2010,7 +2010,7 @@ MonoBehaviour:
   - {fileID: 2109440562146185313}
   bookCanvas: {fileID: 4475344493157547371}
   fadeDuration: 1
-  typingSpeed: -0.5
+  typingSpeed: -1
   bookIsOpen: 0
   pauseMenuMng: {fileID: 0}
   Book: {fileID: 4475344493157547371}
