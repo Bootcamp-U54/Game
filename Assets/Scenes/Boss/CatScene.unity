@@ -23645,6 +23645,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1353834010}
+    - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9014827054906145522, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_Pivot.x
       value: 0
