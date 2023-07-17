@@ -21,7 +21,7 @@ public class BookManager : MonoBehaviour
     private int currentIndexStory;
 
     private int catBorder = 1;
-    private int skeletorBorder = 7;
+    private int skeletorBorder = 6;
 
     private int currentIndexTrack;
     private bool isTyping;
