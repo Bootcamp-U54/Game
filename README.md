@@ -149,9 +149,14 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 [Unity Team 54 Miro Backlog Board](https://miro.com/welcomeonboard/T1o1UXo0aDZWclV3SkpYdG90UXdXUVF1M21sYXROYkp0bkJ2b1QxNm9IbDdjcGNZZXhsRGtFc1RIclZpaDc0TXwzNDU4NzY0NTU2NDU4NTkwODI3fDI=?share_link_id=6111593492)
 
 **Ekstralar**
-- Başarım sistemi eklendi. Her boss ve parkur bölümü tamamlandığında oyuncu çeşitli başarımlar kazanacaktır. Bölüm içinde bazı belirli objelere de başarımlar eklenmiştir.
-- Hile sistemi eklenmiştir. Bölümler belirlenen tuşa basıldığında geçilebilmektedir. Hile aktif edildiğinde başarımlar çalışmayacak şekilde ayarlanmıştır.
-- Save sistemi eklenmiştir. Oyuncu oyunu yarım bırakıp döndüğünde en son tamamladığı bölümden oyuna devam edebilir.
-- İsim kullanarak karakter özelleştirme eklenmiştir. Bunu yapmamızın sebebi oyuncunun karakterine daha yakın hissetmesi
-- Bosslarda ve parkurlarda ilerlemeyi yüzdelik olarak bölümün sonunda görebilmektedir. Bunu yapmamızın sebebi de oyuncuyu hırslandırıp oyuncuda tekrar oynama isteği uyandırmak.
-- Discord API sistemi eklendi. Oyuncunun başarımlarını Discord'a mesaj olarak gönderen API sistemi eklendi.
+- Başarım sistemi eklendi. Her boss ve parkur bölümü tamamlandığında oyuncu çeşitli başarımlar kazanacaktır. Bölüm içinde bazı belirli objelere de başarımlar eklenmiştir. Bu başarımlar kendi içinde nadirliklerine göre sınıflandırılmıştır
+
+- Hile sistemi eklendi. Bölümler belirlenen tuşa basıldığında geçilebilir şekilde ayarlandı. Hile aktif edilip bölüm hile kullanılarak geçildiğinde bölümü geçme  başarımları çalışmayacak şekilde ayarlandı.
+
+- Save sistemi eklendi. Oyuncu oyunu yarım bırakıp döndüğünde en son tamamladığı bölümden oyuna devam edebilir.
+
+- İsim kullanarak karakter özelleştirme eklendi. Oyuncunun karaktere isim vererek kendini oyuna daha yakın hissetmesi sağlandı.
+
+- Oyuncu bosslarda ve parkurlarda ilerlemeyi yüzdelik olarak öldükten sonra görebilmektedir. Bunu yapmamızın sebebi de oyuncuyu hırslandırıp oyuncuda tekrar oynama isteği uyandırmaktır.
+
+- Discord API sistemi eklendi. Oyuncunun başarımlarını Discord'a mesaj olarak gönderebilecek bir sistem eklendi. Bu sistemi oyuncunun istediği discord sunucusuna bağlanabilecek şekilde ayarlandı ve bu işlemi kolayca yapabilmesi için arayüz tasarlandı.
