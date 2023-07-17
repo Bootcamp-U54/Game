@@ -47870,6 +47870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4475344493157547371, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: pauseMenuMng
       value: 
@@ -47924,7 +47928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7579462904848933672, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

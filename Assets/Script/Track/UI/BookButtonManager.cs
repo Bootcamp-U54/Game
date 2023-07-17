@@ -48,14 +48,12 @@ public class BookButtonManager : MonoBehaviour
     {
         mainImage.enabled = visible;
         storyImage.enabled = visible;
-        controllerImage.enabled = visible;
         trackImage.enabled = visible;
     }
 
     private void SetAllBookActive(bool active)
     {
         storyBook.SetActive(active);
-        controllerBook.SetActive(active);
         trackBook.SetActive(active);
     }
 

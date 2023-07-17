@@ -60929,20 +60929,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 952353747}
     m_Modifications:
-    - target: {fileID: 3217275916419959189, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
-      propertyPath: m_text
-      value: 'Kaito''nun Semsiye;
-
-        Sessiz ve sakin bir Japon koyunde, Ame
-        no Hi ailesi yasar. Ailenin babasi, Dahici, usta bir comlekcidir. Sadece
-        comlek yapmakla kalmaz, her malzemeden cesitli hediyeler uretip sevdiklerine
-        hediye etmeyi cok sever. Cocuklarindan biri olan Kaito, fotograf cekmeyi
-        sever. Yagmurlu bir gunde, yine calisma odasina kapanan Dahici, bir semsiye
-        yapmaya karar verir.'
+    - target: {fileID: 332683342248536308, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 332683342248536308, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 332683342248536308, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095430504849285688, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3612996385918028950, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_Name
       value: Book_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001193604834241444, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 4001193604834241444, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 4001193604834241444, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377879336149668083, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: typingSpeed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696410031365929559, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: pauseMenuMng
@@ -60952,6 +60977,18 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 44868335}
+    - target: {fileID: 5254608521787847946, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578090268251567631, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614535143107385325, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6024948238442062718, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -60995,6 +61032,42 @@ PrefabInstance:
     - target: {fileID: 6024948238442062718, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772136065235254555, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070234553134693814, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834485788364830156, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846094465982032584, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556502461701977363, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728253848807198758, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 8728253848807198758, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4659918872487329924, guid: f7445822ee85a9143a9d5248060a758d, type: 2}
+    - target: {fileID: 8728253848807198758, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870235614625377396, guid: 932b70fc9ae4cee49a90d0de08ed8fda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -19,12 +19,12 @@ public class BookManager : MonoBehaviour
     public GameObject bookCanvas;
     public float fadeDuration = 2f;
     private int currentIndexStory;
-    
+
     private int catBorder = 1;
     private int skeletorBorder = 7;
 
-    private int currentIndexTrack, currentIndexController = 0;
-    private bool isTyping = false;
+    private int currentIndexTrack;
+    private bool isTyping;
     public float typingSpeed;
     private bool isPaused = false;
 
@@ -41,9 +41,11 @@ public class BookManager : MonoBehaviour
 
     private void Start()
     {
+  
+
         ScaneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         #region CurrentIndexGeneator
-        if (ScaneIndex == 4|| ScaneIndex == 5)
+        if (ScaneIndex == 4 || ScaneIndex == 5)
         {
             currentIndexStory = 0;
 
@@ -56,22 +58,21 @@ public class BookManager : MonoBehaviour
             {
                 storyPage[i].DOFade(0f, 0f).SetUpdate(true);
             }
+          
 
 
 
         }
         else if (ScaneIndex >= 8)
         {
-            currentIndexStory = 8;
+            currentIndexStory = 7;
 
             for (int i = 0; i < currentIndexStory; i++)
             {
                 storyPage[i].DOFade(0f, 0f).SetUpdate(true);
             }
+         
         }
-
-        else if (ScaneIndex >= 7)
-            currentIndexStory = 7;
 
         #endregion
 
@@ -85,7 +86,7 @@ public class BookManager : MonoBehaviour
             trackPage[i].DOFade(0f, 0f).SetUpdate(true);
 
         }
-     
+
 
     }
 
@@ -94,12 +95,13 @@ public class BookManager : MonoBehaviour
     {
         Debug.Log(currentIndexStory);
         PlayerController targetScript = targetObject.GetComponent<PlayerController>();
-        if (Input.GetKeyDown(KeyCode.B)&&targetScript.deathSfxIsPlay==false&&pauseMenuMng.pauseMenuIsOpen==false )
+        if (Input.GetKeyDown(KeyCode.B) && targetScript.deathSfxIsPlay == false && pauseMenuMng.pauseMenuIsOpen == false)
         {
             if (isPaused)
             {
                 BackShowPanel();
                 ResumeGame();
+
             }
             else
             {
@@ -108,7 +110,7 @@ public class BookManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 ShowPanel();
                 storyPage[currentIndexStory].DOFade(1f, 0f).SetUpdate(true);
-                StartCoroutine(TypeText(storyPage[currentIndexStory].text));
+                StartTypewriterEffect(storyPage[currentIndexStory].text);
                 Time.timeScale = 0f;
                 isPaused = true;
                 bookIsOpen = true;
@@ -130,6 +132,8 @@ public class BookManager : MonoBehaviour
                 storyPage[currentIndexStory + 1].DOFade(1f, fadeDuration).SetUpdate(true);
                 currentIndexStory++;
                 StartTypewriterEffect(storyPage[currentIndexStory].text);
+             
+
 
             }
         }
@@ -149,7 +153,7 @@ public class BookManager : MonoBehaviour
 
         else if (ScaneIndex >= 8)
         {
-            if (!isTyping && currentIndexStory >= 0 && currentIndexStory + 1 < storyPage.Length && index == 0)
+            if (!isTyping && currentIndexStory >= 0 && currentIndexStory+1 < storyPage.Length && index == 0)
             {
 
                 storyPage[currentIndexStory].DOFade(0f, fadeDuration).SetUpdate(true);
@@ -170,7 +174,7 @@ public class BookManager : MonoBehaviour
 
         }
 
- 
+
 
 
     }
@@ -182,7 +186,9 @@ public class BookManager : MonoBehaviour
             storyPage[currentIndexStory - 1].DOFade(1f, fadeDuration).SetUpdate(true);
             currentIndexStory--;
             StartTypewriterEffect(storyPage[currentIndexStory].text);
+
         }
+
         if (!isTyping && currentIndexTrack > 0 && index == 1)
         {
             trackPage[currentIndexTrack].DOFade(0f, fadeDuration).SetUpdate(true);
