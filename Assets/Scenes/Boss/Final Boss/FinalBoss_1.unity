@@ -955,8 +955,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.80765, y: -0.39415002, z: 0}
-    m_Extent: {x: 1.82955, y: 1.34025, z: 0}
+    m_Center: {x: -0.79709995, y: -0.39369997, z: 0}
+    m_Extent: {x: 1.8300999, y: 1.3403, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7349,8 +7349,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0065499544, y: 0.18350002, z: 0}
-    m_Extent: {x: 1.30705, y: 0.8513, z: 0}
+    m_Center: {x: 0.018750012, y: 0.18320003, z: 0}
+    m_Extent: {x: 1.3045499, y: 0.85800004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8765,8 +8765,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.16795003, y: 0.17844999, z: 0}
-    m_Extent: {x: 1.25985, y: 0.93904996, z: 0}
+    m_Center: {x: 0.16330004, y: 0.18719998, z: 0}
+    m_Extent: {x: 1.2492, y: 0.9383, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12569,7 +12569,6 @@ GameObject:
   - component: {fileID: 1857481560010625683}
   - component: {fileID: 6838057517734819498}
   - component: {fileID: 1719342147618941528}
-  - component: {fileID: 5834152389099630582}
   m_Layer: 5
   m_Name: BookIcon
   m_TagString: Untagged
@@ -12794,19 +12793,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5834152389099630582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754642197822577196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2697fe195ada2f24190a9530f819facb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
 --- !u!222 &6838057517734819498
 CanvasRenderer:
   m_ObjectHideFlags: 0
