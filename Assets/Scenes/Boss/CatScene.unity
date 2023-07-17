@@ -23528,7 +23528,7 @@ MonoBehaviour:
   - {fileID: 73925006}
   spawnDuration: 3
   obstaceDestroyPos: {x: 100, y: 100, z: 0}
-  obstacleDamage: 10
+  obstacleDamage: 1
   obstacleSprite:
   - {fileID: 409108073, guid: bc00bfc5170fdff4585cfc0fe8a94d5c, type: 3}
   - {fileID: -1379656230, guid: bc00bfc5170fdff4585cfc0fe8a94d5c, type: 3}

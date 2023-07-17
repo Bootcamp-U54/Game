@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyObstacle: {fileID: 0}
   destroyPos: {x: 0, y: 0, z: 0}
-  damage: 0
+  damage: 1
 --- !u!50 &4411891786926188951
 Rigidbody2D:
   serializedVersion: 4
