@@ -160,3 +160,5 @@ Parkurları geçin, boss karakterleriyle savaşın, özel güçlere sahip olun v
 - Oyuncu bosslarda ve parkurlarda ilerlemeyi yüzdelik olarak öldükten sonra görebilmektedir. Bunu yapmamızın sebebi de oyuncuyu hırslandırıp oyuncuda tekrar oynama isteği uyandırmaktır.
 
 - Discord API sistemi eklendi. Oyuncunun başarımlarını Discord'a mesaj olarak gönderebilecek bir sistem eklendi. Bu sistemi oyuncunun istediği discord sunucusuna bağlanabilecek şekilde ayarlandı ve bu işlemi kolayca yapabilmesi için arayüz tasarlandı.
+
+- Oyun içi optimizasyonu sağlamak için Object Pooling kullanıldı.
