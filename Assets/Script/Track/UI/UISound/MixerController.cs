@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MixerController : MonoBehaviour
 {
@@ -18,7 +19,14 @@ public class MixerController : MonoBehaviour
     {
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
         sfxSlider.onValueChanged.AddListener(SetSfxVolume);
-      
+
+        if(SceneManager.GetActiveScene().buildIndex==1)
+        {
+            SetMusicVolume(0.5f);
+            SetSfxVolume(0.5f);
+        }
+       
+
     }
     private void Start()
     {

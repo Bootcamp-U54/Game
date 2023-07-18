@@ -1142,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Options
       objectReference: {fileID: 0}
+    - target: {fileID: 2978710965006790603, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3688158273239425387, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1175,9 +1179,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 609967398}
+    - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: closePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754238702288700424, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9014827054906145522, guid: f6ea6f0281ff66b4a83a3a9558855d26, type: 3}
       propertyPath: m_Pivot.x
       value: 0
